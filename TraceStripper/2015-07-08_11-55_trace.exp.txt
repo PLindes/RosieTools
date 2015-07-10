@@ -1,0 +1,685 @@
+#   Green the store block.
+Green the store block.
+#   FAILED!
+
+#   Yes.
+Yes.
+(S279 ^message-type yes)
+
+#   No.
+No.
+(S329 ^message-type no)
+
+#   Finished.
+Finished.
+(S379 ^message-type finished)
+
+#   Purple is a color.
+Purple is a color.
+(S429 ^arg1 @P37 ^message-type adjective-definition
+       ^predicate @C11)
+  (@P37 ^id @P1006 ^spelling purple ^structure-type ADJ)
+    (@P1006 ^name purple1 ^property @P1000)
+  (@C11 ^id @P1000)
+    (@P1000 ^name color ^type visual)
+
+#   The sphere is green.
+The sphere is green.
+(S552 ^arg1 O51 ^message-type object-description
+       ^predicate @G3)
+  (O51 ^id large-green-sphere1 ^predicates P59)
+    (P59 ^arm-status not-grabbed ^category block1 ^color green1 ^movable true
+           ^object-id large-green-sphere1 ^shape sphere1 ^size large1
+           ^status live)
+  (@G3 ^id @P1004 ^spelling green ^structure-type ADJ)
+    (@P1004 ^name green1 ^property @P1000)
+      (@P1000 ^name color ^type visual)
+
+#   The red triangle is on the big green block.
+The red triangle is on the big green block.
+(S679 ^arg1 S694 ^arg1 O48
+       ^message-type object-description ^relation S877 ^relation S876)
+  (S694 ^action @T1025)
+    (@T1025 ^id @A1016)
+      (@A1016 ^action-type primitive ^name turn-off1 ^procedural @P15
+             ^type action)
+  (O48 ^id small-red-triangle1 ^predicates P56)
+    (P56 ^arm-status not-grabbed ^category block1 ^color red1 ^movable true
+           ^object-id small-red-triangle1 ^shape triangle1 ^size small1
+           ^status live)
+  (S877 ^arg2 O50 ^id @R1000)
+    (O50 ^id large-green-block1 ^predicates P58)
+      (P58 ^arm-status not-grabbed ^category block1 ^color green1
+             ^movable true ^object-id large-green-block1 ^shape rectangle1
+             ^size large1 ^status live)
+    (@R1000 ^name on1 ^relation @R6 ^relation @R7 ^relation @R8 ^type relation)
+  (S876 ^arg2 O51 ^id @R1000)
+    (O51 ^id large-green-sphere1 ^predicates P59)
+      (P59 ^arm-status not-grabbed ^category block1 ^color green1
+             ^movable true ^object-id large-green-sphere1 ^shape sphere1
+             ^size large1 ^status live)
+
+#   The red triangle is on the big green block.
+The red triangle is on the big green block.
+#   FAILED!
+(S679 ^arg1 S694 ^arg1 O48 ^message-type object-description
+       ^relation S877 ^relation S876)
+  (S694 ^action @T1025)
+    (@T1025 ^id @A1016)
+  (O48 ^id small-red-triangle1 ^predicates P56)
+    (P56 ^arm-status not-grabbed ^category block1 ^color red1 ^movable true
+           ^object-id small-red-triangle1 ^shape triangle1 ^size small1
+           ^status live)
+  (S877 ^arg2 O50 ^id @R1000)
+    (O50 ^id large-green-block1 ^predicates P58)
+    (@R1000 ^name on1 ^relation @R6 ^relation @R7 ^relation @R8 ^type relation)
+  (S876 ^arg2 O51 ^id @R1000)
+    (O51 ^id large-green-sphere1 ^predicates P59)
+
+#   The red triangle.
+The red triangle.
+(S900 ^arg1 O48 ^arg1 S914 ^message-type object-definition)
+  (O48 ^id small-red-triangle1 ^predicates P56)
+    (P56 ^arm-status not-grabbed ^category block1 ^color red1 ^movable true
+           ^object-id small-red-triangle1 ^shape triangle1 ^size small1
+           ^status live)
+  (S914 ^action @T1025)
+    (@T1025 ^id @A1016)
+      (@A1016 ^action-type primitive ^name turn-off1 ^procedural @P15
+             ^type action)
+
+#   The red triangle.
+The red triangle.
+#   FAILED!
+(S900 ^arg1 O48 ^arg1 S914 ^message-type object-definition)
+  (O48 ^id small-red-triangle1 ^predicates P56)
+    (P56 ^arm-status not-grabbed ^category block1 ^color red1 ^movable true
+           ^object-id small-red-triangle1 ^shape triangle1 ^size small1
+           ^status live)
+  (S914 ^action @T1025)
+    (@T1025 ^id @A1016)
+
+#   The red triangle on the large green block.
+The red triangle on the large green block.
+(S997 ^arg1 O48 ^arg1 S1011
+       ^message-type object-definition)
+  (O48 ^id small-red-triangle1 ^predicates P56)
+    (P56 ^arm-status not-grabbed ^category block1 ^color red1 ^movable true
+           ^object-id small-red-triangle1 ^shape triangle1 ^size small1
+           ^status live)
+  (S1011 ^action @T1025)
+    (@T1025 ^id @A1016)
+      (@A1016 ^action-type primitive ^name turn-off1 ^procedural @P15
+             ^type action)
+
+#   The red triangle on the large green block.
+The red triangle on the large green block.
+(S1210 ^arg1 S1224 ^arg1 O48
+       ^message-type object-definition)
+  (S1224 ^action @T1025)
+    (@T1025 ^id @A1016)
+      (@A1016 ^action-type primitive ^name turn-off1 ^procedural @P15
+             ^type action)
+  (O48 ^id small-red-triangle1 ^predicates P56)
+    (P56 ^arm-status not-grabbed ^category block1 ^color red1 ^movable true
+           ^object-id small-red-triangle1 ^shape triangle1 ^size small1
+           ^status live)
+
+#   The red triangle on the large green block.
+The red triangle on the large green block.
+(S1415 ^arg1 O48 ^arg1 S1429
+       ^message-type object-definition)
+  (O48 ^id small-red-triangle1 ^predicates P56)
+    (P56 ^arm-status not-grabbed ^category block1 ^color red1 ^movable true
+           ^object-id small-red-triangle1 ^shape triangle1 ^size small1
+           ^status live)
+  (S1429 ^action @T1025)
+    (@T1025 ^id @A1016)
+      (@A1016 ^action-type primitive ^name turn-off1 ^procedural @P15
+             ^type action)
+
+#   The red triangle on the large green block.
+The red triangle on the large green block.
+(S1620 ^arg1 O48 ^arg1 S1634
+       ^message-type object-definition)
+  (O48 ^id small-red-triangle1 ^predicates P56)
+    (P56 ^arm-status not-grabbed ^category block1 ^color red1 ^movable true
+           ^object-id small-red-triangle1 ^shape triangle1 ^size small1
+           ^status live)
+  (S1634 ^action @T1025)
+    (@T1025 ^id @A1016)
+      (@A1016 ^action-type primitive ^name turn-off1 ^procedural @P15
+             ^type action)
+
+#   The red triangle on the large green block.
+The red triangle on the large green block.
+(S1825 ^arg1 O48 ^arg1 S1839
+       ^message-type object-definition)
+  (O48 ^id small-red-triangle1 ^predicates P56)
+    (P56 ^arm-status not-grabbed ^category block1 ^color red1 ^movable true
+           ^object-id small-red-triangle1 ^shape triangle1 ^size small1
+           ^status live)
+  (S1839 ^action @T1025)
+    (@T1025 ^id @A1016)
+      (@A1016 ^action-type primitive ^name turn-off1 ^procedural @P15
+             ^type action)
+
+#   The red triangle on the large green block.
+The red triangle on the large green block.
+#   FAILED!
+(S1825 ^arg1 O48 ^arg1 S1839 ^message-type object-definition)
+  (O48 ^id small-red-triangle1 ^predicates P56)
+    (P56 ^arm-status not-grabbed ^category block1 ^color red1 ^movable true
+           ^object-id small-red-triangle1 ^shape triangle1 ^size small1
+           ^status live)
+  (S1839 ^action @T1025)
+    (@T1025 ^id @A1016)
+
+#   The red one.
+The red one.
+(S2035 ^arg1 O48 ^arg1 S2049 ^arg1 O55
+       ^message-type object-definition)
+  (O48 ^id small-red-triangle1 ^predicates P56)
+    (P56 ^arm-status not-grabbed ^category block1 ^color red1 ^movable true
+           ^object-id small-red-triangle1 ^shape triangle1 ^size small1
+           ^status live)
+  (S2049 ^action @T1025)
+    (@T1025 ^id @A1016)
+      (@A1016 ^action-type primitive ^name turn-off1 ^procedural @P15
+             ^type action)
+  (O55 ^id small-soda1 ^predicates P63)
+    (P63 ^arm-status not-grabbed ^category block1 ^color red1 ^movable true
+           ^object-id small-soda1 ^shape soda1 ^size small1 ^status live)
+
+#   The red one.
+The red one.
+#   FAILED!
+(S2035 ^arg1 O48 ^arg1 S2049 ^arg1 O55 ^message-type object-definition)
+  (O48 ^id small-red-triangle1 ^predicates P56)
+    (P56 ^arm-status not-grabbed ^category block1 ^color red1 ^movable true
+           ^object-id small-red-triangle1 ^shape triangle1 ^size small1
+           ^status live)
+  (S2049 ^action @T1025)
+    (@T1025 ^id @A1016)
+  (O55 ^id small-soda1 ^predicates P63)
+    (P63 ^arm-status not-grabbed ^category block1 ^color red1 ^movable true
+           ^object-id small-soda1 ^shape soda1 ^size small1 ^status live)
+
+#   The game is tictactoe.
+The game is tictactoe.
+(S2128 ^arg1 @G5 ^interaction-status I212
+       ^message-type object-description ^predicate @N296)
+  (@G5 ^id @G6)
+    (@G6 ^name game)
+  (I212 ^failure F46)
+    (F46 ^type unknown-word ^word tictactoe)
+  (@N296 ^id @I208 ^spelling tictactoe)
+    (@I208 ^name tictactoe1)
+
+#   The task is done.
+The task is done.
+(S2252 ^arg1 @T1006 ^message-type object-description
+       ^predicate @I15)
+  (@T1006 ^id @T1008)
+    (@T1008 ^name task)
+  (@I15 ^id @T1027 ^spelling done ^structure-type ADJ)
+    (@T1027 ^name task-completed)
+
+#   This is red.
+This is red.
+(S2376 ^arg1 O47 ^message-type object-description ^predicate @V30)
+  (O47 ^id large-orange-triangle1 ^predicates P55)
+    (P55 ^arm-status not-grabbed ^category block1 ^color orange1
+           ^indicated pointed ^movable true ^object-id large-orange-triangle1
+           ^shape triangle1 ^size large1 ^status live)
+  (@V30 ^id @T1025)
+    (@T1025 ^id @A1016)
+      (@A1016 ^action-type primitive ^name turn-off1 ^procedural @P15
+             ^type action)
+
+#   This is red.
+This is red.
+#   FAILED!
+(S2376 ^arg1 O47 ^message-type object-description ^predicate @V30)
+  (O47 ^id large-orange-triangle1 ^predicates P55)
+    (P55 ^arm-status not-grabbed ^category block1 ^color orange1
+           ^indicated pointed ^movable true ^object-id large-orange-triangle1
+           ^shape triangle1 ^size large1 ^status live)
+  (@V30 ^id @T1025)
+    (@T1025 ^id @A1016)
+
+#   This is a big red triangle.
+This is a big red triangle.
+(S2486 ^arg1 O47 ^message-type object-description
+       ^predicate @V33 ^predicate S2556 ^predicate @V32 ^predicate @V31)
+  (O47 ^id large-orange-triangle1 ^predicates P55)
+    (P55 ^arm-status not-grabbed ^category block1 ^color orange1
+           ^indicated pointed ^movable true ^object-id large-orange-triangle1
+           ^shape triangle1 ^size large1 ^status live)
+  (@V33 ^id @P2001)
+    (@P2001 ^name triangle1 ^property @P2000)
+      (@P2000 ^name shape ^type visual)
+  (S2556 ^action @T1025)
+    (@T1025 ^id @A1016)
+      (@A1016 ^action-type primitive ^name turn-off1 ^procedural @P15
+             ^type action)
+  (@V32 ^id @P3003)
+    (@P3003 ^name large1 ^property @P3000)
+      (@P3000 ^name size ^type visual)
+  (@V31 ^id @P1001)
+    (@P1001 ^name red1 ^property @P1000)
+      (@P1000 ^name color ^type visual)
+
+#   This is a big red triangle.
+This is a big red triangle.
+#   FAILED!
+(S2486 ^arg1 O47 ^message-type object-description ^predicate @V33
+       ^predicate S2556 ^predicate @V32 ^predicate @V31)
+  (O47 ^id large-orange-triangle1 ^predicates P55)
+    (P55 ^arm-status not-grabbed ^category block1 ^color orange1
+           ^indicated pointed ^movable true ^object-id large-orange-triangle1
+           ^shape triangle1 ^size large1 ^status live)
+  (@V33 ^id @P2001)
+    (@P2001 ^name triangle1 ^property @P2000)
+  (S2556 ^action @T1025)
+    (@T1025 ^id @A1016)
+  (@V32 ^id @P3003)
+    (@P3003 ^name large1 ^property @P3000)
+  (@V31 ^id @P1001)
+    (@P1001 ^name red1 ^property @P1000)
+
+#   What is inside the pantry?
+What is inside the pantry?
+(S2714 ^message-type what-is-question
+       ^relation S2834)
+  (S2834 ^arg2 L18 ^id @R1001)
+    (L18 ^id 1 ^predicates P64)
+      (P64 ^arm-status not-grabbed ^category location1 ^door closed
+             ^name pantry ^object-id 1 ^status live)
+    (@R1001 ^name in1 ^relation @R9 ^relation @R10 ^relation @R11
+           ^type relation)
+      (@R9 ^avg 0. ^axis y ^bottom 0. ^count 0 ^squaredsum 0. ^sum 0. ^top 0.
+             ^type aligned)
+      (@R10 ^avg 0. ^axis x ^bottom 0. ^count 0 ^squaredsum 0. ^sum 0. ^top 0.
+             ^type aligned)
+      (@R11 ^avg 0. ^axis z ^bottom 0. ^count 0 ^squaredsum 0. ^sum 0. ^top 0.
+             ^type aligned)
+
+#   What is this?
+What is this?
+(S2844 ^arg1 O47 ^message-type what-is-question)
+  (O47 ^id large-orange-triangle1 ^predicates P55)
+    (P55 ^arm-status not-grabbed ^category block1 ^color orange1
+           ^indicated pointed ^movable true ^object-id large-orange-triangle1
+           ^shape triangle1 ^size large1 ^status live)
+
+#   What size is the green sphere?
+What size is the green sphere?
+(S2937 ^arg1 O51
+       ^message-type predicate-question ^predicate @S19)
+  (O51 ^id large-green-sphere1 ^predicates P59)
+    (P59 ^arm-status not-grabbed ^category block1 ^color green1 ^movable true
+           ^object-id large-green-sphere1 ^shape sphere1 ^size large1
+           ^status live)
+  (@S19 ^id @P3000)
+    (@P3000 ^name size ^type visual)
+
+#   What is on the red triangle?
+What is on the red triangle?
+(S3082 ^message-type what-is-question
+       ^relation S3144 ^relation S3219)
+  (S3144 ^action @T1025)
+    (@T1025 ^id @A1016)
+      (@A1016 ^action-type primitive ^name turn-off1 ^procedural @P15
+             ^type action)
+  (S3219 ^arg2 O48 ^id @R1000)
+    (O48 ^id small-red-triangle1 ^predicates P56)
+      (P56 ^arm-status not-grabbed ^category block1 ^color red1 ^movable true
+             ^object-id small-red-triangle1 ^shape triangle1 ^size small1
+             ^status live)
+    (@R1000 ^name on1 ^relation @R6 ^relation @R7 ^relation @R8 ^type relation)
+
+#   What is on the red triangle?
+What is on the red triangle?
+#   FAILED!
+(S3082 ^message-type what-is-question ^relation S3144 ^relation S3219)
+  (S3144 ^action @T1025)
+    (@T1025 ^id @A1016)
+  (S3219 ^arg2 O48 ^id @R1000)
+    (O48 ^id small-red-triangle1 ^predicates P56)
+    (@R1000 ^name on1 ^relation @R6 ^relation @R7 ^relation @R8 ^type relation)
+
+#   Where is the red triangle?
+Where is the red triangle?
+(S3229 ^arg1 S3290 ^arg1 O48
+       ^message-type where-is-question)
+  (S3290 ^action @T1025)
+    (@T1025 ^id @A1016)
+      (@A1016 ^action-type primitive ^name turn-off1 ^procedural @P15
+             ^type action)
+  (O48 ^id small-red-triangle1 ^predicates P56)
+    (P56 ^arm-status not-grabbed ^category block1 ^color red1 ^movable true
+           ^object-id small-red-triangle1 ^shape triangle1 ^size small1
+           ^status live)
+
+#   Where is the red triangle?
+Where is the red triangle?
+#   FAILED!
+(S3229 ^arg1 S3290 ^arg1 O48 ^message-type where-is-question)
+  (S3290 ^action @T1025)
+    (@T1025 ^id @A1016)
+  (O48 ^id small-red-triangle1 ^predicates P56)
+    (P56 ^arm-status not-grabbed ^category block1 ^color red1 ^movable true
+           ^object-id small-red-triangle1 ^shape triangle1 ^size small1
+           ^status live)
+
+#   Clean the kitchen.
+Clean the kitchen.
+(S3356 ^action @C20 ^arg1 @P13001 ^message-type command)
+  (@C20 ^id @A1014)
+    (@A1014 ^name clean)
+  (@P13001 ^name kitchen1 ^property @P13000 ^waypoint wp25)
+    (@P13000 ^name location2 ^type location)
+
+#   Discard the large green block.
+Discard the large green block.
+(S3449 ^action @D6 ^arg1 O50 ^arg1 O51
+       ^message-type command)
+  (@D6 ^id @A1010)
+    (@A1010 ^name discard)
+  (O50 ^id large-green-block1 ^predicates P58)
+    (P58 ^arm-status not-grabbed ^category block1 ^color green1 ^movable true
+           ^object-id large-green-block1 ^shape rectangle1 ^size large1
+           ^status live)
+  (O51 ^id large-green-sphere1 ^predicates P59)
+    (P59 ^arm-status not-grabbed ^category block1 ^color green1 ^movable true
+           ^object-id large-green-sphere1 ^shape sphere1 ^size large1
+           ^status live)
+
+#   Store the large green block on the red triangle.
+Store the large green block on the red triangle.
+(S3584 ^action @O25 ^arg1 O50
+       ^arg1 O51 ^arg2 S3685 ^arg2 S3767 ^message-type command)
+  (@O25 ^id @A1009)
+    (@A1009 ^name store1)
+  (O50 ^id large-green-block1 ^predicates P58)
+    (P58 ^arm-status not-grabbed ^category block1 ^color green1 ^movable true
+           ^object-id large-green-block1 ^shape rectangle1 ^size large1
+           ^status live)
+  (O51 ^id large-green-sphere1 ^predicates P59)
+    (P59 ^arm-status not-grabbed ^category block1 ^color green1 ^movable true
+           ^object-id large-green-sphere1 ^shape sphere1 ^size large1
+           ^status live)
+  (S3685 ^action @T1025)
+    (@T1025 ^id @A1016)
+      (@A1016 ^action-type primitive ^name turn-off1 ^procedural @P15
+             ^type action)
+  (S3767 ^arg2 O48 ^id @R1000)
+    (O48 ^id small-red-triangle1 ^predicates P56)
+      (P56 ^arm-status not-grabbed ^category block1 ^color red1 ^movable true
+             ^object-id small-red-triangle1 ^shape triangle1 ^size small1
+             ^status live)
+    (@R1000 ^name on1 ^relation @R6 ^relation @R7 ^relation @R8 ^type relation)
+
+#   Store the large green block on the red triangle.
+Store the large green block on the red triangle.
+#   FAILED!
+(S3584 ^action @O25 ^arg1 O50 ^arg1 O51 ^arg2 S3685 ^arg2 S3767
+       ^message-type command)
+  (@O25 ^id @A1009)
+    (@A1009 ^name store1)
+  (O50 ^id large-green-block1 ^predicates P58)
+    (P58 ^arm-status not-grabbed ^category block1 ^color green1 ^movable true
+           ^object-id large-green-block1 ^shape rectangle1 ^size large1
+           ^status live)
+  (O51 ^id large-green-sphere1 ^predicates P59)
+    (P59 ^arm-status not-grabbed ^category block1 ^color green1 ^movable true
+           ^object-id large-green-sphere1 ^shape sphere1 ^size large1
+           ^status live)
+  (S3685 ^action @T1025)
+    (@T1025 ^id @A1016)
+  (S3767 ^arg2 O48 ^id @R1000)
+    (O48 ^id small-red-triangle1 ^predicates P56)
+    (@R1000 ^name on1 ^relation @R6 ^relation @R7 ^relation @R8 ^type relation)
+
+#   Put the green sphere in the pantry.
+Put the green sphere in the pantry.
+(S3794 ^action @O19 ^arg1 O51 ^arg2 S3943
+       ^message-type command)
+  (@O19 ^id @A1000)
+    (@A1000 ^action-type primitive ^name put-down1 ^procedural @P1
+           ^type action)
+  (O51 ^id large-green-sphere1 ^predicates P59)
+    (P59 ^arm-status not-grabbed ^category block1 ^color green1 ^movable true
+           ^object-id large-green-sphere1 ^shape sphere1 ^size large1
+           ^status live)
+  (S3943 ^arg2 L18 ^id @R1001)
+    (L18 ^id 1 ^predicates P64)
+      (P64 ^arm-status not-grabbed ^category location1 ^door closed
+             ^name pantry ^object-id 1 ^status live)
+    (@R1001 ^name in1 ^relation @R9 ^relation @R10 ^relation @R11
+           ^type relation)
+      (@R9 ^avg 0. ^axis y ^bottom 0. ^count 0 ^squaredsum 0. ^sum 0. ^top 0.
+             ^type aligned)
+      (@R10 ^avg 0. ^axis x ^bottom 0. ^count 0 ^squaredsum 0. ^sum 0. ^top 0.
+             ^type aligned)
+      (@R11 ^avg 0. ^axis z ^bottom 0. ^count 0 ^squaredsum 0. ^sum 0. ^top 0.
+             ^type aligned)
+
+#   Turn the stove on.
+Turn the stove on.
+#   FAILED!
+
+#   Put down the green sphere in the pantry.
+Put down the green sphere in the pantry.
+(S4107 ^action @P48 ^arg1 O51
+       ^arg2 S4265 ^message-type command)
+  (@P48 ^id @A1000)
+    (@A1000 ^action-type primitive ^name put-down1 ^procedural @P1
+           ^type action)
+  (O51 ^id large-green-sphere1 ^predicates P59)
+    (P59 ^arm-status not-grabbed ^category block1 ^color green1 ^movable true
+           ^object-id large-green-sphere1 ^shape sphere1 ^size large1
+           ^status live)
+  (S4265 ^arg2 L18 ^id @R1001)
+    (L18 ^id 1 ^predicates P64)
+      (P64 ^arm-status not-grabbed ^category location1 ^door closed
+             ^name pantry ^object-id 1 ^status live)
+    (@R1001 ^name in1 ^relation @R9 ^relation @R10 ^relation @R11
+           ^type relation)
+      (@R9 ^avg 0. ^axis y ^bottom 0. ^count 0 ^squaredsum 0. ^sum 0. ^top 0.
+             ^type aligned)
+      (@R10 ^avg 0. ^axis x ^bottom 0. ^count 0 ^squaredsum 0. ^sum 0. ^top 0.
+             ^type aligned)
+      (@R11 ^avg 0. ^axis z ^bottom 0. ^count 0 ^squaredsum 0. ^sum 0. ^top 0.
+             ^type aligned)
+
+#   move the orange triangle on the red triangle to the stove.
+move the orange triangle on the red triangle to the stove.
+(S4292 ^action @O18
+       ^arg1 O47 ^arg1 O52 ^arg2 S4376 ^arg2 S4458 ^message-type command)
+  (@O18 ^id @A1008)
+    (@A1008 ^action-type composite ^goal @G1 ^name move1 ^procedural @P10
+           ^type action)
+  (O47 ^id large-orange-triangle1 ^predicates P55)
+    (P55 ^arm-status not-grabbed ^category block1 ^color orange1
+           ^indicated pointed ^movable true ^object-id large-orange-triangle1
+           ^shape triangle1 ^size large1 ^status live)
+  (O52 ^id small-orange-triangle1 ^predicates P60)
+    (P60 ^arm-status not-grabbed ^category block1 ^color orange1 ^movable true
+           ^object-id large-orange-triangle1 ^shape triangle1 ^size small1
+           ^status live)
+  (S4376 ^action @T1025)
+    (@T1025 ^id @A1016)
+      (@A1016 ^action-type primitive ^name turn-off1 ^procedural @P15
+             ^type action)
+  (S4458 ^arg2 O48 ^id @R1000)
+    (O48 ^id small-red-triangle1 ^predicates P56)
+      (P56 ^arm-status not-grabbed ^category block1 ^color red1 ^movable true
+             ^object-id small-red-triangle1 ^shape triangle1 ^size small1
+             ^status live)
+    (@R1000 ^name on1 ^relation @R6 ^relation @R7 ^relation @R8 ^type relation)
+
+#   move the orange triangle on the red triangle to the stove.
+move the orange triangle on the red triangle to the stove.
+#   FAILED!
+(S4292 ^action @O18 ^arg1 O47 ^arg1 O52 ^arg2 S4376 ^arg2 S4458
+       ^message-type command)
+  (@O18 ^id @A1008)
+    (@A1008 ^action-type composite ^goal @G1 ^name move1 ^procedural @P10
+           ^type action)
+  (O47 ^id large-orange-triangle1 ^predicates P55)
+    (P55 ^arm-status not-grabbed ^category block1 ^color orange1
+           ^indicated pointed ^movable true ^object-id large-orange-triangle1
+           ^shape triangle1 ^size large1 ^status live)
+  (O52 ^id small-orange-triangle1 ^predicates P60)
+    (P60 ^arm-status not-grabbed ^category block1 ^color orange1 ^movable true
+           ^object-id large-orange-triangle1 ^shape triangle1 ^size small1
+           ^status live)
+  (S4376 ^action @T1025)
+    (@T1025 ^id @A1016)
+  (S4458 ^arg2 O48 ^id @R1000)
+    (O48 ^id small-red-triangle1 ^predicates P56)
+    (@R1000 ^name on1 ^relation @R6 ^relation @R7 ^relation @R8 ^type relation)
+
+#   Is the green sphere on the table?
+Is the green sphere on the table?
+(S4572 ^arg1 O51
+       ^message-type object-question ^relation S4711)
+  (O51 ^id large-green-sphere1 ^predicates P59)
+    (P59 ^arm-status not-grabbed ^category block1 ^color green1 ^movable true
+           ^object-id large-green-sphere1 ^shape sphere1 ^size large1
+           ^status live)
+  (S4711 ^arg2 L23 ^id @R1000)
+    (L23 ^id 6 ^predicates P69)
+      (P69 ^arm-status not-grabbed ^category location1 ^name table
+             ^object-id 6 ^status live)
+    (@R1000 ^name on1 ^relation @R6 ^relation @R7 ^relation @R8 ^type relation)
+
+#   Is the red arch to the right of the blue l-block?
+Is the red arch to the right of the blue l-block?
+(S4721 ^arg1 S4748
+       ^arg1 P13507 ^message-type object-question ^relation S4928)
+  (S4748 ^action @T1025)
+    (@T1025 ^id @A1016)
+      (@A1016 ^action-type primitive ^name turn-off1 ^procedural @P15
+             ^type action)
+  (P13507 ^id new-object-id2 ^predicates P13508)
+    (P13508 ^color red1 ^shape arch1 ^visible false)
+  (S4928 ^arg2 P13548 ^id @O10)
+    (P13548 ^id new-object-id3 ^predicates P13549)
+      (P13549 ^color blue1 ^shape l-block1 ^visible false)
+    (@O10 ^name of1)
+
+#   Is the red arch to the right of the blue l-block?
+Is the red arch to the right of the blue l-block?
+#   FAILED!
+(S4721 ^arg1 S4748 ^arg1 P13507 ^message-type object-question
+       ^relation S4928)
+  (S4748 ^action @T1025)
+    (@T1025 ^id @A1016)
+  (P13507 ^id new-object-id2 ^predicates P13508)
+    (P13508 ^color red1 ^shape arch1 ^visible false)
+  (S4928 ^arg2 P13548 ^id @O10)
+    (P13548 ^id new-object-id3 ^predicates P13549)
+    (@O10 ^name of1)
+
+#   Is this green?
+Is this green?
+(S4938 ^arg1 O47 ^message-type object-question ^predicate @G3)
+  (O47 ^id large-orange-triangle1 ^predicates P55)
+    (P55 ^arm-status not-grabbed ^category block1 ^color orange1
+           ^indicated pointed ^movable true ^object-id large-orange-triangle1
+           ^shape triangle1 ^size large1 ^status live)
+  (@G3 ^id @P1004 ^spelling green ^structure-type ADJ)
+    (@P1004 ^name green1 ^property @P1000)
+      (@P1000 ^name color ^type visual)
+
+#   Is the green block a sphere?
+Is the green block a sphere?
+(S5013 ^arg1 O51 ^arg1 O49 ^arg1 O50 ^arg1 O54
+       ^message-type object-question ^predicate @V34)
+  (O51 ^id large-green-sphere1 ^predicates P59)
+    (P59 ^arm-status not-grabbed ^category block1 ^color green1 ^movable true
+           ^object-id large-green-sphere1 ^shape sphere1 ^size large1
+           ^status live)
+  (O49 ^id medium-green-block1 ^predicates P57)
+    (P57 ^arm-status not-grabbed ^category block1 ^color green1 ^movable true
+           ^object-id medium-green-block1 ^shape rectangle1 ^size medium1
+           ^status live)
+  (O50 ^id large-green-block1 ^predicates P58)
+    (P58 ^arm-status not-grabbed ^category block1 ^color green1 ^movable true
+           ^object-id large-green-block1 ^shape rectangle1 ^size large1
+           ^status live)
+  (O54 ^id small-green-box1 ^predicates P62)
+    (P62 ^arm-status not-grabbed ^category block1 ^color green1 ^movable true
+           ^object-id small-green-box1 ^shape box1 ^size small1 ^status live)
+  (@V34 ^id @P2006)
+    (@P2006 ^name sphere1 ^property @P2000)
+      (@P2000 ^name shape ^type visual)
+
+#   Right is a relation.
+Right is a relation.
+(S5139 ^arg1 @R1018 ^message-type adjective-definition
+       ^predicate S5240)
+  (@R1018 ^id @A55 ^spelling right ^structure-type ADJ)
+    (@A55 ^name right1 ^property @P9001 ^required true ^structure-type U
+           ^syntactic-structure head)
+      (@P9001 ^name right1 ^property @P9000 ^side 1)
+  (S5240 ^arg2 @M5 ^id @A1019)
+    (@M5 ^id @A1019 ^name middle-of1 ^number singular ^referent nil
+           ^semantic-value @M5 ^spelling relation ^structure-type N
+           ^syntactic-referent-type P)
+    (@A1019 ^action-type composite ^name fetch1 ^name relation
+           ^procedural @P20 ^type action)
+
+#   grab the sphere.
+grab the sphere.
+(S5263 ^action @N739 ^arg1 O51 ^interaction-status I419
+       ^message-type new-verb ^message-type command)
+  (@N739 ^converts-to VP ^id @I412 ^new-action true ^referent @N739
+         ^spelling grab ^super-type @T998)
+    (@I412 ^name grab4)
+  (O51 ^id large-green-sphere1 ^predicates P59)
+    (P59 ^arm-status not-grabbed ^category block1 ^color green1 ^movable true
+           ^object-id large-green-sphere1 ^shape sphere1 ^size large1
+           ^status live)
+  (I419 ^failure F77)
+    (F77 ^type unknown-word ^word grab)
+
+#   store the sphere.
+store the sphere.
+(S5370 ^action @O25 ^arg1 O51 ^message-type command)
+  (@O25 ^id @A1009)
+    (@A1009 ^name store1)
+  (O51 ^id large-green-sphere1 ^predicates P59)
+    (P59 ^arm-status not-grabbed ^category block1 ^color green1 ^movable true
+           ^object-id large-green-sphere1 ^shape sphere1 ^size large1
+           ^status live)
+
+#   store the medium red sphere.
+store the medium red sphere.
+(S5472 ^action @O25 ^arg1 P13720 ^arg1 S5505
+       ^message-type command)
+  (@O25 ^id @A1009)
+    (@A1009 ^name store1)
+  (P13720 ^id new-object-id6 ^predicates P13721)
+    (P13721 ^color red1 ^movable true ^shape sphere1 ^size medium1
+           ^visible false)
+  (S5505 ^action @T1025)
+    (@T1025 ^id @A1016)
+      (@A1016 ^action-type primitive ^name turn-off1 ^procedural @P15
+             ^type action)
+
+#   store the medium red sphere.
+store the medium red sphere.
+#   FAILED!
+(S5472 ^action @O25 ^arg1 P13720 ^arg1 S5505 ^message-type command)
+  (@O25 ^id @A1009)
+    (@A1009 ^name store1)
+  (P13720 ^id new-object-id6 ^predicates P13721)
+    (P13721 ^color red1 ^movable true ^shape sphere1 ^size medium1
+           ^visible false)
+  (S5505 ^action @T1025)
+    (@T1025 ^id @A1016)
+
