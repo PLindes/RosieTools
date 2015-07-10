@@ -1,0 +1,5 @@
+The sphere [we think] is green.
+(S9 	^arg1 <obj-sphere>    # was indicated-object
+       	^message-type object-description 
+^predicate.id @g1)
+(@g1 ^name green1)

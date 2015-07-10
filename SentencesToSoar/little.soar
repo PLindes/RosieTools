@@ -1,0 +1,50 @@
+#### Test sentences for ROSIE - 
+#    Built by the Regression test tool Mon Jul 06 09:37:39 EDT 2015
+#    from file 'little.txt'.
+
+#   Apply initialize-rosie to set up the state.
+sp {apply*initialize-rosie*sentence-number
+   (state <s> ^name rosie
+              ^operator.name initialize-rosie)
+-->
+   (<s> ^current-sentence-number 1
+        ^min-sentence-number 1
+        ^failure-count 0
+        ^success-count 0)
+}
+
+
+sp {elaborate*state*sentence*the-sphere-we-think-is-green
+   (state <s> ^name comprehension
+              ^superstate <ss>
+              ^segment <seg>)
+   (<ss> ^current-sentence-number 1)
+-->
+   (<seg> ^input-sentence <first>
+          ^current-word <first>
+          ^original-sentence <first>
+          ^expected <S9>)
+   (<first> ^spelling |*|
+            ^next <w0>
+            ^complete-sentence |The sphere we think is green.|)
+   (<w0> ^spelling |The|
+         ^next <w1>)
+   (<w1> ^spelling |sphere|
+         ^next <w2>)
+   (<w2> ^spelling |we|
+         ^next <w3>)
+   (<w3> ^spelling |think|
+         ^next <w4>)
+   (<w4> ^spelling |is|
+         ^next <w5>)
+   (<w5> ^spelling |green|
+         ^next <w6>)
+   (<w6> ^spelling |.|
+         ^next nil)
+   (<S9> ^arg1 <obj-sphere>
+         ^message-type object-description
+         ^predicate.id <g1>)
+   (<g1> ^name green1)
+}
+
+
