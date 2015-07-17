@@ -16,9 +16,9 @@ public class RegressParser extends Parser {
 	protected static final PredictionContextCache _sharedContextCache =
 		new PredictionContextCache();
 	public static final int
-		T__0=1, T__1=2, T__2=3, T__3=4, T__4=5, T__5=6, T__6=7, T__7=8, SYMBOL=9, 
-		WORD=10, NUMBER=11, PAREN=12, TERMINATOR=13, FAILED=14, COMMENT=15, BRACKETS=16, 
-		WS=17;
+		T__0=1, T__1=2, T__2=3, T__3=4, T__4=5, T__5=6, T__6=7, SYMBOL=8, WORD=9, 
+		NUMBER=10, PAREN=11, TERMINATOR=12, FAILED=13, COMMENT=14, BRACKETS=15, 
+		WS=16;
 	public static final int
 		RULE_corpus = 0, RULE_block = 1, RULE_sentence = 2, RULE_expected = 3, 
 		RULE_rhs = 4, RULE_attr = 5, RULE_value = 6, RULE_variable = 7;
@@ -27,12 +27,12 @@ public class RegressParser extends Parser {
 	};
 
 	private static final String[] _LITERAL_NAMES = {
-		null, "','", "'.'", "'('", "'@'", "')'", "'^'", "'<'", "'>'", null, null, 
-		null, null, null, "'#   FAILED!'"
+		null, "','", "'.'", "'('", "')'", "'^'", "'<'", "'>'", null, null, null, 
+		null, null, "'#   FAILED!'"
 	};
 	private static final String[] _SYMBOLIC_NAMES = {
-		null, null, null, null, null, null, null, null, null, "SYMBOL", "WORD", 
-		"NUMBER", "PAREN", "TERMINATOR", "FAILED", "COMMENT", "BRACKETS", "WS"
+		null, null, null, null, null, null, null, null, "SYMBOL", "WORD", "NUMBER", 
+		"PAREN", "TERMINATOR", "FAILED", "COMMENT", "BRACKETS", "WS"
 	};
 	public static final Vocabulary VOCABULARY = new VocabularyImpl(_LITERAL_NAMES, _SYMBOLIC_NAMES);
 
@@ -442,44 +442,35 @@ public class RegressParser extends Parser {
 			{
 			setState(61);
 			match(T__2);
-			setState(63);
-			_la = _input.LA(1);
-			if (_la==T__3) {
-				{
-				setState(62);
-				match(T__3);
-				}
-			}
-
-			setState(65);
+			setState(62);
 			match(SYMBOL);
-			setState(71); 
+			setState(68); 
 			_errHandler.sync(this);
 			_la = _input.LA(1);
 			do {
 				{
 				{
-				setState(66);
+				setState(63);
 				attr();
-				setState(67);
+				setState(64);
 				value();
-				setState(69);
+				setState(66);
 				_la = _input.LA(1);
 				if (_la==COMMENT) {
 					{
-					setState(68);
+					setState(65);
 					match(COMMENT);
 					}
 				}
 
 				}
 				}
-				setState(73); 
+				setState(70); 
 				_errHandler.sync(this);
 				_la = _input.LA(1);
-			} while ( _la==T__5 );
-			setState(75);
-			match(T__4);
+			} while ( _la==T__4 );
+			setState(72);
+			match(T__3);
 			}
 		}
 		catch (RecognitionException re) {
@@ -494,6 +485,7 @@ public class RegressParser extends Parser {
 	}
 
 	public static class AttrContext extends ParserRuleContext {
+		public TerminalNode NUMBER() { return getToken(RegressParser.NUMBER, 0); }
 		public List<TerminalNode> WORD() { return getTokens(RegressParser.WORD); }
 		public TerminalNode WORD(int i) {
 			return getToken(RegressParser.WORD, i);
@@ -519,25 +511,42 @@ public class RegressParser extends Parser {
 		try {
 			enterOuterAlt(_localctx, 1);
 			{
-			setState(77);
-			match(T__5);
-			setState(78);
-			match(WORD);
-			setState(83);
-			_errHandler.sync(this);
-			_la = _input.LA(1);
-			while (_la==T__1) {
+			setState(74);
+			match(T__4);
+			setState(84);
+			switch (_input.LA(1)) {
+			case NUMBER:
+				{
+				setState(75);
+				match(NUMBER);
+				}
+				break;
+			case WORD:
 				{
 				{
-				setState(79);
-				match(T__1);
-				setState(80);
+				setState(76);
 				match(WORD);
-				}
-				}
-				setState(85);
+				setState(81);
 				_errHandler.sync(this);
 				_la = _input.LA(1);
+				while (_la==T__1) {
+					{
+					{
+					setState(77);
+					match(T__1);
+					setState(78);
+					match(WORD);
+					}
+					}
+					setState(83);
+					_errHandler.sync(this);
+					_la = _input.LA(1);
+				}
+				}
+				}
+				break;
+			default:
+				throw new NoViableAltException(this);
 			}
 			}
 		}
@@ -576,43 +585,32 @@ public class RegressParser extends Parser {
 	public final ValueContext value() throws RecognitionException {
 		ValueContext _localctx = new ValueContext(_ctx, getState());
 		enterRule(_localctx, 12, RULE_value);
-		int _la;
 		try {
 			enterOuterAlt(_localctx, 1);
 			{
-			setState(93);
+			setState(90);
 			switch (_input.LA(1)) {
-			case T__6:
+			case T__5:
 				{
 				setState(86);
 				variable();
 				}
 				break;
-			case T__3:
 			case SYMBOL:
 				{
-				setState(88);
-				_la = _input.LA(1);
-				if (_la==T__3) {
-					{
-					setState(87);
-					match(T__3);
-					}
-				}
-
-				setState(90);
+				setState(87);
 				match(SYMBOL);
 				}
 				break;
 			case WORD:
 				{
-				setState(91);
+				setState(88);
 				match(WORD);
 				}
 				break;
 			case NUMBER:
 				{
-				setState(92);
+				setState(89);
 				match(NUMBER);
 				}
 				break;
@@ -654,12 +652,12 @@ public class RegressParser extends Parser {
 		try {
 			enterOuterAlt(_localctx, 1);
 			{
-			setState(95);
-			match(T__6);
-			setState(96);
+			setState(92);
+			match(T__5);
+			setState(93);
 			match(WORD);
-			setState(97);
-			match(T__7);
+			setState(94);
+			match(T__6);
 			}
 		}
 		catch (RecognitionException re) {
@@ -674,33 +672,32 @@ public class RegressParser extends Parser {
 	}
 
 	public static final String _serializedATN =
-		"\3\u0430\ud6d1\u8206\uad2d\u4417\uaef1\u8d80\uaadd\3\23f\4\2\t\2\4\3\t"+
+		"\3\u0430\ud6d1\u8206\uad2d\u4417\uaef1\u8d80\uaadd\3\22c\4\2\t\2\4\3\t"+
 		"\3\4\4\t\4\4\5\t\5\4\6\t\6\4\7\t\7\4\b\t\b\4\t\t\t\3\2\6\2\24\n\2\r\2"+
 		"\16\2\25\3\2\7\2\31\n\2\f\2\16\2\34\13\2\3\3\7\3\37\n\3\f\3\16\3\"\13"+
 		"\3\3\3\3\3\5\3&\n\3\3\3\5\3)\n\3\3\4\3\4\7\4-\n\4\f\4\16\4\60\13\4\3\4"+
 		"\5\4\63\n\4\3\5\7\5\66\n\5\f\5\16\59\13\5\3\5\6\5<\n\5\r\5\16\5=\3\6\3"+
-		"\6\5\6B\n\6\3\6\3\6\3\6\3\6\5\6H\n\6\6\6J\n\6\r\6\16\6K\3\6\3\6\3\7\3"+
-		"\7\3\7\3\7\7\7T\n\7\f\7\16\7W\13\7\3\b\3\b\5\b[\n\b\3\b\3\b\3\b\5\b`\n"+
-		"\b\3\t\3\t\3\t\3\t\3\t\2\2\n\2\4\6\b\n\f\16\20\2\4\4\2\3\3\f\f\4\2\4\4"+
-		"\17\17n\2\23\3\2\2\2\4 \3\2\2\2\6*\3\2\2\2\b;\3\2\2\2\n?\3\2\2\2\fO\3"+
-		"\2\2\2\16_\3\2\2\2\20a\3\2\2\2\22\24\5\4\3\2\23\22\3\2\2\2\24\25\3\2\2"+
-		"\2\25\23\3\2\2\2\25\26\3\2\2\2\26\32\3\2\2\2\27\31\7\21\2\2\30\27\3\2"+
-		"\2\2\31\34\3\2\2\2\32\30\3\2\2\2\32\33\3\2\2\2\33\3\3\2\2\2\34\32\3\2"+
-		"\2\2\35\37\7\21\2\2\36\35\3\2\2\2\37\"\3\2\2\2 \36\3\2\2\2 !\3\2\2\2!"+
-		"#\3\2\2\2\" \3\2\2\2#%\5\6\4\2$&\7\20\2\2%$\3\2\2\2%&\3\2\2\2&(\3\2\2"+
-		"\2\')\5\b\5\2(\'\3\2\2\2()\3\2\2\2)\5\3\2\2\2*.\7\f\2\2+-\t\2\2\2,+\3"+
-		"\2\2\2-\60\3\2\2\2.,\3\2\2\2./\3\2\2\2/\62\3\2\2\2\60.\3\2\2\2\61\63\t"+
-		"\3\2\2\62\61\3\2\2\2\62\63\3\2\2\2\63\7\3\2\2\2\64\66\7\21\2\2\65\64\3"+
-		"\2\2\2\669\3\2\2\2\67\65\3\2\2\2\678\3\2\2\28:\3\2\2\29\67\3\2\2\2:<\5"+
-		"\n\6\2;\67\3\2\2\2<=\3\2\2\2=;\3\2\2\2=>\3\2\2\2>\t\3\2\2\2?A\7\5\2\2"+
-		"@B\7\6\2\2A@\3\2\2\2AB\3\2\2\2BC\3\2\2\2CI\7\13\2\2DE\5\f\7\2EG\5\16\b"+
-		"\2FH\7\21\2\2GF\3\2\2\2GH\3\2\2\2HJ\3\2\2\2ID\3\2\2\2JK\3\2\2\2KI\3\2"+
-		"\2\2KL\3\2\2\2LM\3\2\2\2MN\7\7\2\2N\13\3\2\2\2OP\7\b\2\2PU\7\f\2\2QR\7"+
-		"\4\2\2RT\7\f\2\2SQ\3\2\2\2TW\3\2\2\2US\3\2\2\2UV\3\2\2\2V\r\3\2\2\2WU"+
-		"\3\2\2\2X`\5\20\t\2Y[\7\6\2\2ZY\3\2\2\2Z[\3\2\2\2[\\\3\2\2\2\\`\7\13\2"+
-		"\2]`\7\f\2\2^`\7\r\2\2_X\3\2\2\2_Z\3\2\2\2_]\3\2\2\2_^\3\2\2\2`\17\3\2"+
-		"\2\2ab\7\t\2\2bc\7\f\2\2cd\7\n\2\2d\21\3\2\2\2\21\25\32 %(.\62\67=AGK"+
-		"UZ_";
+		"\6\3\6\3\6\3\6\5\6E\n\6\6\6G\n\6\r\6\16\6H\3\6\3\6\3\7\3\7\3\7\3\7\3\7"+
+		"\7\7R\n\7\f\7\16\7U\13\7\5\7W\n\7\3\b\3\b\3\b\3\b\5\b]\n\b\3\t\3\t\3\t"+
+		"\3\t\3\t\2\2\n\2\4\6\b\n\f\16\20\2\4\4\2\3\3\13\13\4\2\4\4\16\16j\2\23"+
+		"\3\2\2\2\4 \3\2\2\2\6*\3\2\2\2\b;\3\2\2\2\n?\3\2\2\2\fL\3\2\2\2\16\\\3"+
+		"\2\2\2\20^\3\2\2\2\22\24\5\4\3\2\23\22\3\2\2\2\24\25\3\2\2\2\25\23\3\2"+
+		"\2\2\25\26\3\2\2\2\26\32\3\2\2\2\27\31\7\20\2\2\30\27\3\2\2\2\31\34\3"+
+		"\2\2\2\32\30\3\2\2\2\32\33\3\2\2\2\33\3\3\2\2\2\34\32\3\2\2\2\35\37\7"+
+		"\20\2\2\36\35\3\2\2\2\37\"\3\2\2\2 \36\3\2\2\2 !\3\2\2\2!#\3\2\2\2\" "+
+		"\3\2\2\2#%\5\6\4\2$&\7\17\2\2%$\3\2\2\2%&\3\2\2\2&(\3\2\2\2\')\5\b\5\2"+
+		"(\'\3\2\2\2()\3\2\2\2)\5\3\2\2\2*.\7\13\2\2+-\t\2\2\2,+\3\2\2\2-\60\3"+
+		"\2\2\2.,\3\2\2\2./\3\2\2\2/\62\3\2\2\2\60.\3\2\2\2\61\63\t\3\2\2\62\61"+
+		"\3\2\2\2\62\63\3\2\2\2\63\7\3\2\2\2\64\66\7\20\2\2\65\64\3\2\2\2\669\3"+
+		"\2\2\2\67\65\3\2\2\2\678\3\2\2\28:\3\2\2\29\67\3\2\2\2:<\5\n\6\2;\67\3"+
+		"\2\2\2<=\3\2\2\2=;\3\2\2\2=>\3\2\2\2>\t\3\2\2\2?@\7\5\2\2@F\7\n\2\2AB"+
+		"\5\f\7\2BD\5\16\b\2CE\7\20\2\2DC\3\2\2\2DE\3\2\2\2EG\3\2\2\2FA\3\2\2\2"+
+		"GH\3\2\2\2HF\3\2\2\2HI\3\2\2\2IJ\3\2\2\2JK\7\6\2\2K\13\3\2\2\2LV\7\7\2"+
+		"\2MW\7\f\2\2NS\7\13\2\2OP\7\4\2\2PR\7\13\2\2QO\3\2\2\2RU\3\2\2\2SQ\3\2"+
+		"\2\2ST\3\2\2\2TW\3\2\2\2US\3\2\2\2VM\3\2\2\2VN\3\2\2\2W\r\3\2\2\2X]\5"+
+		"\20\t\2Y]\7\n\2\2Z]\7\13\2\2[]\7\f\2\2\\X\3\2\2\2\\Y\3\2\2\2\\Z\3\2\2"+
+		"\2\\[\3\2\2\2]\17\3\2\2\2^_\7\b\2\2_`\7\13\2\2`a\7\t\2\2a\21\3\2\2\2\20"+
+		"\25\32 %(.\62\67=DHSV\\";
 	public static final ATN _ATN =
 		new ATNDeserializer().deserialize(_serializedATN.toCharArray());
 	static {

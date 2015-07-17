@@ -1,0 +1,7 @@
+#   Stop.
+Stop.
+(S1 ^action a)
+#(S111 ^action @A1106 ^message-type command)
+#  (@A1106 ^action-type primitive ^handle stop1 ^item-type action
+#         ^procedural @P90029 ^type action)
+#    (@P90029 ^execution-operator execute-stop1 ^op_name initiate-stop1)
