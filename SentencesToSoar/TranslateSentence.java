@@ -232,14 +232,21 @@ public class TranslateSentence extends RegressBaseListener {
 	@Override public void enterAttr(RegressParser.AttrContext ctx) {
 		//	Put the correct white space first
 		expectBuilder.append((firstAttr)? " " : attrIndent);
-        //  Build an attribute with possible dot notation
-        List<TerminalNode> words = ctx.WORD();
-        boolean first = true;
-        for (TerminalNode w: words) {
-    		expectBuilder.append((first)? "^" : ".");
-    		expectBuilder.append(w.getText());
-    		first = false;
-        }
+		//	Process the attribute
+		if (ctx.NUMBER() != null) {
+			//	Build a numeric attribute
+			expectBuilder.append("^");
+			expectBuilder.append(ctx.NUMBER().getText());
+		} else {
+	        //  Build a word attribute with possible dot notation
+	        List<TerminalNode> words = ctx.WORD();
+	        boolean first = true;
+	        for (TerminalNode w: words) {
+	    		expectBuilder.append((first)? "^" : ".");
+	    		expectBuilder.append(w.getText());
+	    		first = false;
+	        }
+		}
 	}
 	
 	/**
