@@ -1,5 +1,5 @@
 #### Test sentences for ROSIE - 
-#    Built by the SentencesToSoar tool Fri Jul 17 13:23:21 EDT 2015
+#    Built by the SentencesToSoar tool Mon Jul 20 10:46:18 EDT 2015
 #    from file 'john_trace.exp.txt'.
 
 #   Apply initialize-rosie to set up the state.
@@ -32,15 +32,15 @@ sp {elaborate*state*sentence*stop
          ^next <w1>)
    (<w1> ^spelling |.|
          ^next nil)
-   (<S111> ^action <@A1106>
+   (<S111> ^action <A1106>
            ^message-type command)
-   (<@A1106> ^action-type primitive
-             ^handle stop1
-             ^item-type action
-             ^procedural <@P90029>
-             ^type action)
-   (<@P90029> ^execution-operator execute-stop1
-              ^op_name initiate-stop1)
+   (<A1106> ^action-type primitive
+            ^handle stop1
+            ^item-type action
+            ^procedural <P90029>
+            ^type action)
+   (<P90029> ^execution-operator execute-stop1
+             ^op_name initiate-stop1)
 }
 
 
@@ -62,18 +62,18 @@ sp {elaborate*state*sentence*go
          ^next <w1>)
    (<w1> ^spelling |.|
          ^next nil)
-   (<S161> ^action <@A1103>
+   (<S161> ^action <A1103>
            ^message-type command)
-   (<@A1103> ^action-type composite
-             ^handle go1
-             ^item-type action
-             ^procedural <@P90025>
-             ^type action)
-   (<@P90025> ^arg1 <@P90026>
-              ^initiation-operator initiate-go1)
-   (<@P90026> ^arg-type concept
-              ^id <@C5>
-              ^optional true)
+   (<A1103> ^action-type composite
+            ^handle go1
+            ^item-type action
+            ^procedural <P90025>
+            ^type action)
+   (<P90025> ^arg1 <P90026>
+             ^initiation-operator initiate-go1)
+   (<P90026> ^arg-type concept
+             ^id <C5>
+             ^optional true)
 }
 
 
@@ -95,18 +95,18 @@ sp {elaborate*state*sentence*forward
          ^next <w1>)
    (<w1> ^spelling |.|
          ^next nil)
-   (<S211> ^action <@A1103>
+   (<S211> ^action <A1103>
            ^message-type command)
-   (<@A1103> ^action-type composite
-             ^handle go1
-             ^item-type action
-             ^procedural <@P90025>
-             ^type action)
-   (<@P90025> ^arg1 <@P90026>
-              ^initiation-operator initiate-go1)
-   (<@P90026> ^arg-type concept
-              ^id <@C5>
-              ^optional true)
+   (<A1103> ^action-type composite
+            ^handle go1
+            ^item-type action
+            ^procedural <P90025>
+            ^type action)
+   (<P90025> ^arg1 <P90026>
+             ^initiation-operator initiate-go1)
+   (<P90026> ^arg-type concept
+             ^id <C5>
+             ^optional true)
 }
 
 
@@ -130,18 +130,18 @@ sp {elaborate*state*sentence*go-forward
          ^next <w2>)
    (<w2> ^spelling |.|
          ^next nil)
-   (<S261> ^action <@A1103>
+   (<S261> ^action <A1103>
            ^message-type command)
-   (<@A1103> ^action-type composite
-             ^handle go1
-             ^item-type action
-             ^procedural <@P90025>
-             ^type action)
-   (<@P90025> ^arg1 <@P90026>
-              ^initiation-operator initiate-go1)
-   (<@P90026> ^arg-type concept
-              ^id <@C5>
-              ^optional true)
+   (<A1103> ^action-type composite
+            ^handle go1
+            ^item-type action
+            ^procedural <P90025>
+            ^type action)
+   (<P90025> ^arg1 <P90026>
+             ^initiation-operator initiate-go1)
+   (<P90026> ^arg-type concept
+             ^id <C5>
+             ^optional true)
 }
 
 
@@ -165,18 +165,18 @@ sp {elaborate*state*sentence*drive-forward
          ^next <w2>)
    (<w2> ^spelling |.|
          ^next nil)
-   (<S328> ^action <@A1103>
+   (<S328> ^action <A1103>
            ^message-type command)
-   (<@A1103> ^action-type composite
-             ^handle go1
-             ^item-type action
-             ^procedural <@P90025>
-             ^type action)
-   (<@P90025> ^arg1 <@P90026>
-              ^initiation-operator initiate-go1)
-   (<@P90026> ^arg-type concept
-              ^id <@C5>
-              ^optional true)
+   (<A1103> ^action-type composite
+            ^handle go1
+            ^item-type action
+            ^procedural <P90025>
+            ^type action)
+   (<P90025> ^arg1 <P90026>
+             ^initiation-operator initiate-go1)
+   (<P90026> ^arg-type concept
+             ^id <C5>
+             ^optional true)
 }
 
 
@@ -204,25 +204,25 @@ sp {elaborate*state*sentence*go-down-the-hall
          ^next <w4>)
    (<w4> ^spelling |.|
          ^next nil)
-   (<S395> ^action <@A1103>
-           ^arg1 <@P12003>
+   (<S395> ^action <A1103>
+           ^arg1 <P12003>
            ^message-type command)
-   (<@A1103> ^action-type composite
-             ^handle go1
-             ^item-type action
-             ^procedural <@P90025>
-             ^type action)
-   (<@P90025> ^arg1 <@P90026>
-              ^initiation-operator initiate-go1)
-   (<@P90026> ^arg-type concept
-              ^id <@C5>
-              ^optional true)
-   (<@P12003> ^handle hall1
-              ^item-type concept
-              ^property <@P12000>)
-   (<@P12000> ^handle spatial-shape
-              ^item-type property
-              ^type visual)
+   (<A1103> ^action-type composite
+            ^handle go1
+            ^item-type action
+            ^procedural <P90025>
+            ^type action)
+   (<P90025> ^arg1 <P90026>
+             ^initiation-operator initiate-go1)
+   (<P90026> ^arg-type concept
+             ^id <C5>
+             ^optional true)
+   (<P12003> ^handle hall1
+             ^item-type concept
+             ^property <P12000>)
+   (<P12000> ^handle spatial-shape
+             ^item-type property
+             ^type visual)
 }
 
 
@@ -246,25 +246,25 @@ sp {elaborate*state*sentence*orient-north
          ^next <w2>)
    (<w2> ^spelling |.|
          ^next nil)
-   (<S496> ^action <@A1107>
-           ^arg1 <@P8001>
+   (<S496> ^action <A1107>
+           ^arg1 <P8001>
            ^message-type command)
-   (<@A1107> ^action-type primitive
-             ^handle orient1
-             ^item-type action
-             ^procedural <@P90030>
-             ^type action)
-   (<@P90030> ^arg1 <@P90031>
-              ^execution-operator execute-orient1
-              ^op_name initiate-orient1)
-   (<@P90031> ^arg-type concept
-              ^id <@C7>)
-   (<@P8001> ^handle north1
-             ^item-type concept
-             ^property <@P8000>
-             ^yaw 3.14)
-   (<@P8000> ^handle cardinal-direction1
-             ^item-type property)
+   (<A1107> ^action-type primitive
+            ^handle orient1
+            ^item-type action
+            ^procedural <P90030>
+            ^type action)
+   (<P90030> ^arg1 <P90031>
+             ^execution-operator execute-orient1
+             ^op_name initiate-orient1)
+   (<P90031> ^arg-type concept
+             ^id <C7>)
+   (<P8001> ^handle north1
+            ^item-type concept
+            ^property <P8000>
+            ^yaw 3.14)
+   (<P8000> ^handle cardinal-direction1
+            ^item-type property)
 }
 
 
@@ -288,25 +288,25 @@ sp {elaborate*state*sentence*orient-s
          ^next <w2>)
    (<w2> ^spelling |.|
          ^next nil)
-   (<S571> ^action <@A1107>
-           ^arg1 <@P8003>
+   (<S571> ^action <A1107>
+           ^arg1 <P8003>
            ^message-type command)
-   (<@A1107> ^action-type primitive
-             ^handle orient1
-             ^item-type action
-             ^procedural <@P90030>
-             ^type action)
-   (<@P90030> ^arg1 <@P90031>
-              ^execution-operator execute-orient1
-              ^op_name initiate-orient1)
-   (<@P90031> ^arg-type concept
-              ^id <@C7>)
-   (<@P8003> ^handle south1
-             ^item-type concept
-             ^property <@P8000>
-             ^yaw 0.)
-   (<@P8000> ^handle cardinal-direction1
-             ^item-type property)
+   (<A1107> ^action-type primitive
+            ^handle orient1
+            ^item-type action
+            ^procedural <P90030>
+            ^type action)
+   (<P90030> ^arg1 <P90031>
+             ^execution-operator execute-orient1
+             ^op_name initiate-orient1)
+   (<P90031> ^arg-type concept
+             ^id <C7>)
+   (<P8003> ^handle south1
+            ^item-type concept
+            ^property <P8000>
+            ^yaw 0.)
+   (<P8000> ^handle cardinal-direction1
+            ^item-type property)
 }
 
 
@@ -330,25 +330,25 @@ sp {elaborate*state*sentence*face-east
          ^next <w2>)
    (<w2> ^spelling |.|
          ^next nil)
-   (<S646> ^action <@A1107>
-           ^arg1 <@P8002>
+   (<S646> ^action <A1107>
+           ^arg1 <P8002>
            ^message-type command)
-   (<@A1107> ^action-type primitive
-             ^handle orient1
-             ^item-type action
-             ^procedural <@P90030>
-             ^type action)
-   (<@P90030> ^arg1 <@P90031>
-              ^execution-operator execute-orient1
-              ^op_name initiate-orient1)
-   (<@P90031> ^arg-type concept
-              ^id <@C7>)
-   (<@P8002> ^handle east1
-             ^item-type concept
-             ^property <@P8000>
-             ^yaw 1.507)
-   (<@P8000> ^handle cardinal-direction1
-             ^item-type property)
+   (<A1107> ^action-type primitive
+            ^handle orient1
+            ^item-type action
+            ^procedural <P90030>
+            ^type action)
+   (<P90030> ^arg1 <P90031>
+             ^execution-operator execute-orient1
+             ^op_name initiate-orient1)
+   (<P90031> ^arg-type concept
+             ^id <C7>)
+   (<P8002> ^handle east1
+            ^item-type concept
+            ^property <P8000>
+            ^yaw 1.507)
+   (<P8000> ^handle cardinal-direction1
+            ^item-type property)
 }
 
 
@@ -372,25 +372,25 @@ sp {elaborate*state*sentence*face-west
          ^next <w2>)
    (<w2> ^spelling |.|
          ^next nil)
-   (<S721> ^action <@A1107>
-           ^arg1 <@P8004>
+   (<S721> ^action <A1107>
+           ^arg1 <P8004>
            ^message-type command)
-   (<@A1107> ^action-type primitive
-             ^handle orient1
-             ^item-type action
-             ^procedural <@P90030>
-             ^type action)
-   (<@P90030> ^arg1 <@P90031>
-              ^execution-operator execute-orient1
-              ^op_name initiate-orient1)
-   (<@P90031> ^arg-type concept
-              ^id <@C7>)
-   (<@P8004> ^handle west1
-             ^item-type concept
-             ^property <@P8000>
-             ^yaw -1.507)
-   (<@P8000> ^handle cardinal-direction1
-             ^item-type property)
+   (<A1107> ^action-type primitive
+            ^handle orient1
+            ^item-type action
+            ^procedural <P90030>
+            ^type action)
+   (<P90030> ^arg1 <P90031>
+             ^execution-operator execute-orient1
+             ^op_name initiate-orient1)
+   (<P90031> ^arg-type concept
+             ^id <C7>)
+   (<P8004> ^handle west1
+            ^item-type concept
+            ^property <P8000>
+            ^yaw -1.507)
+   (<P8000> ^handle cardinal-direction1
+            ^item-type property)
 }
 
 
@@ -412,26 +412,26 @@ sp {elaborate*state*sentence*turn-left
          ^next <w1>)
    (<w1> ^spelling |left|
          ^next nil)
-   (<S796> ^action <@A1100>
-           ^arg1 <@P9002>
+   (<S796> ^action <A1100>
+           ^arg1 <P9002>
            ^message-type command)
-   (<@A1100> ^action-type primitive
-             ^handle turn1
-             ^item-type action
-             ^procedural <@P90023>
-             ^type action)
-   (<@P90023> ^arg1 <@P90024>
-              ^execution-operator execute-turn1
-              ^op_name initiate-turn1)
-   (<@P90024> ^arg-type concept
-              ^id <@C4>)
-   (<@P9002> ^handle left1
-             ^item-type concept
-             ^property <@P9000>
-             ^side 1
-             ^yaw 1.1)
-   (<@P9000> ^handle relative-direction1
-             ^item-type property)
+   (<A1100> ^action-type primitive
+            ^handle turn1
+            ^item-type action
+            ^procedural <P90023>
+            ^type action)
+   (<P90023> ^arg1 <P90024>
+             ^execution-operator execute-turn1
+             ^op_name initiate-turn1)
+   (<P90024> ^arg-type concept
+             ^id <C4>)
+   (<P9002> ^handle left1
+            ^item-type concept
+            ^property <P9000>
+            ^side 1
+            ^yaw 1.1)
+   (<P9000> ^handle relative-direction1
+            ^item-type property)
 }
 
 
@@ -453,26 +453,26 @@ sp {elaborate*state*sentence*turn-right
          ^next <w1>)
    (<w1> ^spelling |right|
          ^next nil)
-   (<S863> ^action <@A1100>
-           ^arg1 <@P9001>
+   (<S863> ^action <A1100>
+           ^arg1 <P9001>
            ^message-type command)
-   (<@A1100> ^action-type primitive
-             ^handle turn1
-             ^item-type action
-             ^procedural <@P90023>
-             ^type action)
-   (<@P90023> ^arg1 <@P90024>
-              ^execution-operator execute-turn1
-              ^op_name initiate-turn1)
-   (<@P90024> ^arg-type concept
-              ^id <@C4>)
-   (<@P9001> ^handle right1
-             ^item-type concept
-             ^property <@P9000>
-             ^side -1
-             ^yaw 1.1)
-   (<@P9000> ^handle relative-direction1
-             ^item-type property)
+   (<A1100> ^action-type primitive
+            ^handle turn1
+            ^item-type action
+            ^procedural <P90023>
+            ^type action)
+   (<P90023> ^arg1 <P90024>
+             ^execution-operator execute-turn1
+             ^op_name initiate-turn1)
+   (<P90024> ^arg-type concept
+             ^id <C4>)
+   (<P9001> ^handle right1
+            ^item-type concept
+            ^property <P9000>
+            ^side -1
+            ^yaw 1.1)
+   (<P9000> ^handle relative-direction1
+            ^item-type property)
 }
 
 
@@ -494,26 +494,26 @@ sp {elaborate*state*sentence*turn-around
          ^next <w1>)
    (<w1> ^spelling |around|
          ^next nil)
-   (<S930> ^action <@A1100>
-           ^arg1 <@P9003>
+   (<S930> ^action <A1100>
+           ^arg1 <P9003>
            ^message-type command)
-   (<@A1100> ^action-type primitive
-             ^handle turn1
-             ^item-type action
-             ^procedural <@P90023>
-             ^type action)
-   (<@P90023> ^arg1 <@P90024>
-              ^execution-operator execute-turn1
-              ^op_name initiate-turn1)
-   (<@P90024> ^arg-type concept
-              ^id <@C4>)
-   (<@P9003> ^handle around1
-             ^item-type concept
-             ^property <@P9000>
-             ^side -1
-             ^yaw 2.7)
-   (<@P9000> ^handle relative-direction1
-             ^item-type property)
+   (<A1100> ^action-type primitive
+            ^handle turn1
+            ^item-type action
+            ^procedural <P90023>
+            ^type action)
+   (<P90023> ^arg1 <P90024>
+             ^execution-operator execute-turn1
+             ^op_name initiate-turn1)
+   (<P90024> ^arg-type concept
+             ^id <C4>)
+   (<P9003> ^handle around1
+            ^item-type concept
+            ^property <P9000>
+            ^side -1
+            ^yaw 2.7)
+   (<P9000> ^handle relative-direction1
+            ^item-type property)
 }
 
 
@@ -541,33 +541,33 @@ sp {elaborate*state*sentence*follow-the-left-wall
          ^next <w4>)
    (<w4> ^spelling |.|
          ^next nil)
-   (<S997> ^action <@A1104>
-           ^arg1 <@P9002>
-           ^arg1 <@P12002>
+   (<S997> ^action <A1104>
+           ^arg1 <P9002>
+           ^arg1 <P12002>
            ^message-type command)
-   (<@A1104> ^action-type primitive
-             ^handle follow-wall1
-             ^item-type action
-             ^procedural <@P90027>
-             ^type action)
-   (<@P90027> ^arg1 <@P90028>
-              ^execution-operator execute-follow-wall1
-              ^op_name initiate-follow-wall1)
-   (<@P90028> ^arg-type concept
-              ^id <@C6>)
-   (<@P9002> ^handle left1
+   (<A1104> ^action-type primitive
+            ^handle follow-wall1
+            ^item-type action
+            ^procedural <P90027>
+            ^type action)
+   (<P90027> ^arg1 <P90028>
+             ^execution-operator execute-follow-wall1
+             ^op_name initiate-follow-wall1)
+   (<P90028> ^arg-type concept
+             ^id <C6>)
+   (<P9002> ^handle left1
+            ^item-type concept
+            ^property <P9000>
+            ^side 1
+            ^yaw 1.1)
+   (<P9000> ^handle relative-direction1
+            ^item-type property)
+   (<P12002> ^handle wall1
              ^item-type concept
-             ^property <@P9000>
-             ^side 1
-             ^yaw 1.1)
-   (<@P9000> ^handle relative-direction1
-             ^item-type property)
-   (<@P12002> ^handle wall1
-              ^item-type concept
-              ^property <@P12000>)
-   (<@P12000> ^handle spatial-shape
-              ^item-type property
-              ^type visual)
+             ^property <P12000>)
+   (<P12000> ^handle spatial-shape
+             ^item-type property
+             ^type visual)
 }
 
 
@@ -595,33 +595,33 @@ sp {elaborate*state*sentence*follow-the-right-wall
          ^next <w4>)
    (<w4> ^spelling |.|
          ^next nil)
-   (<S1106> ^action <@A1104>
-            ^arg1 <@P9001>
-            ^arg1 <@P12002>
+   (<S1106> ^action <A1104>
+            ^arg1 <P9001>
+            ^arg1 <P12002>
             ^message-type command)
-   (<@A1104> ^action-type primitive
-             ^handle follow-wall1
-             ^item-type action
-             ^procedural <@P90027>
-             ^type action)
-   (<@P90027> ^arg1 <@P90028>
-              ^execution-operator execute-follow-wall1
-              ^op_name initiate-follow-wall1)
-   (<@P90028> ^arg-type concept
-              ^id <@C6>)
-   (<@P9001> ^handle right1
+   (<A1104> ^action-type primitive
+            ^handle follow-wall1
+            ^item-type action
+            ^procedural <P90027>
+            ^type action)
+   (<P90027> ^arg1 <P90028>
+             ^execution-operator execute-follow-wall1
+             ^op_name initiate-follow-wall1)
+   (<P90028> ^arg-type concept
+             ^id <C6>)
+   (<P9001> ^handle right1
+            ^item-type concept
+            ^property <P9000>
+            ^side -1
+            ^yaw 1.1)
+   (<P9000> ^handle relative-direction1
+            ^item-type property)
+   (<P12002> ^handle wall1
              ^item-type concept
-             ^property <@P9000>
-             ^side -1
-             ^yaw 1.1)
-   (<@P9000> ^handle relative-direction1
-             ^item-type property)
-   (<@P12002> ^handle wall1
-              ^item-type concept
-              ^property <@P12000>)
-   (<@P12000> ^handle spatial-shape
-              ^item-type property
-              ^type visual)
+             ^property <P12000>)
+   (<P12000> ^handle spatial-shape
+             ^item-type property
+             ^type visual)
 }
 
 
@@ -649,20 +649,20 @@ sp {elaborate*state*sentence*go-to-the-waypoint
          ^next <w4>)
    (<w4> ^spelling |.|
          ^next nil)
-   (<S1215> ^action <@A1103>
+   (<S1215> ^action <A1103>
             ^message-type command
             ^predicate <S1303>)
-   (<@A1103> ^action-type composite
-             ^handle go1
-             ^item-type action
-             ^procedural <@P90025>
-             ^type action)
-   (<@P90025> ^arg1 <@P90026>
-              ^initiation-operator initiate-go1)
-   (<@P90026> ^arg-type concept
-              ^id <@C5>
-              ^optional true)
-   (<S1303>  <P90168>
+   (<A1103> ^action-type composite
+            ^handle go1
+            ^item-type action
+            ^procedural <P90025>
+            ^type action)
+   (<P90025> ^arg1 <P90026>
+             ^initiation-operator initiate-go1)
+   (<P90026> ^arg-type concept
+             ^id <C5>
+             ^optional true)
+   (<S1303> ^2 <P90168>
             ^handle on1
             ^item-type predicate)
    (<P90168> ^handle new-object-id1
@@ -699,20 +699,20 @@ sp {elaborate*state*sentence*go-to-the-kitchen
          ^next <w4>)
    (<w4> ^spelling |.|
          ^next nil)
-   (<S1330> ^action <@A1103>
+   (<S1330> ^action <A1103>
             ^message-type command
             ^predicate <S1418>)
-   (<@A1103> ^action-type composite
-             ^handle go1
-             ^item-type action
-             ^procedural <@P90025>
-             ^type action)
-   (<@P90025> ^arg1 <@P90026>
-              ^initiation-operator initiate-go1)
-   (<@P90026> ^arg-type concept
-              ^id <@C5>
-              ^optional true)
-   (<S1418>  <P90199>
+   (<A1103> ^action-type composite
+            ^handle go1
+            ^item-type action
+            ^procedural <P90025>
+            ^type action)
+   (<P90025> ^arg1 <P90026>
+             ^initiation-operator initiate-go1)
+   (<P90026> ^arg-type concept
+             ^id <C5>
+             ^optional true)
+   (<S1418> ^2 <P90199>
             ^handle on1
             ^item-type predicate)
    (<P90199> ^handle new-object-id2
@@ -749,20 +749,20 @@ sp {elaborate*state*sentence*drive-to-the-kitchen
          ^next <w4>)
    (<w4> ^spelling |.|
          ^next nil)
-   (<S1445> ^action <@A1103>
+   (<S1445> ^action <A1103>
             ^message-type command
             ^predicate <S1537>)
-   (<@A1103> ^action-type composite
-             ^handle go1
-             ^item-type action
-             ^procedural <@P90025>
-             ^type action)
-   (<@P90025> ^arg1 <@P90026>
-              ^initiation-operator initiate-go1)
-   (<@P90026> ^arg-type concept
-              ^id <@C5>
-              ^optional true)
-   (<S1537>  <P90199>
+   (<A1103> ^action-type composite
+            ^handle go1
+            ^item-type action
+            ^procedural <P90025>
+            ^type action)
+   (<P90025> ^arg1 <P90026>
+             ^initiation-operator initiate-go1)
+   (<P90026> ^arg-type concept
+             ^id <C5>
+             ^optional true)
+   (<S1537> ^2 <P90199>
             ^handle on1
             ^item-type predicate)
    (<P90199> ^handle new-object-id2
@@ -801,20 +801,20 @@ sp {elaborate*state*sentence*go-to-the-starting-location
          ^next <w5>)
    (<w5> ^spelling |.|
          ^next nil)
-   (<S1564> ^action <@A1103>
+   (<S1564> ^action <A1103>
             ^message-type command
             ^predicate <S1669>)
-   (<@A1103> ^action-type composite
-             ^handle go1
-             ^item-type action
-             ^procedural <@P90025>
-             ^type action)
-   (<@P90025> ^arg1 <@P90026>
-              ^initiation-operator initiate-go1)
-   (<@P90026> ^arg-type concept
-              ^id <@C5>
-              ^optional true)
-   (<S1669>  <P90282>
+   (<A1103> ^action-type composite
+            ^handle go1
+            ^item-type action
+            ^procedural <P90025>
+            ^type action)
+   (<P90025> ^arg1 <P90026>
+             ^initiation-operator initiate-go1)
+   (<P90026> ^arg-type concept
+             ^id <C5>
+             ^optional true)
+   (<S1669> ^2 <P90282>
             ^handle on1
             ^item-type predicate)
    (<P90282> ^handle new-object-id3
@@ -854,20 +854,20 @@ sp {elaborate*state*sentence*go-to-your-starting-location
          ^next <w5>)
    (<w5> ^spelling |.|
          ^next nil)
-   (<S1696> ^action <@A1103>
+   (<S1696> ^action <A1103>
             ^message-type command
             ^predicate <S1805>)
-   (<@A1103> ^action-type composite
-             ^handle go1
-             ^item-type action
-             ^procedural <@P90025>
-             ^type action)
-   (<@P90025> ^arg1 <@P90026>
-              ^initiation-operator initiate-go1)
-   (<@P90026> ^arg-type concept
-              ^id <@C5>
-              ^optional true)
-   (<S1805>  <P90282>
+   (<A1103> ^action-type composite
+            ^handle go1
+            ^item-type action
+            ^procedural <P90025>
+            ^type action)
+   (<P90025> ^arg1 <P90026>
+             ^initiation-operator initiate-go1)
+   (<P90026> ^arg-type concept
+             ^id <C5>
+             ^optional true)
+   (<S1805> ^2 <P90282>
             ^handle on1
             ^item-type predicate)
    (<P90282> ^handle new-object-id3
@@ -905,20 +905,20 @@ sp {elaborate*state*sentence*go-to-the-waypoint
          ^next <w4>)
    (<w4> ^spelling |.|
          ^next nil)
-   (<S1832> ^action <@A1103>
+   (<S1832> ^action <A1103>
             ^message-type command
             ^predicate <S1924>)
-   (<@A1103> ^action-type composite
-             ^handle go1
-             ^item-type action
-             ^procedural <@P90025>
-             ^type action)
-   (<@P90025> ^arg1 <@P90026>
-              ^initiation-operator initiate-go1)
-   (<@P90026> ^arg-type concept
-              ^id <@C5>
-              ^optional true)
-   (<S1924>  <P90168>
+   (<A1103> ^action-type composite
+            ^handle go1
+            ^item-type action
+            ^procedural <P90025>
+            ^type action)
+   (<P90025> ^arg1 <P90026>
+             ^initiation-operator initiate-go1)
+   (<P90026> ^arg-type concept
+             ^id <C5>
+             ^optional true)
+   (<S1924> ^2 <P90168>
             ^handle on1
             ^item-type predicate)
    (<P90168> ^handle new-object-id1
@@ -955,19 +955,19 @@ sp {elaborate*state*sentence*pick-up-the-box
          ^next <w4>)
    (<w4> ^spelling |.|
          ^next nil)
-   (<S1951> ^action <@A1001>
+   (<S1951> ^action <A1001>
             ^arg1 <O8036>
             ^message-type command)
-   (<@A1001> ^action-type primitive
-             ^handle pick-up1
-             ^item-type action
-             ^procedural <@P90005>
-             ^type action)
-   (<@P90005> ^arg1 <@P90006>
-              ^execution-operator execute-pick-up1
-              ^op_name initiate-pick-up1)
-   (<@P90006> ^arg-type object
-              ^id <@O3>)
+   (<A1001> ^action-type primitive
+            ^handle pick-up1
+            ^item-type action
+            ^procedural <P90005>
+            ^type action)
+   (<P90005> ^arg1 <P90006>
+             ^execution-operator execute-pick-up1
+             ^op_name initiate-pick-up1)
+   (<P90006> ^arg-type object
+             ^id <O3>)
    (<O8036> ^handle small-green-box1
             ^item-type object
             ^predicates <P90062>)
@@ -1006,23 +1006,23 @@ sp {elaborate*state*sentence*put-down-the-box
          ^next <w4>)
    (<w4> ^spelling |.|
          ^next nil)
-   (<S2056> ^action <@A1000>
+   (<S2056> ^action <A1000>
             ^arg1 <O8036>
             ^message-type command)
-   (<@A1000> ^action-type primitive
-             ^handle put-down1
-             ^item-type action
-             ^procedural <@P90001>
-             ^type action)
-   (<@P90001> ^arg1 <@P90002>
-              ^arg2 <@P90003>
-              ^execution-operator execute-put-down1
-              ^op_name initiate-put-down1)
-   (<@P90002> ^arg-type object
-              ^id <@O1>)
-   (<@P90003>  <@O2>
-              ^arg-type predicate
-              ^id <@P90004>)
+   (<A1000> ^action-type primitive
+            ^handle put-down1
+            ^item-type action
+            ^procedural <P90001>
+            ^type action)
+   (<P90001> ^arg1 <P90002>
+             ^arg2 <P90003>
+             ^execution-operator execute-put-down1
+             ^op_name initiate-put-down1)
+   (<P90002> ^arg-type object
+             ^id <O1>)
+   (<P90003> ^2 <O2>
+             ^arg-type predicate
+             ^id <P90004>)
    (<O8036> ^handle small-green-box1
             ^item-type object
             ^predicates <P90062>)
@@ -1072,7 +1072,7 @@ sp {elaborate*state*sentence*you-are-in-the-kitchen
              ^predicates <P90052>)
    (<A10063> ^action wait)
    (<P90052> ^handle rosie)
-   (<S2287>  <P90199>
+   (<S2287> ^2 <P90199>
             ^handle in1
             ^item-type predicate)
    (<P90199> ^handle new-object-id2
@@ -1123,7 +1123,7 @@ sp {elaborate*state*sentence*the-soda-is-in-the-kitchen
    (<P90511> ^dialog-object true
              ^shape soda1
              ^visible false)
-   (<S2453>  <P90199>
+   (<S2453> ^2 <P90199>
             ^handle in1
             ^item-type predicate)
    (<P90199> ^handle new-object-id2
@@ -1166,27 +1166,27 @@ sp {elaborate*state*sentence*go-forward-until-you-see-an-intersection
          ^next <w7>)
    (<w7> ^spelling |.|
          ^next nil)
-   (<S2476> ^action <@A1103>
+   (<S2476> ^action <A1103>
             ^arg2 <S2516>
             ^message-type command)
-   (<@A1103> ^action-type composite
-             ^handle go1
-             ^item-type action
-             ^procedural <@P90025>
-             ^type action)
-   (<@P90025> ^arg1 <@P90026>
-              ^initiation-operator initiate-go1)
-   (<@P90026> ^arg-type concept
-              ^id <@C5>
-              ^optional true)
+   (<A1103> ^action-type composite
+            ^handle go1
+            ^item-type action
+            ^procedural <P90025>
+            ^type action)
+   (<P90025> ^arg1 <P90026>
+             ^initiation-operator initiate-go1)
+   (<P90026> ^arg-type concept
+             ^id <C5>
+             ^optional true)
    (<S2516> ^until-clause <S2595>)
-   (<S2595> ^action <@A1111>
+   (<S2595> ^action <A1111>
             ^agent <R10030>
             ^arg1 <P90563>)
-   (<@A1111> ^handle sense1
-             ^item-type action
-             ^procedural <@E3>
-             ^type action)
+   (<A1111> ^handle sense1
+            ^item-type action
+            ^procedural <E3>
+            ^type action)
    (<R10030> ^arm <A10063>
              ^handle rosie
              ^item-type object
@@ -1226,22 +1226,22 @@ sp {elaborate*state*sentence*explore-until-you-see-a-soda
          ^next <w6>)
    (<w6> ^spelling |.|
          ^next nil)
-   (<S2677> ^action <@A1110>
+   (<S2677> ^action <A1110>
             ^arg2 <S2708>
             ^message-type command)
-   (<@A1110> ^handle explore1
-             ^item-type action
-             ^procedural <@E2>
-             ^type action)
-   (<@E2> ^op_name initiate-explore1)
+   (<A1110> ^handle explore1
+            ^item-type action
+            ^procedural <E2>
+            ^type action)
+   (<E2> ^op_name initiate-explore1)
    (<S2708> ^until-clause <S2787>)
-   (<S2787> ^action <@A1111>
+   (<S2787> ^action <A1111>
             ^agent <R10030>
             ^arg1 <P90584>)
-   (<@A1111> ^handle sense1
-             ^item-type action
-             ^procedural <@E3>
-             ^type action)
+   (<A1111> ^handle sense1
+            ^item-type action
+            ^procedural <E3>
+            ^type action)
    (<R10030> ^arm <A10063>
              ^handle rosie
              ^item-type object
@@ -1281,27 +1281,27 @@ sp {elaborate*state*sentence*drive-until-you-sense-a-wall
          ^next <w6>)
    (<w6> ^spelling |.|
          ^next nil)
-   (<S2869> ^action <@A1103>
+   (<S2869> ^action <A1103>
             ^arg2 <S2900>
             ^message-type command)
-   (<@A1103> ^action-type composite
-             ^handle go1
-             ^item-type action
-             ^procedural <@P90025>
-             ^type action)
-   (<@P90025> ^arg1 <@P90026>
-              ^initiation-operator initiate-go1)
-   (<@P90026> ^arg-type concept
-              ^id <@C5>
-              ^optional true)
+   (<A1103> ^action-type composite
+            ^handle go1
+            ^item-type action
+            ^procedural <P90025>
+            ^type action)
+   (<P90025> ^arg1 <P90026>
+             ^initiation-operator initiate-go1)
+   (<P90026> ^arg-type concept
+             ^id <C5>
+             ^optional true)
    (<S2900> ^until-clause <S2979>)
-   (<S2979> ^action <@A1111>
+   (<S2979> ^action <A1111>
             ^agent <R10030>
             ^arg1 <P90626>)
-   (<@A1111> ^handle sense1
-             ^item-type action
-             ^procedural <@E3>
-             ^type action)
+   (<A1111> ^handle sense1
+            ^item-type action
+            ^procedural <E3>
+            ^type action)
    (<R10030> ^arm <A10063>
              ^handle rosie
              ^item-type object
@@ -1341,25 +1341,25 @@ sp {elaborate*state*sentence*go-until-there-is-a-doorway
          ^next <w6>)
    (<w6> ^spelling |.|
          ^next nil)
-   (<S3061> ^action <@A1103>
+   (<S3061> ^action <A1103>
             ^arg2 <S3092>
             ^message-type command)
-   (<@A1103> ^action-type composite
-             ^handle go1
-             ^item-type action
-             ^procedural <@P90025>
-             ^type action)
-   (<@P90025> ^arg1 <@P90026>
-              ^initiation-operator initiate-go1)
-   (<@P90026> ^arg-type concept
-              ^id <@C5>
-              ^optional true)
+   (<A1103> ^action-type composite
+            ^handle go1
+            ^item-type action
+            ^procedural <P90025>
+            ^type action)
+   (<P90025> ^arg1 <P90026>
+             ^initiation-operator initiate-go1)
+   (<P90026> ^arg-type concept
+             ^id <C5>
+             ^optional true)
    (<S3092> ^until-clause <S3214>)
-   (<S3214> ^predicate <@P12004>)
-   (<@P12004> ^handle door
-              ^item-type concept
-              ^output-word door
-              ^property <@P12000>)
+   (<S3214> ^predicate <P12004>)
+   (<P12004> ^handle door
+             ^item-type concept
+             ^output-word door
+             ^property <P12000>)
 }
 
 
@@ -1397,34 +1397,34 @@ sp {elaborate*state*sentence*drive-down-the-hall-until-you-reach-the-end
          ^next <w9>)
    (<w9> ^spelling |.|
          ^next nil)
-   (<S3241> ^action <@A1103>
-            ^arg1 <@P12003>
+   (<S3241> ^action <A1103>
+            ^arg1 <P12003>
             ^arg2 <S3315>
             ^message-type command)
-   (<@A1103> ^action-type composite
-             ^handle go1
-             ^item-type action
-             ^procedural <@P90025>
-             ^type action)
-   (<@P90025> ^arg1 <@P90026>
-              ^initiation-operator initiate-go1)
-   (<@P90026> ^arg-type concept
-              ^id <@C5>
-              ^optional true)
-   (<@P12003> ^handle hall1
-              ^item-type concept
-              ^property <@P12000>)
-   (<@P12000> ^handle spatial-shape
-              ^item-type property
-              ^type visual)
+   (<A1103> ^action-type composite
+            ^handle go1
+            ^item-type action
+            ^procedural <P90025>
+            ^type action)
+   (<P90025> ^arg1 <P90026>
+             ^initiation-operator initiate-go1)
+   (<P90026> ^arg-type concept
+             ^id <C5>
+             ^optional true)
+   (<P12003> ^handle hall1
+             ^item-type concept
+             ^property <P12000>)
+   (<P12000> ^handle spatial-shape
+             ^item-type property
+             ^type visual)
    (<S3315> ^until-clause <S3394>)
-   (<S3394> ^action <@A1111>
+   (<S3394> ^action <A1111>
             ^agent <R10030>
             ^arg1 <P90687>)
-   (<@A1111> ^handle sense1
-             ^item-type action
-             ^procedural <@E3>
-             ^type action)
+   (<A1111> ^handle sense1
+            ^item-type action
+            ^procedural <E3>
+            ^type action)
    (<R10030> ^arm <A10063>
              ^handle rosie
              ^item-type object
@@ -1470,40 +1470,40 @@ sp {elaborate*state*sentence*follow-the-right-wall-until-there-is-a-doorway
          ^next <w9>)
    (<w9> ^spelling |.|
          ^next nil)
-   (<S3476> ^action <@A1104>
-            ^arg1 <@P9001>
-            ^arg1 <@P12002>
+   (<S3476> ^action <A1104>
+            ^arg1 <P9001>
+            ^arg1 <P12002>
             ^arg2 <S3558>
             ^message-type command)
-   (<@A1104> ^action-type primitive
-             ^handle follow-wall1
-             ^item-type action
-             ^procedural <@P90027>
-             ^type action)
-   (<@P90027> ^arg1 <@P90028>
-              ^execution-operator execute-follow-wall1
-              ^op_name initiate-follow-wall1)
-   (<@P90028> ^arg-type concept
-              ^id <@C6>)
-   (<@P9001> ^handle right1
+   (<A1104> ^action-type primitive
+            ^handle follow-wall1
+            ^item-type action
+            ^procedural <P90027>
+            ^type action)
+   (<P90027> ^arg1 <P90028>
+             ^execution-operator execute-follow-wall1
+             ^op_name initiate-follow-wall1)
+   (<P90028> ^arg-type concept
+             ^id <C6>)
+   (<P9001> ^handle right1
+            ^item-type concept
+            ^property <P9000>
+            ^side -1
+            ^yaw 1.1)
+   (<P9000> ^handle relative-direction1
+            ^item-type property)
+   (<P12002> ^handle wall1
              ^item-type concept
-             ^property <@P9000>
-             ^side -1
-             ^yaw 1.1)
-   (<@P9000> ^handle relative-direction1
-             ^item-type property)
-   (<@P12002> ^handle wall1
-              ^item-type concept
-              ^property <@P12000>)
-   (<@P12000> ^handle spatial-shape
-              ^item-type property
-              ^type visual)
+             ^property <P12000>)
+   (<P12000> ^handle spatial-shape
+             ^item-type property
+             ^type visual)
    (<S3558> ^until-clause <S3680>)
-   (<S3680> ^predicate <@P12004>)
-   (<@P12004> ^handle door
-              ^item-type concept
-              ^output-word door
-              ^property <@P12000>)
+   (<S3680> ^predicate <P12004>)
+   (<P12004> ^handle door
+             ^item-type concept
+             ^output-word door
+             ^property <P12000>)
 }
 
 
@@ -1541,42 +1541,42 @@ sp {elaborate*state*sentence*follow-the-right-wall-until-you-see-two-doors
          ^next <w9>)
    (<w9> ^spelling |.|
          ^next nil)
-   (<S3707> ^action <@A1104>
-            ^arg1 <@P9001>
-            ^arg1 <@P12002>
+   (<S3707> ^action <A1104>
+            ^arg1 <P9001>
+            ^arg1 <P12002>
             ^arg2 <S3789>
             ^message-type command)
-   (<@A1104> ^action-type primitive
-             ^handle follow-wall1
-             ^item-type action
-             ^procedural <@P90027>
-             ^type action)
-   (<@P90027> ^arg1 <@P90028>
-              ^execution-operator execute-follow-wall1
-              ^op_name initiate-follow-wall1)
-   (<@P90028> ^arg-type concept
-              ^id <@C6>)
-   (<@P9001> ^handle right1
+   (<A1104> ^action-type primitive
+            ^handle follow-wall1
+            ^item-type action
+            ^procedural <P90027>
+            ^type action)
+   (<P90027> ^arg1 <P90028>
+             ^execution-operator execute-follow-wall1
+             ^op_name initiate-follow-wall1)
+   (<P90028> ^arg-type concept
+             ^id <C6>)
+   (<P9001> ^handle right1
+            ^item-type concept
+            ^property <P9000>
+            ^side -1
+            ^yaw 1.1)
+   (<P9000> ^handle relative-direction1
+            ^item-type property)
+   (<P12002> ^handle wall1
              ^item-type concept
-             ^property <@P9000>
-             ^side -1
-             ^yaw 1.1)
-   (<@P9000> ^handle relative-direction1
-             ^item-type property)
-   (<@P12002> ^handle wall1
-              ^item-type concept
-              ^property <@P12000>)
-   (<@P12000> ^handle spatial-shape
-              ^item-type property
-              ^type visual)
+             ^property <P12000>)
+   (<P12000> ^handle spatial-shape
+             ^item-type property
+             ^type visual)
    (<S3789> ^until-clause <S3868>)
-   (<S3868> ^action <@A1111>
+   (<S3868> ^action <A1111>
             ^agent <R10030>
             ^arg1 <P90754>)
-   (<@A1111> ^handle sense1
-             ^item-type action
-             ^procedural <@E3>
-             ^type action)
+   (<A1111> ^handle sense1
+            ^item-type action
+            ^procedural <E3>
+            ^type action)
    (<R10030> ^arm <A10063>
              ^handle rosie
              ^item-type object
@@ -1622,42 +1622,42 @@ sp {elaborate*state*sentence*follow-the-right-wall-until-you-reach-the-end
          ^next <w9>)
    (<w9> ^spelling |.|
          ^next nil)
-   (<S3950> ^action <@A1104>
-            ^arg1 <@P9001>
-            ^arg1 <@P12002>
+   (<S3950> ^action <A1104>
+            ^arg1 <P9001>
+            ^arg1 <P12002>
             ^arg2 <S4032>
             ^message-type command)
-   (<@A1104> ^action-type primitive
-             ^handle follow-wall1
-             ^item-type action
-             ^procedural <@P90027>
-             ^type action)
-   (<@P90027> ^arg1 <@P90028>
-              ^execution-operator execute-follow-wall1
-              ^op_name initiate-follow-wall1)
-   (<@P90028> ^arg-type concept
-              ^id <@C6>)
-   (<@P9001> ^handle right1
+   (<A1104> ^action-type primitive
+            ^handle follow-wall1
+            ^item-type action
+            ^procedural <P90027>
+            ^type action)
+   (<P90027> ^arg1 <P90028>
+             ^execution-operator execute-follow-wall1
+             ^op_name initiate-follow-wall1)
+   (<P90028> ^arg-type concept
+             ^id <C6>)
+   (<P9001> ^handle right1
+            ^item-type concept
+            ^property <P9000>
+            ^side -1
+            ^yaw 1.1)
+   (<P9000> ^handle relative-direction1
+            ^item-type property)
+   (<P12002> ^handle wall1
              ^item-type concept
-             ^property <@P9000>
-             ^side -1
-             ^yaw 1.1)
-   (<@P9000> ^handle relative-direction1
-             ^item-type property)
-   (<@P12002> ^handle wall1
-              ^item-type concept
-              ^property <@P12000>)
-   (<@P12000> ^handle spatial-shape
-              ^item-type property
-              ^type visual)
+             ^property <P12000>)
+   (<P12000> ^handle spatial-shape
+             ^item-type property
+             ^type visual)
    (<S4032> ^until-clause <S4111>)
-   (<S4111> ^action <@A1111>
+   (<S4111> ^action <A1111>
             ^agent <R10030>
             ^arg1 <P90687>)
-   (<@A1111> ^handle sense1
-             ^item-type action
-             ^procedural <@E3>
-             ^type action)
+   (<A1111> ^handle sense1
+            ^item-type action
+            ^procedural <E3>
+            ^type action)
    (<R10030> ^arm <A10063>
              ^handle rosie
              ^item-type object
@@ -1693,32 +1693,32 @@ sp {elaborate*state*sentence*drive-forward-one-meter
          ^next <w4>)
    (<w4> ^spelling |.|
          ^next nil)
-   (<S4193> ^action <@A1103>
-            ^arg1 <@C47>
-            ^arg1 <@P10001>
+   (<S4193> ^action <A1103>
+            ^arg1 <C47>
+            ^arg1 <P10001>
             ^message-type command)
-   (<@A1103> ^action-type composite
-             ^handle go1
-             ^item-type action
-             ^procedural <@P90025>
-             ^type action)
-   (<@P90025> ^arg1 <@P90026>
-              ^initiation-operator initiate-go1)
-   (<@P90026> ^arg-type concept
-              ^id <@C5>
-              ^optional true)
-   (<@C47> ^quantity <@C32>)
-   (<@C32> ^handle 1
-           ^property <@P11000>)
-   (<@P11000> ^handle number
-              ^item-type property
-              ^type number)
-   (<@P10001> ^handle meters
-              ^item-type concept
-              ^property <@P10000>)
-   (<@P10000> ^handle unit
-              ^item-type property
-              ^type unit)
+   (<A1103> ^action-type composite
+            ^handle go1
+            ^item-type action
+            ^procedural <P90025>
+            ^type action)
+   (<P90025> ^arg1 <P90026>
+             ^initiation-operator initiate-go1)
+   (<P90026> ^arg-type concept
+             ^id <C5>
+             ^optional true)
+   (<C47> ^quantity <C32>)
+   (<C32> ^handle 1
+          ^property <P11000>)
+   (<P11000> ^handle number
+             ^item-type property
+             ^type number)
+   (<P10001> ^handle meters
+             ^item-type concept
+             ^property <P10000>)
+   (<P10000> ^handle unit
+             ^item-type property
+             ^type unit)
 }
 
 
@@ -1748,22 +1748,22 @@ sp {elaborate*state*sentence*drive-slowly-to-the-kitchen
          ^next <w5>)
    (<w5> ^spelling |.|
          ^next nil)
-   (<S4294> ^action <@A1103>
+   (<S4294> ^action <A1103>
             ^message-type command
-            ^modifier <@S10>
+            ^modifier <S10>
             ^predicate <S4403>)
-   (<@A1103> ^action-type composite
-             ^handle go1
-             ^item-type action
-             ^procedural <@P90025>
-             ^type action)
-   (<@P90025> ^arg1 <@P90026>
-              ^initiation-operator initiate-go1)
-   (<@P90026> ^arg-type concept
-              ^id <@C5>
-              ^optional true)
-   (<@S10> ^handle slow1)
-   (<S4403>  <P90199>
+   (<A1103> ^action-type composite
+            ^handle go1
+            ^item-type action
+            ^procedural <P90025>
+            ^type action)
+   (<P90025> ^arg1 <P90026>
+             ^initiation-operator initiate-go1)
+   (<P90026> ^arg-type concept
+             ^id <C5>
+             ^optional true)
+   (<S10> ^handle slow1)
+   (<S4403> ^2 <P90199>
             ^handle on1
             ^item-type predicate)
    (<P90199> ^handle new-object-id2
@@ -1804,23 +1804,23 @@ sp {elaborate*state*sentence*deliver-the-box-to-the-kitchen
          ^next <w6>)
    (<w6> ^spelling |.|
          ^next nil)
-   (<S4430> ^action <@A1018>
+   (<S4430> ^action <A1018>
             ^arg1 <O8036>
             ^arg2 <S4560>
             ^message-type command)
-   (<@A1018> ^action-type composite
-             ^handle deliver1
-             ^item-type action
-             ^procedural <@P90015>
-             ^type action)
-   (<@P90015> ^arg1 <@P90016>
-              ^arg2 <@P90017>
-              ^op_name initiate-deliver1)
-   (<@P90016> ^arg-type object
-              ^id <@O8>)
-   (<@P90017>  <@O9>
-              ^arg-type predicate
-              ^id <@P90018>)
+   (<A1018> ^action-type composite
+            ^handle deliver1
+            ^item-type action
+            ^procedural <P90015>
+            ^type action)
+   (<P90015> ^arg1 <P90016>
+             ^arg2 <P90017>
+             ^op_name initiate-deliver1)
+   (<P90016> ^arg-type object
+             ^id <O8>)
+   (<P90017> ^2 <O9>
+             ^arg-type predicate
+             ^id <P90018>)
    (<O8036> ^handle small-green-box1
             ^item-type object
             ^predicates <P90062>)
@@ -1832,7 +1832,7 @@ sp {elaborate*state*sentence*deliver-the-box-to-the-kitchen
              ^shape box1
              ^size small1
              ^status live)
-   (<S4560>  <P90199>
+   (<S4560> ^2 <P90199>
             ^handle on1
             ^item-type predicate)
    (<P90199> ^handle new-object-id2
@@ -1873,18 +1873,18 @@ sp {elaborate*state*sentence*take-the-box-to-the-kitchen
          ^next <w6>)
    (<w6> ^spelling |.|
          ^next nil)
-   (<S4587> ^action <@R13159>
+   (<S4587> ^action <R13159>
             ^arg1 <O8036>
             ^arg2 <S4730>
             ^message-type command
             ^message-type new-verb)
-   (<@R13159> ^handle take10
-              ^item-type action
-              ^word-structure <@N10740>)
-   (<@N10740> ^new-action true
-              ^referent <@R13159>
-              ^spelling take
-              ^super-type <@T999>)
+   (<R13159> ^handle take10
+             ^item-type action
+             ^word-structure <N10740>)
+   (<N10740> ^new-action true
+             ^referent <R13159>
+             ^spelling take
+             ^super-type <T999>)
    (<O8036> ^handle small-green-box1
             ^item-type object
             ^predicates <P90062>)
@@ -1896,7 +1896,7 @@ sp {elaborate*state*sentence*take-the-box-to-the-kitchen
              ^shape box1
              ^size small1
              ^status live)
-   (<S4730>  <P90199>
+   (<S4730> ^2 <P90199>
             ^handle on1
             ^item-type predicate)
    (<P90199> ^handle new-object-id2
@@ -1937,26 +1937,26 @@ sp {elaborate*state*sentence*take-the-box-to-the-kitchen
          ^next <w6>)
    (<w6> ^spelling |.|
          ^next nil)
-   (<S4753> ^action <@R13159>
+   (<S4753> ^action <R13159>
             ^arg1 <O8036>
             ^arg2 <S4883>
             ^message-type command)
-   (<@R13159> ^handle take10
-              ^item-type action
-              ^word-structure <@N10740>)
-   (<@N10740> ^new-action true
-              ^referent <@R13159>
-              ^spelling take
-              ^super-type <@T999>)
-   (<@T999> ^assigners <@V6>
-            ^assigners <@V7>
-            ^assigners <@V8>
-            ^att test
-            ^converts-to VP
-            ^number singular
-            ^semantic-structure action
-            ^structure-type V
-            ^tense present)
+   (<R13159> ^handle take10
+             ^item-type action
+             ^word-structure <N10740>)
+   (<N10740> ^new-action true
+             ^referent <R13159>
+             ^spelling take
+             ^super-type <T999>)
+   (<T999> ^assigners <V6>
+           ^assigners <V7>
+           ^assigners <V8>
+           ^att test
+           ^converts-to VP
+           ^number singular
+           ^semantic-structure action
+           ^structure-type V
+           ^tense present)
    (<O8036> ^handle small-green-box1
             ^item-type object
             ^predicates <P90062>)
@@ -1968,7 +1968,7 @@ sp {elaborate*state*sentence*take-the-box-to-the-kitchen
              ^shape box1
              ^size small1
              ^status live)
-   (<S4883>  <P90199>
+   (<S4883> ^2 <P90199>
             ^handle on1
             ^item-type predicate)
    (<P90199> ^handle new-object-id2
@@ -2017,13 +2017,13 @@ sp {elaborate*state*sentence*the-goal-is-that-the-box-is-in-the-kitchen
          ^next <w10>)
    (<w10> ^spelling |.|
          ^next nil)
-   (<S4910> ^arg1 <@G4>
+   (<S4910> ^arg1 <G4>
             ^message-type object-description
             ^subclause <S4992>)
-   (<@G4> ^handle goal1
-          ^property <@C19>)
-   (<@C19> ^handle concept
-           ^type conceptual)
+   (<G4> ^handle goal1
+         ^property <C19>)
+   (<C19> ^handle concept
+          ^type conceptual)
    (<S4992> ^arg1 <O8036>
             ^predicate <S5166>)
    (<O8036> ^handle small-green-box1
@@ -2037,7 +2037,7 @@ sp {elaborate*state*sentence*the-goal-is-that-the-box-is-in-the-kitchen
              ^shape box1
              ^size small1
              ^status live)
-   (<S5166>  <P90199>
+   (<S5166> ^2 <P90199>
             ^handle in1
             ^item-type predicate)
    (<P90199> ^handle new-object-id2
@@ -2083,15 +2083,15 @@ sp {elaborate*state*sentence*the-goal-is-that-you-are-not-holding-the-box
          ^next <w10>)
    (<w10> ^spelling |.|
          ^next nil)
-   (<S5189> ^arg1 <@G4>
+   (<S5189> ^arg1 <G4>
             ^message-type object-description
             ^subclause <S5271>)
-   (<@G4> ^handle goal1
-          ^property <@C19>)
-   (<@C19> ^handle concept
-           ^type conceptual)
+   (<G4> ^handle goal1
+         ^property <C19>)
+   (<C19> ^handle concept
+          ^type conceptual)
    (<S5271> ^arg1 <R10030>
-            ^modifier <@N10003>
+            ^modifier <N10003>
             ^predicate <S5437>)
    (<R10030> ^arm <A10063>
              ^handle rosie
@@ -2099,8 +2099,8 @@ sp {elaborate*state*sentence*the-goal-is-that-you-are-not-holding-the-box
              ^predicates <P90052>)
    (<A10063> ^action wait)
    (<P90052> ^handle rosie)
-   (<@N10003> ^handle negation)
-   (<S5437>  <O8036>
+   (<N10003> ^handle negation)
+   (<S5437> ^2 <O8036>
             ^handle holding1
             ^item-type predicate)
    (<O8036> ^handle small-green-box1
@@ -2155,13 +2155,13 @@ sp {elaborate*state*sentence*the-goal-is-that-the-box-is-in-the-kitchen-and-the-
          ^next <w15>)
    (<w15> ^spelling |.|
          ^next nil)
-   (<S5460> ^arg1 <@G4>
+   (<S5460> ^arg1 <G4>
             ^message-type object-description
             ^subclause <S5542>)
-   (<@G4> ^handle goal1
-          ^property <@C19>)
-   (<@C19> ^handle concept
-           ^type conceptual)
+   (<G4> ^handle goal1
+         ^property <C19>)
+   (<C19> ^handle concept
+          ^type conceptual)
    (<S5542> ^subclause <S5642>
             ^subclause <S5825>)
    (<S5642> ^arg1 <O8036>
@@ -2169,17 +2169,17 @@ sp {elaborate*state*sentence*the-goal-is-that-the-box-is-in-the-kitchen-and-the-
    (<O8036> ^handle small-green-box1
             ^item-type object
             ^predicates <P90062>)
-   (<S5716>  <P90199>
+   (<S5716> ^2 <P90199>
             ^handle in1
             ^item-type predicate)
    (<S5825> ^arg1 <O8033>
-            ^predicate <@P1006>)
+            ^predicate <P1006>)
    (<O8033> ^handle large-green-sphere1
             ^item-type object
             ^predicates <P90059>)
-   (<@P1006> ^handle purple1
-             ^item-type predicate
-             ^property <@P1000>)
+   (<P1006> ^handle purple1
+            ^item-type predicate
+            ^property <P1000>)
 }
 
 
@@ -2209,7 +2209,7 @@ sp {elaborate*state*sentence*the-sphere-is-red
          ^next nil)
    (<S5882> ^arg1 <O8033>
             ^message-type object-description
-            ^predicate <@P1001>)
+            ^predicate <P1001>)
    (<O8033> ^handle large-green-sphere1
             ^item-type object
             ^predicates <P90059>)
@@ -2221,12 +2221,12 @@ sp {elaborate*state*sentence*the-sphere-is-red
              ^shape sphere1
              ^size large1
              ^status live)
-   (<@P1001> ^handle red1
-             ^item-type predicate
-             ^property <@P1000>)
-   (<@P1000> ^handle color
-             ^item-type property
-             ^type visual)
+   (<P1001> ^handle red1
+            ^item-type predicate
+            ^property <P1000>)
+   (<P1000> ^handle color
+            ^item-type property
+            ^type visual)
 }
 
 
@@ -2280,13 +2280,13 @@ sp {elaborate*state*sentence*the-goal-is-that-the-box-is-in-the-kitchen-and-you-
          ^next <w17>)
    (<w17> ^spelling |.|
          ^next nil)
-   (<S6008> ^arg1 <@G4>
+   (<S6008> ^arg1 <G4>
             ^message-type object-description
             ^subclause <S6090>)
-   (<@G4> ^handle goal1
-          ^property <@C19>)
-   (<@C19> ^handle concept
-           ^type conceptual)
+   (<G4> ^handle goal1
+         ^property <C19>)
+   (<C19> ^handle concept
+          ^type conceptual)
    (<S6090> ^subclause <S6190>
             ^subclause <S6348>)
    (<S6190> ^arg1 <O8036>
@@ -2294,18 +2294,18 @@ sp {elaborate*state*sentence*the-goal-is-that-the-box-is-in-the-kitchen-and-you-
    (<O8036> ^handle small-green-box1
             ^item-type object
             ^predicates <P90062>)
-   (<S6264>  <P90199>
+   (<S6264> ^2 <P90199>
             ^handle in1
             ^item-type predicate)
    (<S6348> ^arg1 <R10030>
-            ^modifier <@N10003>
+            ^modifier <N10003>
             ^predicate <S6439>)
    (<R10030> ^arm <A10063>
              ^handle rosie
              ^item-type object
              ^predicates <P90052>)
-   (<@N10003> ^handle negation)
-   (<S6439>  <O8036>
+   (<N10003> ^handle negation)
+   (<S6439> ^2 <O8036>
             ^handle holding1
             ^item-type predicate)
 }

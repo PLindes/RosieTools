@@ -34,7 +34,11 @@ public class TranslateSentence extends RegressBaseListener {
 			+ "\r\n";
 	
 	static final String PRODUCTION_TEXT =
+<<<<<<< HEAD
 			"sp {elaborate*state*sentence-%d*%s\r\n"
+=======
+			"sp {elaborate*state*sentence*%s\r\n"
+>>>>>>> origin/master
 			+ "   (state <s> ^name comprehension\r\n"
 			+ "              ^superstate <ss>\r\n"
 			+ "              ^segment <seg>)\r\n"
@@ -232,6 +236,7 @@ public class TranslateSentence extends RegressBaseListener {
 	@Override public void enterAttr(RegressParser.AttrContext ctx) {
 		//	Put the correct white space first
 		expectBuilder.append((firstAttr)? " " : attrIndent);
+<<<<<<< HEAD
         //  Build an attribute with possible dot notation
         List<TerminalNode> words = ctx.WORD();
         boolean first = true;
@@ -240,6 +245,23 @@ public class TranslateSentence extends RegressBaseListener {
     		expectBuilder.append(w.getText());
     		first = false;
         }
+=======
+		//	Process the attribute
+		if (ctx.NUMBER() != null) {
+			//	Build a numeric attribute
+			expectBuilder.append("^");
+			expectBuilder.append(ctx.NUMBER().getText());
+		} else {
+	        //  Build a word attribute with possible dot notation
+	        List<TerminalNode> words = ctx.WORD();
+	        boolean first = true;
+	        for (TerminalNode w: words) {
+	    		expectBuilder.append((first)? "^" : ".");
+	    		expectBuilder.append(w.getText());
+	    		first = false;
+	        }
+		}
+>>>>>>> origin/master
 	}
 	
 	/**
@@ -313,7 +335,10 @@ public class TranslateSentence extends RegressBaseListener {
 	@Override public void exitBlock(RegressParser.BlockContext ctx) {
         //  Build the production
         String production = String.format(PRODUCTION_TEXT,
+<<<<<<< HEAD
         					sentenceNumber,
+=======
+>>>>>>> origin/master
                             sentenceName,
                             sentenceNumber++,
                             expectedSymbol,
