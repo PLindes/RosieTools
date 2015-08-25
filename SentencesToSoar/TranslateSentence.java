@@ -34,7 +34,7 @@ public class TranslateSentence extends RegressBaseListener {
 			+ "\r\n";
 	
 	static final String PRODUCTION_TEXT =
-			"sp {elaborate*state*sentence*%s\r\n"
+			"sp {elaborate*state*sentence-%d*%s\r\n"
 			+ "   (state <s> ^name comprehension\r\n"
 			+ "              ^superstate <ss>\r\n"
 			+ "              ^segment <seg>)\r\n"
@@ -313,6 +313,7 @@ public class TranslateSentence extends RegressBaseListener {
 	@Override public void exitBlock(RegressParser.BlockContext ctx) {
         //  Build the production
         String production = String.format(PRODUCTION_TEXT,
+        					sentenceNumber,
                             sentenceName,
                             sentenceNumber++,
                             expectedSymbol,
