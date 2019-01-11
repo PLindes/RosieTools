@@ -1,0 +1,7 @@
+The name of the game is risk.
+The name of an action is attack.
+If a captured location has more than one soldier on it then you can attack an enemy location that is next to the captured location.
+If the number of the blocks on a captured location is more than one then you can attack an occupied location that is next to the captured location.
+If all locations are captured then you win.
+If all locations are occupied then you lose.
+The goal is that all locations are captured.

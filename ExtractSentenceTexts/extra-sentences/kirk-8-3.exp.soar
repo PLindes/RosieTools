@@ -1,0 +1,306 @@
+#### Test sentences for ROSIE - 
+#    Built by the SentencesToSoar tool Thu Sep 01 12:08:11 EDT 2016
+#    from file 'kirk-8-3.exp.txt'.
+chunk off
+#   Apply initialize-rosie to set up the state.
+sp {apply*initialize-rosie*sentence-number
+   (state <s> ^name rosie
+              ^operator.name initialize-rosie)
+-->
+   (<s> ^current-sentence-number 1
+        ^max-sentence-number 4
+        ^failure-count 0
+        ^success-count 0)
+}
+
+
+#   You can set the value of a location to five.
+sp {elaborate*state*sentence*you-can-set-the-value-of-a-location-to-five
+   (state <s> ^name comprehension
+              ^superstate <ss>
+              ^segment <seg>)
+   (<ss> ^current-sentence-number 1)
+-->
+   (<seg> ^input-sentence <first>
+          ^current-word <first>
+          ^original-sentence <first>
+          ^expected <S124>)
+   (<first> ^spelling |*|
+            ^next <w0>
+            ^complete-sentence |You can set the value of a location to five.|)
+   (<w0> ^spelling |you|
+         ^next <w1>)
+   (<w1> ^spelling |can|
+         ^next <w2>)
+   (<w2> ^spelling |set|
+         ^next <w3>)
+   (<w3> ^spelling |the|
+         ^next <w4>)
+   (<w4> ^spelling |value|
+         ^next <w5>)
+   (<w5> ^spelling |of|
+         ^next <w6>)
+   (<w6> ^spelling |a|
+         ^next <w7>)
+   (<w7> ^spelling |location|
+         ^next <w8>)
+   (<w8> ^spelling |to|
+         ^next <w9>)
+   (<w9> ^spelling |five|
+         ^next <w10>)
+   (<w10> ^spelling |.|
+         ^next nil)
+   (<S124> ^action <N10035>
+           ^action-modifier <N10033>
+           ^agent <N10032>
+           ^arg1 <S337>
+           ^arg2 <S330>
+           ^message-type command)
+   (<N10035> ^handle set
+             ^item-type action)
+   (<N10033> ^handle can)
+   (<N10032> ^handle rosie
+             ^property <P90131>)
+   (<P90131> ^handle handle
+              ^type visual)
+   (<S337> ^2 <S338>
+           ^handle of1
+           ^item-type predicate)
+   (<S338> ^2 <P90207>
+           ^handle value)
+   (<P90207> #^handle new-object-id1
+             ^item-type location
+             ^predicates <P90208>
+             ^predicates-copied true)
+   (<P90208> ^category location
+             ^dialog-object true
+             ^visibility unknown-visible)
+   (<S330> ^2 <R10243>
+           ^handle to1
+           ^item-type predicate)
+   (<R10243> ^number 5)
+}
+
+
+#   You can set the value of a location to a number that is greater than zero.
+sp {elaborate*state*sentence*you-can-set-the-value-of-a-location-to-a-number-that-is-greater-than-zero
+   (state <s> ^name comprehension
+              ^superstate <ss>
+              ^segment <seg>)
+   (<ss> ^current-sentence-number 2)
+-->
+   (<seg> ^input-sentence <first>
+          ^current-word <first>
+          ^original-sentence <first>
+          ^expected <S365>)
+   (<first> ^spelling |*|
+            ^next <w0>
+            ^complete-sentence |You can set the value of a location to a number that is greater than zero.|)
+   (<w0> ^spelling |you|
+         ^next <w1>)
+   (<w1> ^spelling |can|
+         ^next <w2>)
+   (<w2> ^spelling |set|
+         ^next <w3>)
+   (<w3> ^spelling |the|
+         ^next <w4>)
+   (<w4> ^spelling |value|
+         ^next <w5>)
+   (<w5> ^spelling |of|
+         ^next <w6>)
+   (<w6> ^spelling |a|
+         ^next <w7>)
+   (<w7> ^spelling |location|
+         ^next <w8>)
+   (<w8> ^spelling |to|
+         ^next <w9>)
+   (<w9> ^spelling |a|
+         ^next <w10>)
+   (<w10> ^spelling |number|
+         ^next <w11>)
+   (<w11> ^spelling |that|
+         ^next <w12>)
+   (<w12> ^spelling |is|
+         ^next <w13>)
+   (<w13> ^spelling |greater|
+         ^next <w14>)
+   (<w14> ^spelling |than|
+         ^next <w15>)
+   (<w15> ^spelling |zero|
+         ^next <w16>)
+   (<w16> ^spelling |.|
+         ^next nil)
+   (<S365> ^action <N10086>
+           ^action-modifier <N10084>
+           ^agent <N10083>
+           ^arg1 <S674>
+           ^arg2 <S666>
+           ^message-type command)
+   (<N10086> ^handle set
+             ^item-type action)
+   (<N10084> ^handle can)
+   (<N10083> ^handle rosie
+             ^property <P90131>)
+   (<P90131> ^handle handle
+              ^type visual)
+   (<S674> ^2 <S675>
+           ^handle of1
+           ^item-type predicate)
+   (<S675> ^2 <P90268>
+           ^handle value)
+   (<P90268> #^handle new-object-id2
+             ^item-type location
+             ^predicates <P90269>
+             ^predicates-copied true)
+   (<P90269> ^category location
+             ^dialog-object true
+             ^visibility unknown-visible)
+   (<S666> ^2 <S667>
+           ^handle to1
+           ^item-type predicate)
+   (<S667> ^2 <S664>
+           ^handle number1)
+   (<S664> ^2 <R10475>
+           ^handle greater-than1)
+   (<R10475> ^number 0)
+}
+
+
+#   You can set the value of a location to a number that is greater than zero and less than ten.
+sp {elaborate*state*sentence*you-can-set-the-value-of-a-location-to-a-number-that-is-greater-than-zero-and-less-than-ten
+   (state <s> ^name comprehension
+              ^superstate <ss>
+              ^segment <seg>)
+   (<ss> ^current-sentence-number 3)
+-->
+   (<seg> ^input-sentence <first>
+          ^current-word <first>
+          ^original-sentence <first>
+          ^expected <S702>)
+   (<first> ^spelling |*|
+            ^next <w0>
+            ^complete-sentence |You can set the value of a location to a number that is greater than zero andx less than ten.|)
+   (<w0> ^spelling |you|
+         ^next <w1>)
+   (<w1> ^spelling |can|
+         ^next <w2>)
+   (<w2> ^spelling |set|
+         ^next <w3>)
+   (<w3> ^spelling |the|
+         ^next <w4>)
+   (<w4> ^spelling |value|
+         ^next <w5>)
+   (<w5> ^spelling |of|
+         ^next <w6>)
+   (<w6> ^spelling |a|
+         ^next <w7>)
+   (<w7> ^spelling |location|
+         ^next <w8>)
+   (<w8> ^spelling |to|
+         ^next <w9>)
+   (<w9> ^spelling |a|
+         ^next <w10>)
+   (<w10> ^spelling |number|
+         ^next <w11>)
+   (<w11> ^spelling |that|
+         ^next <w12>)
+   (<w12> ^spelling |is|
+         ^next <w13>)
+   (<w13> ^spelling |greater|
+         ^next <w14>)
+   (<w14> ^spelling |than|
+         ^next <w15>)
+   (<w15> ^spelling |zero|
+         ^next <w16>)
+   (<w16> ^spelling |andx|
+         ^next <w17>)
+   (<w17> ^spelling |less|
+         ^next <w18>)
+   (<w18> ^spelling |than|
+         ^next <w19>)
+   (<w19> ^spelling |ten|
+         ^next <w20>)
+   (<w20> ^spelling |.|
+         ^next nil)
+   (<S702> ^action <N10162>
+           ^action-modifier <N10160>
+           ^agent <N10159>
+           ^arg1 <S1107>
+           ^arg2 <S1097>
+           ^arg2 <S1099>
+           ^message-type command)
+   (<N10162> ^handle set
+             ^item-type action)
+   (<N10160> ^handle can)
+   (<N10159> ^handle rosie
+             ^property <P90131>)
+   (<P90131> ^handle handle
+              ^type visual)
+   (<S1107> ^2 <S1108>
+            ^handle of1
+            ^item-type predicate)
+   (<S1108> ^2 <P90345>
+            ^handle value)
+   (<P90345> #^handle new-object-id3
+             ^item-type location
+             ^predicates <P90346>
+             ^predicates-copied true)
+   (<P90346> ^category location
+             ^dialog-object true
+             ^visibility unknown-visible)
+   (<S1097> ^2 <S1098>
+            ^handle to1
+            ^item-type predicate)
+   (<S1098> ^2 <S1001>
+            ^handle number1)
+   (<S1001> ^2 <R10707>
+            ^handle greater-than1)
+   (<R10707> ^number 0)
+   (<S1099> ^2 <S1100>
+            ^handle to1
+            ^item-type predicate)
+   (<S1100> ^2 <S1094>
+            ^handle number1)
+   (<S1094> ^2 <R10774>
+            ^handle less-than1)
+   (<R10774> ^number 10)
+}
+
+
+#   load init-tictactoe.
+sp {elaborate*state*sentence*load-init-tictactoe
+   (state <s> ^name comprehension
+              ^superstate <ss>
+              ^segment <seg>)
+   (<ss> ^current-sentence-number 4)
+-->
+   (<seg> ^input-sentence <first>
+          ^current-word <first>
+          ^original-sentence <first>
+          ^expected <S1135>)
+   (<first> ^spelling |*|
+            ^next <w0>
+            ^complete-sentence |load init-tictactoe.|)
+   (<w0> ^spelling |load|
+         ^next <w1>)
+   (<w1> ^spelling |init-tictactoe|
+         ^next <w2>)
+   (<w2> ^spelling |.|
+         ^next nil)
+   (<S1135> ^action <N10249>
+            ^arg1 <N10252>
+            ^message-type command)
+   (<N10249> ^handle load
+             ^item-type action
+             ^procedural <E18>
+             ^type action)
+   (<E18> ^op_name initiate-load)
+   (<N10252> ^handle init-tictactoe4
+             ^word-structure <N10251>)
+   (<N10251> ^referent <R10817>
+              ^spelling init-tictactoe)
+   (<R10817> ^handle init-tictactoe4
+              ^word-structure <N10251>)
+}
+
+

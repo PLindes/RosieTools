@@ -1,0 +1,827 @@
+#### Test sentences for ROSIE - 
+#    Built by the SentencesToSoar tool Thu Sep 01 12:02:37 EDT 2016
+#    from file 'kirk-8-22.exp.txt'.
+chunk off
+#   Apply initialize-rosie to set up the state.
+sp {apply*initialize-rosie*sentence-number
+   (state <s> ^name rosie
+              ^operator.name initialize-rosie)
+-->
+   (<s> ^current-sentence-number 1
+        ^max-sentence-number 10
+        ^failure-count 0
+        ^success-count 0)
+}
+
+
+#   Consider moving a block onto a center location.
+sp {elaborate*state*sentence*consider-moving-a-block-onto-a-center-location
+   (state <s> ^name comprehension
+              ^superstate <ss>
+              ^segment <seg>)
+   (<ss> ^current-sentence-number 1)
+-->
+   (<seg> ^input-sentence <first>
+          ^current-word <first>
+          ^original-sentence <first>
+          ^expected <S124>)
+   (<first> ^spelling |*|
+            ^next <w0>
+            ^complete-sentence |Consider moving a block onto a center location.|)
+   (<w0> ^spelling |consider|
+         ^next <w1>)
+   (<w1> ^spelling |moving|
+         ^next <w2>)
+   (<w2> ^spelling |a|
+         ^next <w3>)
+   (<w3> ^spelling |block|
+         ^next <w4>)
+   (<w4> ^spelling |onto|
+         ^next <w5>)
+   (<w5> ^spelling |a|
+         ^next <w6>)
+   (<w6> ^spelling |center|
+         ^next <w7>)
+   (<w7> ^spelling |location|
+         ^next <w8>)
+   (<w8> ^spelling |.|
+         ^next nil)
+   (<S124> ^action <N10032>
+           ^message-type command
+           ^subclause1 <S155>)
+   (<N10032> ^handle consider
+             ^item-type action
+             ^procedural <E19>
+             ^type action)
+   (<E19> ^op_name initiate-consider1)
+   (<S155> ^action <N10036>
+           ^arg1 <P90197>
+           ^arg2 <S280>)
+   (<N10036> ^handle move1
+             ^item-type action)
+   (<P90197> ##^handle new-object-id2
+             ^item-type block
+             ^predicates <P90198>
+             ^predicates-copied true)
+   (<P90198> ^category block
+             ^dialog-object true
+             ^visibility unknown-visible)
+   (<S280> ^2 <P90190>
+           ^handle on1
+           ^item-type predicate)
+   (<P90190> ##^handle new-object-id1
+             ^item-type location
+             ^predicates <P90191>
+             ^predicates-copied true)
+   (<P90191> ^category location
+             ^dialog-object true
+             ^property center
+             ^visibility unknown-visible)
+}
+
+
+#   Consider moving a block onto a corner location over moving the block onto an edge location.
+sp {elaborate*state*sentence*consider-moving-a-block-onto-a-corner-location-over-moving-the-block-onto-an-edge-location
+   (state <s> ^name comprehension
+              ^superstate <ss>
+              ^segment <seg>)
+   (<ss> ^current-sentence-number 2)
+-->
+   (<seg> ^input-sentence <first>
+          ^current-word <first>
+          ^original-sentence <first>
+          ^expected <S311>)
+   (<first> ^spelling |*|
+            ^next <w0>
+            ^complete-sentence |Consider moving a block onto a corner location over moving the block onto an edge location.|)
+   (<w0> ^spelling |consider|
+         ^next <w1>)
+   (<w1> ^spelling |moving|
+         ^next <w2>)
+   (<w2> ^spelling |a|
+         ^next <w3>)
+   (<w3> ^spelling |block|
+         ^next <w4>)
+   (<w4> ^spelling |onto|
+         ^next <w5>)
+   (<w5> ^spelling |a|
+         ^next <w6>)
+   (<w6> ^spelling |corner|
+         ^next <w7>)
+   (<w7> ^spelling |location|
+         ^next <w8>)
+   (<w8> ^spelling |over|
+         ^next <w9>)
+   (<w9> ^spelling |moving|
+         ^next <w10>)
+   (<w10> ^spelling |the|
+         ^next <w11>)
+   (<w11> ^spelling |block|
+         ^next <w12>)
+   (<w12> ^spelling |onto|
+         ^next <w13>)
+   (<w13> ^spelling |an|
+         ^next <w14>)
+   (<w14> ^spelling |edge|
+         ^next <w15>)
+   (<w15> ^spelling |location|
+         ^next <w16>)
+   (<w16> ^spelling |.|
+         ^next nil)
+   (<S311> ^action <N10075>
+           ^message-type command
+           ^subclause1 <S342>
+           ^subclause2 <S488>)
+   (<N10075> ^handle consider
+             ^item-type action
+             ^procedural <E19>
+             ^type action)
+   (<E19> ^op_name initiate-consider1)
+   (<S342> ^action <N10079>
+           ^arg1 <P90231>
+           ^arg2 <S467>)
+   (<N10079> ^handle move1
+             ^item-type action)
+   (<P90231> #handle new-object-id4
+             ^item-type block
+             ^predicates <P90232>
+             ^predicates-copied true)
+   (<P90232> ^category block
+             ^dialog-object true
+             ^visibility unknown-visible)
+   (<S467> ^2 <P90224>
+           ^handle on1
+           ^item-type predicate)
+   (<P90224> ##^handle new-object-id3
+             ^item-type location
+             ^predicates <P90225>
+             ^predicates-copied true)
+   (<P90225> ^category location
+             ^dialog-object true
+             ^property corner
+             ^visibility unknown-visible)
+   (<S488> ^action <N10115>
+           ^arg1 <P90231>
+           ^arg2 <S613>)
+   (<N10115> ^handle move1
+             ^item-type action)
+   (<S613> ^2 <P90253>
+           ^handle on1
+           ^item-type predicate)
+   (<P90253> ##^handle new-object-id5
+             ^item-type location
+             ^predicates <P90254>
+             ^predicates-copied true)
+   (<P90254> ^category location
+             ^dialog-object true
+             ^property edge
+             ^visibility unknown-visible)
+}
+
+
+#   If the color of a block is the color of a location then prefer moving the block onto the location.
+sp {elaborate*state*sentence*if-the-color-of-a-block-is-the-color-of-a-location-then-prefer-moving-the-block-onto-the-location
+   (state <s> ^name comprehension
+              ^superstate <ss>
+              ^segment <seg>)
+   (<ss> ^current-sentence-number 3)
+-->
+   (<seg> ^input-sentence <first>
+          ^current-word <first>
+          ^original-sentence <first>
+          ^expected <S648>)
+   (<first> ^spelling |*|
+            ^next <w0>
+            ^complete-sentence |If the color of a block is the color of a location then prefer moving the block onto the location.|)
+   (<w0> ^spelling |if|
+         ^next <w1>)
+   (<w1> ^spelling |the|
+         ^next <w2>)
+   (<w2> ^spelling |color|
+         ^next <w3>)
+   (<w3> ^spelling |of|
+         ^next <w4>)
+   (<w4> ^spelling |a|
+         ^next <w5>)
+   (<w5> ^spelling |block|
+         ^next <w6>)
+   (<w6> ^spelling |is|
+         ^next <w7>)
+   (<w7> ^spelling |the|
+         ^next <w8>)
+   (<w8> ^spelling |color|
+         ^next <w9>)
+   (<w9> ^spelling |of|
+         ^next <w10>)
+   (<w10> ^spelling |a|
+         ^next <w11>)
+   (<w11> ^spelling |location|
+         ^next <w12>)
+   (<w12> ^spelling |then|
+         ^next <w13>)
+   (<w13> ^spelling |prefer|
+         ^next <w14>)
+   (<w14> ^spelling |moving|
+         ^next <w15>)
+   (<w15> ^spelling |the|
+         ^next <w16>)
+   (<w16> ^spelling |block|
+         ^next <w17>)
+   (<w17> ^spelling |onto|
+         ^next <w18>)
+   (<w18> ^spelling |the|
+         ^next <w19>)
+   (<w19> ^spelling |location|
+         ^next <w20>)
+   (<w20> ^spelling |.|
+         ^next nil)
+   (<S648> ^if-subclause <S811>
+           ^message-type conditional
+           ^then-subclause <S1110>)
+   (<S811> ^action <N10180>
+           ^arg1 <S812>
+           ^predicate <S922>)
+   (<N10180> ^handle is1
+             ^item-type action)
+   (<S812> ^2 <S813>
+           ^handle of1
+           ^item-type predicate)
+   (<S813> ^2 <P90300>
+           ^handle color)
+   (<S922> ^2 <S923>
+           ^handle of1
+           ^item-type predicate)
+   (<S923> ^2 <P90326>
+           ^handle color)
+   (<P90326> ##^handle new-object-id7
+             ^item-type location
+             ^predicates <P90327>
+             ^predicates-copied true)
+   (<P90327> ^category location
+             ^dialog-object true
+             ^visibility unknown-visible)
+   (<S1110> ^action <N10217>
+            ^subclause1 <S973>)
+   (<N10217> ^handle prefer
+             ^item-type action
+             ^procedural <E14>
+             ^type action)
+   (<E14> ^op_name initiate-prefer1)
+   (<S973> ^action <N10222>
+           ^arg1 <P90300>
+           ^arg2 <S1085>)
+   (<N10222> ^handle move1
+             ^item-type action)
+   (<P90300> #^handle new-object-id6
+             ^item-type block
+             ^predicates <P90301>
+             ^predicates-copied true)
+   (<P90301> ^category block
+             ^dialog-object true
+             ^visibility unknown-visible)
+   (<S1085> ^2 <P90326>
+            ^handle on1
+            ^item-type predicate)
+}
+
+
+#   Prefer moving a block onto a location that was previously covered.
+sp {elaborate*state*sentence*prefer-moving-a-block-onto-a-location-that-was-previously-covered
+   (state <s> ^name comprehension
+              ^superstate <ss>
+              ^segment <seg>)
+   (<ss> ^current-sentence-number 4)
+-->
+   (<seg> ^input-sentence <first>
+          ^current-word <first>
+          ^original-sentence <first>
+          ^expected <S1137>)
+   (<first> ^spelling |*|
+            ^next <w0>
+            ^complete-sentence |Prefer moving a block onto a location that was previously covered.|)
+   (<w0> ^spelling |prefer|
+         ^next <w1>)
+   (<w1> ^spelling |moving|
+         ^next <w2>)
+   (<w2> ^spelling |a|
+         ^next <w3>)
+   (<w3> ^spelling |block|
+         ^next <w4>)
+   (<w4> ^spelling |onto|
+         ^next <w5>)
+   (<w5> ^spelling |a|
+         ^next <w6>)
+   (<w6> ^spelling |location|
+         ^next <w7>)
+   (<w7> ^spelling |that|
+         ^next <w8>)
+   (<w8> ^spelling |was|
+         ^next <w9>)
+   (<w9> ^spelling |previously|
+         ^next <w10>)
+   (<w10> ^spelling |covered|
+         ^next <w11>)
+   (<w11> ^spelling |.|
+         ^next nil)
+   (<S1137> ^action <N10258>
+            ^message-type command
+            ^subclause1 <S1168>)
+   (<N10258> ^handle prefer
+             ^item-type action
+             ^procedural <E14>
+             ^type action)
+   (<E14> ^op_name initiate-prefer1)
+   (<S1168> ^action <N10262>
+            ^arg1 <P90447>
+            ^arg2 <S1340>)
+   (<N10262> ^handle move1
+             ^item-type action)
+   (<P90447> #^handle new-object-id9
+             ^item-type block
+             ^predicates <P90448>
+             ^predicates-copied true)
+   (<P90448> ^category block
+             ^dialog-object true
+             ^visibility unknown-visible)
+   (<S1340> ^2 <P90441>
+            ^handle on1
+            ^item-type predicate)
+   (<P90441> #^handle new-object-id8
+             ^item-type location
+             ^predicates <P90442>
+             ^predicates-copied true)
+   (<P90442> ^category location
+             ^dialog-object true
+             ^property covered
+             ^property-modifier <N10296>
+             ^visibility unknown-visible)
+   (<N10296> ^handle previously
+             ^modifier true
+             ^modifying <N10299>)
+   (<N10299> ^handle covered
+             ^property <C38>)
+}
+
+
+#   Prefer not moving a block that was that was previously moved.
+sp {elaborate*state*sentence*prefer-not-moving-a-block-that-was-that-was-previously-moved
+   (state <s> ^name comprehension
+              ^superstate <ss>
+              ^segment <seg>)
+   (<ss> ^current-sentence-number 5)
+-->
+   (<seg> ^input-sentence <first>
+          ^current-word <first>
+          ^original-sentence <first>
+          ^expected <S1371>)
+   (<first> ^spelling |*|
+            ^next <w0>
+            ^complete-sentence |Prefer not moving a block that was previously moved.|)
+   (<w0> ^spelling |prefer|
+         ^next <w1>)
+   (<w1> ^spelling |not|
+         ^next <w2>)
+   (<w2> ^spelling |moving|
+         ^next <w3>)
+   (<w3> ^spelling |a|
+         ^next <w4>)
+   (<w4> ^spelling |block|
+         ^next <w5>)
+   (<w5> ^spelling |that|
+         ^next <w8>)
+   (<w8> ^spelling |was|
+         ^next <w9>)
+   (<w9> ^spelling |previously|
+         ^next <w10>)
+   (<w10> ^spelling |moved|
+         ^next <w11>)
+   (<w11> ^spelling |.|
+         ^next nil)
+   (<S1371> ^action <N10316>
+            ^message-type command
+            ^subclause1 <S1431>)
+   (<N10316> ^handle prefer
+             ^item-type action
+             ^procedural <E14>
+             ^type action)
+   (<E14> ^op_name initiate-prefer1)
+   (<S1431> ^action <N10322>
+            ^arg1 <P90470>
+            ^modifier <N10320>)
+   (<N10322> ^handle move1
+             ^item-type action)
+   (<P90470> #^handle new-object-id10
+             ^item-type block
+             ^predicates <P90471>
+             ^predicates-copied true)
+   (<P90471> ^category block
+             ^dialog-object true
+             ^property moved
+             ^property-modifier <N10347>
+             ^visibility unknown-visible)
+   (<N10347> ^handle previously
+             ^modifier true
+             ^modifying <N10350>)
+   (<N10350> ^handle moved
+             ^property <C38>)
+   (<C38> ^handle property
+           ^type visual)
+   (<N10320> ^handle negation
+             ^modifier true)
+}
+
+
+#   Prefer moving a block that was not previously moved.
+sp {elaborate*state*sentence*prefer-moving-a-block-that-was-not-previously-moved
+   (state <s> ^name comprehension
+              ^superstate <ss>
+              ^segment <seg>)
+   (<ss> ^current-sentence-number 6)
+-->
+   (<seg> ^input-sentence <first>
+          ^current-word <first>
+          ^original-sentence <first>
+          ^expected <S1577>)
+   (<first> ^spelling |*|
+            ^next <w0>
+            ^complete-sentence |Prefer moving a block that was not previously moved.|)
+   (<w0> ^spelling |prefer|
+         ^next <w1>)
+   (<w1> ^spelling |moving|
+         ^next <w2>)
+   (<w2> ^spelling |a|
+         ^next <w3>)
+   (<w3> ^spelling |block|
+         ^next <w4>)
+   (<w4> ^spelling |that|
+         ^next <w5>)
+   (<w5> ^spelling |was|
+         ^next <w6>)
+   (<w6> ^spelling |not|
+         ^next <w7>)
+   (<w7> ^spelling |previously|
+         ^next <w8>)
+   (<w8> ^spelling |moved|
+         ^next <w9>)
+   (<w9> ^spelling |.|
+         ^next nil)
+   (<S1577> ^action <N10363>
+            ^message-type command
+            ^subclause1 <S1608>)
+   (<N10363> ^handle prefer
+             ^item-type action
+             ^procedural <E14>
+             ^type action)
+   (<E14> ^op_name initiate-prefer1)
+   (<S1608> ^action <N10367>
+            ^arg1 <P90495>)
+   (<N10367> ^handle move1
+             ^item-type action)
+   (<P90495> #^handle new-object-id11
+             ^item-type block
+             ^predicates <P90496>
+             ^predicates-copied true)
+   (<P90496> ^category block
+             ^dialog-object true
+             ^property moved
+             ^property-modifier <N10391>
+             ^property-modifier <N10394>
+             ^visibility unknown-visible)
+   (<N10391> ^handle negation
+             ^modifier true
+             ^modifying <N10397>)
+   (<N10397> ^handle moved
+             ^property <C38>)
+   (<C38> ^handle property
+           ^type visual)
+   (<N10394> ^handle previously
+             ^modifier true
+             ^modifying <N10397>)
+}
+
+
+#   Prefer not moving a block that is matched-by a block that was previously moved.
+sp {elaborate*state*sentence*prefer-not-moving-a-block-that-is-matched-by-a-block-that-was-previously-moved
+   (state <s> ^name comprehension
+              ^superstate <ss>
+              ^segment <seg>)
+   (<ss> ^current-sentence-number 7)
+-->
+   (<seg> ^input-sentence <first>
+          ^current-word <first>
+          ^original-sentence <first>
+          ^expected <S1771>)
+   (<first> ^spelling |*|
+            ^next <w0>
+            ^complete-sentence |Prefer not moving a block that is matched-by a block that was previously moved.|)
+   (<w0> ^spelling |prefer|
+         ^next <w1>)
+   (<w1> ^spelling |not|
+         ^next <w2>)
+   (<w2> ^spelling |moving|
+         ^next <w3>)
+   (<w3> ^spelling |a|
+         ^next <w4>)
+   (<w4> ^spelling |block|
+         ^next <w5>)
+   (<w5> ^spelling |that|
+         ^next <w6>)
+   (<w6> ^spelling |is|
+         ^next <w7>)
+   (<w7> ^spelling |matched-by|
+         ^next <w8>)
+   (<w8> ^spelling |a|
+         ^next <w9>)
+   (<w9> ^spelling |block|
+         ^next <w10>)
+   (<w10> ^spelling |that|
+         ^next <w11>)
+   (<w11> ^spelling |was|
+         ^next <w12>)
+   (<w12> ^spelling |previously|
+         ^next <w13>)
+   (<w13> ^spelling |moved|
+         ^next <w14>)
+   (<w14> ^spelling |.|
+         ^next nil)
+   (<S1771> ^action <N10410>
+            ^message-type command
+            ^subclause1 <S1831>)
+   (<N10410> ^handle prefer
+             ^item-type action
+             ^procedural <E14>
+             ^type action)
+   (<E14> ^op_name initiate-prefer1)
+   (<S1831> ^action <N10416>
+            ^arg1 <P90538>
+            ^modifier <N10414>)
+   (<N10416> ^handle move1
+             ^item-type action)
+   (<P90538> #^handle new-object-id13
+             ^item-type block
+             ^predicates <P90539>
+             ^predicates-copied true
+             ^relation <S2032>)
+   (<P90539> ^category block
+             ^dialog-object true
+             ^visibility unknown-visible)
+   (<S2032> ^2 <P90530>
+            ^handle matched-by1)
+   (<P90530> #^handle new-object-id12
+             ^item-type block
+             ^predicates <P90531>
+             ^predicates-copied true)
+   (<P90531> ^category block
+             ^dialog-object true
+             ^property moved
+             ^property-modifier <N10462>
+             ^visibility unknown-visible)
+   (<N10462> ^handle previously
+             ^modifier true
+             ^modifying <N10465>)
+   (<N10414> ^handle negation
+             ^modifier true)
+}
+
+
+#   Consider moving a block that is not matched-by a block that was previously moved.
+sp {elaborate*state*sentence*consider-moving-a-block-that-is-not-matched-by-a-block-that-was-previously-moved
+   (state <s> ^name comprehension
+              ^superstate <ss>
+              ^segment <seg>)
+   (<ss> ^current-sentence-number 8)
+-->
+   (<seg> ^input-sentence <first>
+          ^current-word <first>
+          ^original-sentence <first>
+          ^expected <S2063>)
+   (<first> ^spelling |*|
+            ^next <w0>
+            ^complete-sentence |Consider moving a block that is not matched-by a block that was previously moved.|)
+   (<w0> ^spelling |consider|
+         ^next <w1>)
+   (<w1> ^spelling |moving|
+         ^next <w2>)
+   (<w2> ^spelling |a|
+         ^next <w3>)
+   (<w3> ^spelling |block|
+         ^next <w4>)
+   (<w4> ^spelling |that|
+         ^next <w5>)
+   (<w5> ^spelling |is|
+         ^next <w6>)
+   (<w6> ^spelling |not|
+         ^next <w7>)
+   (<w7> ^spelling |matched-by|
+         ^next <w8>)
+   (<w8> ^spelling |a|
+         ^next <w9>)
+   (<w9> ^spelling |block|
+         ^next <w10>)
+   (<w10> ^spelling |that|
+         ^next <w11>)
+   (<w11> ^spelling |was|
+         ^next <w12>)
+   (<w12> ^spelling |previously|
+         ^next <w13>)
+   (<w13> ^spelling |moved|
+         ^next <w14>)
+   (<w14> ^spelling |.|
+         ^next nil)
+   (<S2063> ^action <N10484>
+            ^message-type command
+            ^subclause1 <S2094>)
+   (<N10484> ^handle consider
+             ^item-type action
+             ^procedural <E19>
+             ^type action)
+   (<E19> ^op_name initiate-consider1)
+   (<S2094> ^action <N10488>
+            ^arg1 <P90583>)
+   (<N10488> ^handle move1
+             ^item-type action)
+   (<P90583> #^handle new-object-id15
+             ^item-type block
+             ^predicates <P90584>
+             ^predicates-copied true
+             ^relation <S2312>)
+   (<P90584> ^category block
+             ^dialog-object true
+             ^visibility unknown-visible)
+   (<S2312> ^2 <P90575>
+            ^handle matched-by1
+            ^predicates <N10512>)
+   (<P90575> #^handle new-object-id14
+             ^item-type block
+             ^predicates <P90576>
+             ^predicates-copied true)
+   (<P90576> ^category block
+             ^dialog-object true
+             ^property moved
+             ^property-modifier <N10536>
+             ^visibility unknown-visible)
+   (<N10536> ^handle previously
+             ^modifier true
+             ^modifying <N10539>)
+   (<N10512> ^handle negation
+             ^modifier true)
+}
+
+
+#   Consider moving a block that is matched-by a block that was previously moved.
+sp {elaborate*state*sentence*consider-moving-a-block-that-is-matched-by-a-block-that-was-previously-moved
+   (state <s> ^name comprehension
+              ^superstate <ss>
+              ^segment <seg>)
+   (<ss> ^current-sentence-number 9)
+-->
+   (<seg> ^input-sentence <first>
+          ^current-word <first>
+          ^original-sentence <first>
+          ^expected <S2343>)
+   (<first> ^spelling |*|
+            ^next <w0>
+            ^complete-sentence |Consider moving a block that is matched-by a block that was previously moved.|)
+   (<w0> ^spelling |consider|
+         ^next <w1>)
+   (<w1> ^spelling |moving|
+         ^next <w2>)
+   (<w2> ^spelling |a|
+         ^next <w3>)
+   (<w3> ^spelling |block|
+         ^next <w4>)
+   (<w4> ^spelling |that|
+         ^next <w5>)
+   (<w5> ^spelling |is|
+         ^next <w6>)
+   (<w6> ^spelling |matched-by|
+         ^next <w7>)
+   (<w7> ^spelling |a|
+         ^next <w8>)
+   (<w8> ^spelling |block|
+         ^next <w9>)
+   (<w9> ^spelling |that|
+         ^next <w10>)
+   (<w10> ^spelling |was|
+         ^next <w11>)
+   (<w11> ^spelling |previously|
+         ^next <w12>)
+   (<w12> ^spelling |moved|
+         ^next <w13>)
+   (<w13> ^spelling |.|
+         ^next nil)
+   (<S2343> ^action <N10558>
+            ^message-type command
+            ^subclause1 <S2374>)
+   (<N10558> ^handle consider
+             ^item-type action
+             ^procedural <E19>
+             ^type action)
+   (<E19> ^op_name initiate-consider1)
+   (<S2374> ^action <N10562>
+            ^arg1 <P90626>)
+   (<N10562> ^handle move1
+             ^item-type action)
+   (<P90626> #^handle new-object-id17
+             ^item-type block
+             ^predicates <P90627>
+             ^predicates-copied true
+             ^relation <S2575>)
+   (<P90627> ^category block
+             ^dialog-object true
+             ^visibility unknown-visible)
+   (<S2575> ^2 <P90618>
+            ^handle matched-by1)
+   (<P90618> #^handle new-object-id16
+             ^item-type block
+             ^predicates <P90619>
+             ^predicates-copied true)
+   (<P90619> ^category block
+             ^dialog-object true
+             ^property moved
+             ^property-modifier <N10607>
+             ^visibility unknown-visible)
+   (<N10607> ^handle previously
+             ^modifier true
+             ^modifying <N10610>)
+}
+
+
+#   Prefer moving a block onto a location that was previously clear.
+sp {elaborate*state*sentence*prefer-moving-a-block-onto-a-location-that-was-previously-clear
+   (state <s> ^name comprehension
+              ^superstate <ss>
+              ^segment <seg>)
+   (<ss> ^current-sentence-number 10)
+-->
+   (<seg> ^input-sentence <first>
+          ^current-word <first>
+          ^original-sentence <first>
+          ^expected <S2606>)
+   (<first> ^spelling |*|
+            ^next <w0>
+            ^complete-sentence |Prefer moving a block onto a location that was previously clear.|)
+   (<w0> ^spelling |prefer|
+         ^next <w1>)
+   (<w1> ^spelling |moving|
+         ^next <w2>)
+   (<w2> ^spelling |a|
+         ^next <w3>)
+   (<w3> ^spelling |block|
+         ^next <w4>)
+   (<w4> ^spelling |onto|
+         ^next <w5>)
+   (<w5> ^spelling |a|
+         ^next <w6>)
+   (<w6> ^spelling |location|
+         ^next <w7>)
+   (<w7> ^spelling |that|
+         ^next <w8>)
+   (<w8> ^spelling |was|
+         ^next <w9>)
+   (<w9> ^spelling |previously|
+         ^next <w10>)
+   (<w10> ^spelling |clear|
+         ^next <w11>)
+   (<w11> ^spelling |.|
+         ^next nil)
+   (<S2606> ^action <N10629>
+            ^message-type command
+            ^subclause1 <S2637>)
+   (<N10629> ^handle prefer
+             ^item-type action
+             ^procedural <E14>
+             ^type action)
+   (<E14> ^op_name initiate-prefer1)
+   (<S2637> ^action <N10633>
+            ^arg1 <P90665>
+            ^arg2 <S2813>)
+   (<N10633> ^handle move1
+             ^item-type action)
+   (<P90665> #^handle new-object-id19
+             ^item-type block
+             ^predicates <P90666>
+             ^predicates-copied true)
+   (<P90666> ^category block
+             ^dialog-object true
+             ^visibility unknown-visible)
+   (<S2813> ^2 <P90659>
+            ^handle on1
+            ^item-type predicate)
+   (<P90659> #^handle new-object-id18
+             ^item-type location
+             ^predicates <P90660>
+             ^predicates-copied true)
+   (<P90660> ^category location
+             ^dialog-object true
+             ^property clear
+             ^property-modifier <N10667>
+             ^visibility unknown-visible)
+   (<N10667> ^handle previously
+             ^modifier true
+             ^modifying <N10670>)
+   (<N10670> ^handle clear
+             ^property <C38>)
+}
+
+

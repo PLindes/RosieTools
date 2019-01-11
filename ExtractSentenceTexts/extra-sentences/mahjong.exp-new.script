@@ -1,0 +1,5 @@
+The name of the puzzle is mahjong.
+if the color of a clear free block is the color of another clear free block then you can move the blocks onto the garbage.
+if a location is not below an object then it is clear.
+if a block is not on a location then it is free.
+the goal is that all blocks are on the garbage.

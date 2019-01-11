@@ -1,0 +1,541 @@
+#### Test sentences for ROSIE - 
+#    Built by the SentencesToSoar tool Thu Sep 01 12:24:38 EDT 2016
+#    from file 'mahjong.exp.txt'.
+chunk off
+#   Apply initialize-rosie to set up the state.
+sp {apply*initialize-rosie*sentence-number
+   (state <s> ^name rosie
+              ^operator.name initialize-rosie)
+-->
+   (<s> ^current-sentence-number 1
+        ^max-sentence-number 5
+        ^failure-count 0
+        ^success-count 0)
+}
+
+
+#   The name of the puzzle is mahjong.
+sp {elaborate*state*sentence*the-name-of-the-puzzle-is-mahjong
+   (state <s> ^name comprehension
+              ^superstate <ss>
+              ^segment <seg>)
+   (<ss> ^current-sentence-number 1)
+-->
+   (<seg> ^input-sentence <first>
+          ^current-word <first>
+          ^original-sentence <first>
+          ^expected <S124>)
+   (<first> ^spelling |*|
+            ^next <w0>
+            ^complete-sentence |The name of the puzzle is mahjong.|)
+   (<w0> ^spelling |the|
+         ^next <w1>)
+   (<w1> ^spelling |name|
+         ^next <w2>)
+   (<w2> ^spelling |of|
+         ^next <w3>)
+   (<w3> ^spelling |the|
+         ^next <w4>)
+   (<w4> ^spelling |puzzle|
+         ^next <w5>)
+   (<w5> ^spelling |is|
+         ^next <w6>)
+   (<w6> ^spelling |mahjong|
+         ^next <w7>)
+   (<w7> ^spelling |.|
+         ^next nil)
+   (<S124> ^arg1 <S243>
+           ^message-type object-description
+           ^predicate <N10069>)
+   (<S243> ^2 <S244>
+           ^handle of1
+           ^item-type predicate)
+   (<S244> ^2 <N10046>
+           ^handle name1)
+   (<N10046> ^handle puzzle1
+             ^property <C62>)
+   (<C62> ^handle concept
+           ^type conceptual)
+   (<N10069> ^handle mahjong1
+             ^item-type predicate
+             ^word-structure <N10068>)
+   (<N10068> ^referent <R10192>
+              ^spelling mahjong)
+   (<R10192> ^handle mahjong1
+              ^word-structure <N10068>)
+}
+
+
+#   if the color of a clear free block is the color of another clear free block then you can move the blocks onto the garbage.
+sp {elaborate*state*sentence*if-the-color-of-a-clear-free-block-is-the-color-of-another-clear-free-block-then-you-can-move-the-blocks-onto-the-garbage
+   (state <s> ^name comprehension
+              ^superstate <ss>
+              ^segment <seg>)
+   (<ss> ^current-sentence-number 2)
+-->
+   (<seg> ^input-sentence <first>
+          ^current-word <first>
+          ^original-sentence <first>
+          ^expected <S301>)
+   (<first> ^spelling |*|
+            ^next <w0>
+            ^complete-sentence |if the color of a clear free block is the color of another clear free block then you can move the blocks onto the garbage.|)
+   (<w0> ^spelling |if|
+         ^next <w1>)
+   (<w1> ^spelling |the|
+         ^next <w2>)
+   (<w2> ^spelling |color|
+         ^next <w3>)
+   (<w3> ^spelling |of|
+         ^next <w4>)
+   (<w4> ^spelling |a|
+         ^next <w5>)
+   (<w5> ^spelling |clear|
+         ^next <w6>)
+   (<w6> ^spelling |free|
+         ^next <w7>)
+   (<w7> ^spelling |block|
+         ^next <w8>)
+   (<w8> ^spelling |is|
+         ^next <w9>)
+   (<w9> ^spelling |the|
+         ^next <w10>)
+   (<w10> ^spelling |color|
+         ^next <w11>)
+   (<w11> ^spelling |of|
+         ^next <w12>)
+   (<w12> ^spelling |another|
+         ^next <w13>)
+   (<w13> ^spelling |clear|
+         ^next <w14>)
+   (<w14> ^spelling |free|
+         ^next <w15>)
+   (<w15> ^spelling |block|
+         ^next <w16>)
+   (<w16> ^spelling |then|
+         ^next <w17>)
+   (<w17> ^spelling |you|
+         ^next <w18>)
+   (<w18> ^spelling |can|
+         ^next <w19>)
+   (<w19> ^spelling |move|
+         ^next <w20>)
+   (<w20> ^spelling |the|
+         ^next <w21>)
+   (<w21> ^spelling |blocks|
+         ^next <w22>)
+   (<w22> ^spelling |onto|
+         ^next <w23>)
+   (<w23> ^spelling |the|
+         ^next <w24>)
+   (<w24> ^spelling |garbage|
+         ^next <w25>)
+   (<w25> ^spelling |.|
+         ^next nil)
+   (<S301> ^if-subclause <S498>
+           ^message-type conditional
+           ^then-subclause <S872>)
+   (<S498> ^action <N10110>
+           ^arg1 <S499>
+           ^predicate <S643>)
+   (<N10110> ^handle is1
+             ^item-type action)
+   (<S499> ^2 <S500>
+           ^handle of1
+           ^item-type predicate)
+   (<S500> ^2 <P90204>
+           ^handle color)
+   (<S643> ^2 <S644>
+           ^handle of1
+           ^item-type predicate)
+   (<S644> ^2 <P90236>
+           ^handle color)
+   (<S872> ^action <N10157>
+           ^action-modifier <N10155>
+           ^agent <R10090>
+           ^arg1 <O8032>
+           ^arg1 <O8027>
+           ^arg1 <P90236>
+           ^arg1 <P90204>
+           ^arg1 <O8029>
+           ^arg1 <O8034>
+           ^arg1 <O8030>
+           ^arg1 <O8036>
+           ^arg1 <O8033>
+           ^arg1 <O8035>
+           ^arg1 <O8028>
+           ^arg1 <O8031>
+           ^arg2 <S855>)
+   (<N10157> ^handle move1
+             ^item-type action)
+   (<N10155> ^handle can)
+   (<R10090> ^arm <A10140>
+             ^handle rosie
+             ^item-type object
+             ^predicates <P90148>)
+   (<A10140> ^action wait
+             ^state internal)
+   (<P90148> ^handle rosie)
+   (<O8032> ^handle large-green-sphere1
+            ^item-type object
+            ^predicates <P90155>)
+   (<P90155> ^arm-status not-grabbed
+             ^category block
+             ^color green1
+             ^movable true
+             ^shape sphere1
+             ^size large1
+             ^visibility visible)
+   (<O8027> ^handle self
+            ^predicates <P90150>
+            ^type object)
+   (<P90150> ^arm-status not-grabbed
+             ^category block
+             ^type object)
+   (<P90236> ^handle new-object-id3
+             ^item-type block
+             ^predicates <P90237>
+             ^predicates-copied true
+             ^specifier distinct)
+   (<P90237> ^category block
+             ^dialog-object true
+             ^property clear
+             ^property free
+             ^visibility unknown-visible)
+   (<P90204> ^handle new-object-id2
+             ^item-type block
+             ^predicates <P90205>
+             ^predicates-copied true)
+   (<P90205> ^category block
+             ^dialog-object true
+             ^property clear
+             ^property free
+             ^visibility unknown-visible)
+   (<O8029> ^handle small-red-triangle1
+            ^item-type object
+            ^predicates <P90152>)
+   (<P90152> ^arm-status not-grabbed
+             ^category block
+             ^color red1
+             ^movable true
+             ^shape triangle1
+             ^size small1
+             ^visibility visible)
+   (<O8034> ^handle medium-purple-triangle1
+            ^item-type object
+            ^predicates <P90157>)
+   (<P90157> ^arm-status not-grabbed
+             ^category block
+             ^color purple1
+             ^movable true
+             ^shape triangle1
+             ^size medium1
+             ^visibility visible)
+   (<O8030> ^handle medium-green-block1
+            ^item-type object
+            ^predicates <P90153>)
+   (<P90153> ^arm-status not-grabbed
+             ^category block
+             ^color green1
+             ^movable true
+             ^shape rectangle1
+             ^size medium1
+             ^visibility visible)
+   (<O8036> ^handle conference-room-lights1
+            ^item-type object
+            ^predicates <P90159>)
+   (<P90159> ^arm-status not-grabbed
+             ^category block
+             ^category fixture
+             ^movable false
+             ^shape lights1
+             ^visibility visible)
+   (<O8033> ^handle small-orange-triangle1
+            ^item-type object
+            ^predicates <P90156>)
+   (<P90156> ^arm-status not-grabbed
+             ^category block
+             ^color orange1
+             ^movable true
+             ^shape triangle1
+             ^size small1
+             ^visibility visible)
+   (<O8035> ^handle small-green-box1
+            ^item-type object
+            ^predicates <P90158>)
+   (<P90158> ^arm-status not-grabbed
+             ^category block
+             ^color green1
+             ^movable true
+             ^shape box1
+             ^size small1
+             ^visibility visible)
+   (<O8028> ^handle large-orange-triangle1
+            ^item-type object
+            ^predicates <P90151>)
+   (<P90151> ^arm-status not-grabbed
+             ^category block
+             ^color orange1
+             ^indicated pointed
+             ^movable true
+             ^shape triangle1
+             ^size large1
+             ^visibility visible)
+   (<O8031> ^handle large-green-block1
+            ^item-type object
+            ^predicates <P90154>)
+   (<P90154> ^arm-status not-grabbed
+             ^category block
+             ^color green1
+             ^movable true
+             ^shape rectangle1
+             ^size large1
+             ^visibility visible)
+   (<S855> ^2 <L39>
+           ^handle on1
+           ^item-type predicate)
+   (<L39> ^handle 3
+          ^item-type object
+          ^predicates <P90162>)
+   (<P90162> ^arm-status not-grabbed
+             ^category location
+             ^door closed
+             ^name garbage
+             ^visibility visible)
+}
+
+
+#   if a location is not below an object then it is clear.
+sp {elaborate*state*sentence*if-a-location-is-not-below-an-object-then-it-is-clear
+   (state <s> ^name comprehension
+              ^superstate <ss>
+              ^segment <seg>)
+   (<ss> ^current-sentence-number 3)
+-->
+   (<seg> ^input-sentence <first>
+          ^current-word <first>
+          ^original-sentence <first>
+          ^expected <S899>)
+   (<first> ^spelling |*|
+            ^next <w0>
+            ^complete-sentence |if a location is not below an object then it is clear.|)
+   (<w0> ^spelling |if|
+         ^next <w1>)
+   (<w1> ^spelling |a|
+         ^next <w2>)
+   (<w2> ^spelling |location|
+         ^next <w3>)
+   (<w3> ^spelling |is|
+         ^next <w4>)
+   (<w4> ^spelling |not|
+         ^next <w5>)
+   (<w5> ^spelling |below|
+         ^next <w6>)
+   (<w6> ^spelling |an|
+         ^next <w7>)
+   (<w7> ^spelling |object|
+         ^next <w8>)
+   (<w8> ^spelling |then|
+         ^next <w9>)
+   (<w9> ^spelling |it|
+         ^next <w10>)
+   (<w10> ^spelling |is|
+         ^next <w11>)
+   (<w11> ^spelling |clear|
+         ^next <w12>)
+   (<w12> ^spelling |.|
+         ^next nil)
+   (<S899> ^if-subclause <S1009>
+           ^message-type conditional
+           ^then-subclause <S1171>)
+   (<S1009> ^action <N10221>
+            ^arg1 <P90318>
+            ^modifier <N10232>
+            ^predicate <S1100>)
+   (<N10221> ^handle is1
+             ^item-type action)
+   (<P90318> ^handle new-object-id4
+             ^item-type location
+             ^predicates <P90319>
+             ^predicates-copied true)
+   (<P90319> ^category location
+             ^dialog-object true
+             ^visibility unknown-visible)
+   (<N10232> ^handle negation
+             ^modifier true)
+   (<S1100> ^2 <P90338>
+            ^handle below1
+            ^item-type predicate)
+   (<P90338> ^handle new-object-id5
+             ^item-type object
+             ^predicates <P90339>
+             ^predicates-copied true)
+   (<P90339> ^category object
+             ^dialog-object true
+             ^visibility unknown-visible)
+   (<S1171> ^action <N10254>
+            ^arg1 <P90318>
+            ^predicate <N10266>)
+   (<N10254> ^handle is1
+             ^item-type action)
+   (<N10266> ^handle clear
+             ^item-type predicate
+             ^property <C38>)
+   (<C38> ^handle property
+           ^type visual)
+}
+
+
+#   if a block is not on a location then it is free.
+sp {elaborate*state*sentence*if-a-block-is-not-on-a-location-then-it-is-free
+   (state <s> ^name comprehension
+              ^superstate <ss>
+              ^segment <seg>)
+   (<ss> ^current-sentence-number 4)
+-->
+   (<seg> ^input-sentence <first>
+          ^current-word <first>
+          ^original-sentence <first>
+          ^expected <S1232>)
+   (<first> ^spelling |*|
+            ^next <w0>
+            ^complete-sentence |if a block is not on a location then it is free.|)
+   (<w0> ^spelling |if|
+         ^next <w1>)
+   (<w1> ^spelling |a|
+         ^next <w2>)
+   (<w2> ^spelling |block|
+         ^next <w3>)
+   (<w3> ^spelling |is|
+         ^next <w4>)
+   (<w4> ^spelling |not|
+         ^next <w5>)
+   (<w5> ^spelling |on|
+         ^next <w6>)
+   (<w6> ^spelling |a|
+         ^next <w7>)
+   (<w7> ^spelling |location|
+         ^next <w8>)
+   (<w8> ^spelling |then|
+         ^next <w9>)
+   (<w9> ^spelling |it|
+         ^next <w10>)
+   (<w10> ^spelling |is|
+         ^next <w11>)
+   (<w11> ^spelling |free|
+         ^next <w12>)
+   (<w12> ^spelling |.|
+         ^next nil)
+   (<S1232> ^if-subclause <S1342>
+            ^message-type conditional
+            ^then-subclause <S1504>)
+   (<S1342> ^action <N10290>
+            ^arg1 <P90360>
+            ^modifier <N10301>
+            ^predicate <S1433>)
+   (<N10290> ^handle is1
+             ^item-type action)
+   (<P90360> ^handle new-object-id6
+             ^item-type block
+             ^predicates <P90361>
+             ^predicates-copied true)
+   (<P90361> ^category block
+             ^dialog-object true
+             ^visibility unknown-visible)
+   (<N10301> ^handle negation
+             ^modifier true)
+   (<S1433> ^2 <P90379>
+            ^handle on1
+            ^item-type predicate)
+   (<P90379> ^handle new-object-id7
+             ^item-type location
+             ^predicates <P90380>
+             ^predicates-copied true)
+   (<P90380> ^category location
+             ^dialog-object true
+             ^visibility unknown-visible)
+   (<S1504> ^action <N10323>
+            ^arg1 <P90360>
+            ^predicate <N10335>)
+   (<N10323> ^handle is1
+             ^item-type action)
+   (<N10335> ^handle free
+             ^item-type predicate
+             ^property <C38>)
+   (<C38> ^handle property
+           ^type visual)
+}
+
+
+#   the goal is that all blocks are on the garbage.
+sp {elaborate*state*sentence*the-goal-is-that-all-blocks-are-on-the-garbage
+   (state <s> ^name comprehension
+              ^superstate <ss>
+              ^segment <seg>)
+   (<ss> ^current-sentence-number 5)
+-->
+   (<seg> ^input-sentence <first>
+          ^current-word <first>
+          ^original-sentence <first>
+          ^expected <S1565>)
+   (<first> ^spelling |*|
+            ^next <w0>
+            ^complete-sentence |the goal is that all blocks are on the garbage.|)
+   (<w0> ^spelling |the|
+         ^next <w1>)
+   (<w1> ^spelling |goal|
+         ^next <w2>)
+   (<w2> ^spelling |is|
+         ^next <w3>)
+   (<w3> ^spelling |that|
+         ^next <w4>)
+   (<w4> ^spelling |all|
+         ^next <w5>)
+   (<w5> ^spelling |blocks|
+         ^next <w6>)
+   (<w6> ^spelling |are|
+         ^next <w7>)
+   (<w7> ^spelling |on|
+         ^next <w8>)
+   (<w8> ^spelling |the|
+         ^next <w9>)
+   (<w9> ^spelling |garbage|
+         ^next <w10>)
+   (<w10> ^spelling |.|
+         ^next nil)
+   (<S1565> ^arg1 <N10348>
+            ^message-type object-description
+            ^subclause <S1639>)
+   (<N10348> ^handle goal
+             ^property <C62>)
+   (<C62> ^handle concept
+           ^type conceptual)
+   (<S1639> ^action <N10382>
+            ^arg1 <P90405>
+            ^predicate <S1821>)
+   (<N10382> ^handle is1
+             ^item-type action)
+   (<P90405> ^handle new-object-id8
+             ^item-type block
+             ^predicates <P90406>
+             ^predicates-copied true)
+   (<P90406> ^category block
+             ^dialog-object true
+             ^multiple true
+             ^quantified <N10370>
+             ^visibility unknown-visible)
+   (<N10370> ^handle all)
+   (<S1821> ^2 <L39>
+            ^handle on1
+            ^item-type predicate)
+   (<L39> ^handle 3
+          ^item-type object
+          ^predicates <P90162>)
+   (<P90162> ^arm-status not-grabbed
+             ^category location
+             ^door closed
+             ^name garbage
+             ^visibility visible)
+}
+
+

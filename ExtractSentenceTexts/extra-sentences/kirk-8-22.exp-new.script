@@ -1,0 +1,10 @@
+Consider moving a block onto a center location.
+Consider moving a block onto a corner location over moving the block onto an edge location.
+If the color of a block is the color of a location then prefer moving the block onto the location.
+Prefer moving a block onto a location that was previously covered.
+Prefer not moving a block that was previously moved.
+Prefer moving a block that was not previously moved.
+Prefer not moving a block that is matched-by a block that was previously moved.
+Consider moving a block that is not matched-by a block that was previously moved.
+Consider moving a block that is matched-by a block that was previously moved.
+Prefer moving a block onto a location that was previously clear.

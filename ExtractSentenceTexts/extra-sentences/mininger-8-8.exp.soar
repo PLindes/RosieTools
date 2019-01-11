@@ -1,0 +1,391 @@
+#### Test sentences for ROSIE - 
+#    Built by the SentencesToSoar tool Thu Sep 01 11:42:23 EDT 2016
+#    from file 'mininger-8-8.exp.txt'.
+chunk off
+#   Apply initialize-rosie to set up the state.
+sp {apply*initialize-rosie*sentence-number
+   (state <s> ^name rosie
+              ^operator.name initialize-rosie)
+-->
+   (<s> ^current-sentence-number 1
+        ^max-sentence-number 6
+        ^failure-count 0
+        ^success-count 0)
+}
+
+
+#   Store the soda.
+sp {elaborate*state*sentence*store-the-soda
+   (state <s> ^name comprehension
+              ^superstate <ss>
+              ^segment <seg>)
+   (<ss> ^current-sentence-number 1)
+-->
+   (<seg> ^input-sentence <first>
+          ^current-word <first>
+          ^original-sentence <first>
+          ^expected <S124>)
+   (<first> ^spelling |*|
+            ^next <w0>
+            ^complete-sentence |Store the soda.|)
+   (<w0> ^spelling |store|
+         ^next <w1>)
+   (<w1> ^spelling |the|
+         ^next <w2>)
+   (<w2> ^spelling |soda|
+         ^next <w3>)
+   (<w3> ^spelling |.|
+         ^next nil)
+   (<S124> ^action <N10032>
+           ^arg1 <P90198>
+           ^message-type command)
+   (<N10032> ^handle store1
+             ^item-type action)
+   (<P90198> ^item-type object
+             ^predicates <P90199>
+             ^predicates-copied true)
+   (<P90199> ^category object
+             ^dialog-object true
+             ^shape soda1
+             ^visibility not-visible)
+}
+
+
+#   The goal is that the soda is in the fridge.
+sp {elaborate*state*sentence*the-goal-is-that-the-soda-is-in-the-fridge
+   (state <s> ^name comprehension
+              ^superstate <ss>
+              ^segment <seg>)
+   (<ss> ^current-sentence-number 2)
+-->
+   (<seg> ^input-sentence <first>
+          ^current-word <first>
+          ^original-sentence <first>
+          ^expected <S224>)
+   (<first> ^spelling |*|
+            ^next <w0>
+            ^complete-sentence |The goal is that the soda is in the fridge.|)
+   (<w0> ^spelling |the|
+         ^next <w1>)
+   (<w1> ^spelling |goal|
+         ^next <w2>)
+   (<w2> ^spelling |is|
+         ^next <w3>)
+   (<w3> ^spelling |that|
+         ^next <w4>)
+   (<w4> ^spelling |the|
+         ^next <w5>)
+   (<w5> ^spelling |soda|
+         ^next <w6>)
+   (<w6> ^spelling |is|
+         ^next <w7>)
+   (<w7> ^spelling |in|
+         ^next <w8>)
+   (<w8> ^spelling |the|
+         ^next <w9>)
+   (<w9> ^spelling |fridge|
+         ^next <w10>)
+   (<w10> ^spelling |.|
+         ^next nil)
+   (<S224> ^arg1 <N10059>
+           ^message-type object-description
+           ^subclause <S298>)
+   (<N10059> ^handle goal)
+   (<S298> ^action <N10090>
+           ^arg1 <P90198>
+           ^predicate <S468>)
+   (<N10090> ^handle is1
+             ^item-type action)
+   (<P90198> ^item-type object
+             ^predicates <P90199>
+             ^predicates-copied true)
+   (<P90199> ^category object
+             ^dialog-object true
+             ^shape soda1
+             ^visibility not-visible)
+   (<S468>  ^2 <L45>
+           ^handle in1
+           ^item-type predicate)
+   (<L45> ^handle fridge1
+          ^item-type location
+          ^predicates <P90168>)
+   (<P90168> ^arm-status not-grabbed
+             ^category location
+             ^name fridge
+             ^spatial-shape room1
+             ^visibility visible)
+}
+
+
+#   Perform these steps.
+sp {elaborate*state*sentence*perform-these-steps
+   (state <s> ^name comprehension
+              ^superstate <ss>
+              ^segment <seg>)
+   (<ss> ^current-sentence-number 3)
+-->
+   (<seg> ^input-sentence <first>
+          ^current-word <first>
+          ^original-sentence <first>
+          ^expected <S491>)
+   (<first> ^spelling |*|
+            ^next <w0>
+            ^complete-sentence |Perform these steps.|)
+   (<w0> ^spelling |perform|
+         ^next <w1>)
+   (<w1> ^spelling |these|
+         ^next <w2>)
+   (<w2> ^spelling |steps|
+         ^next <w3>)
+   (<w3> ^spelling |.|
+         ^next nil)
+   (<S491> ^action <N10121>
+           ^arg1 <P90302>
+           ^message-type command)
+   (<N10121> ^handle perform1
+             ^item-type action)
+   (<P90302> ^item-type object
+             ^predicates <P90303>
+             ^predicates-copied true)
+   (<P90303> ^category object
+             ^dialog-object true
+             ^multiple true
+             ^shape steps1
+             ^visibility not-visible)
+}
+
+
+#   If an object is not a green drink then put it in the fridge.
+sp {elaborate*state*sentence*if-an-object-is-not-a-green-drink-then-put-it-in-the-fridge
+   (state <s> ^name comprehension
+              ^superstate <ss>
+              ^segment <seg>)
+   (<ss> ^current-sentence-number 4)
+-->
+   (<seg> ^input-sentence <first>
+          ^current-word <first>
+          ^original-sentence <first>
+          ^expected <S591>)
+   (<first> ^spelling |*|
+            ^next <w0>
+            ^complete-sentence |If an object is not a green drink then put it in the fridge.|)
+   (<w0> ^spelling |if|
+         ^next <w1>)
+   (<w1> ^spelling |an|
+         ^next <w2>)
+   (<w2> ^spelling |object|
+         ^next <w3>)
+   (<w3> ^spelling |is|
+         ^next <w4>)
+   (<w4> ^spelling |not|
+         ^next <w5>)
+   (<w5> ^spelling |a|
+         ^next <w6>)
+   (<w6> ^spelling |green|
+         ^next <w7>)
+   (<w7> ^spelling |drink|
+         ^next <w8>)
+   (<w8> ^spelling |then|
+         ^next <w9>)
+   (<w9> ^spelling |put|
+         ^next <w10>)
+   (<w10> ^spelling |it|
+         ^next <w11>)
+   (<w11> ^spelling |in|
+         ^next <w12>)
+   (<w12> ^spelling |the|
+         ^next <w13>)
+   (<w13> ^spelling |fridge|
+         ^next <w14>)
+   (<w14> ^spelling |.|
+         ^next nil)
+   (<S591> ^if-subclause <S701>
+           ^message-type conditional
+           ^then-subclause <S943>)
+   (<S701> ^action <N10158>
+           ^arg1 <P90313>
+           ^modifier <N10169>
+           ^predicate <N10177>
+           ^predicate <N10180>)
+   (<N10158> ^handle is1
+             ^item-type action)
+   (<P90313> ^item-type object
+             ^predicates <P90314>
+             ^predicates-copied true)
+   (<P90314> ^category object
+             ^dialog-object true
+             ^visibility unknown-visible)
+   (<N10169> ^handle negation
+             ^modifier true)
+   (<N10177> ^handle green1
+             ^item-type predicate
+             ^property <P1000>)
+   (<P1000> ^handle color
+             ^item-type property
+             ^type visual)
+   (<N10180> ^handle drink1
+             ^item-type object
+             ^property <P2000>)
+   (<P2000> ^handle shape
+             ^item-type property
+             ^type visual)
+   (<S943> ^action <N10187>
+           ^arg1 <P90313>
+           ^arg2 <S926>)
+   (<N10187> ^action-type primitive
+             ^handle put-down1
+             ^item-type action
+             ^procedural <P90001>)
+   (<P90001> ^arg1 <P90002>
+              ^op_name initiate-put-down1)
+   (<P90002> ^arg-status real
+              ^arg-type object
+              ^id <O1>)
+   (<S926> ^2 <L45>
+           ^handle in1
+           ^item-type predicate)
+   (<L45> ^handle fridge1
+          ^item-type location
+          ^predicates <P90168>)
+   (<P90168> ^arm-status not-grabbed
+             ^category location
+             ^name fridge
+             ^spatial-shape room1
+             ^visibility visible)
+}
+
+
+#   The goal is that the soda is in the storage location.
+sp {elaborate*state*sentence*the-goal-is-that-the-soda-is-in-the-storage-location
+   (state <s> ^name comprehension
+              ^superstate <ss>
+              ^segment <seg>)
+   (<ss> ^current-sentence-number 5)
+-->
+   (<seg> ^input-sentence <first>
+          ^current-word <first>
+          ^original-sentence <first>
+          ^expected <S970>)
+   (<first> ^spelling |*|
+            ^next <w0>
+            ^complete-sentence |The goal is that the soda is in the storage location.|)
+   (<w0> ^spelling |the|
+         ^next <w1>)
+   (<w1> ^spelling |goal|
+         ^next <w2>)
+   (<w2> ^spelling |is|
+         ^next <w3>)
+   (<w3> ^spelling |that|
+         ^next <w4>)
+   (<w4> ^spelling |the|
+         ^next <w5>)
+   (<w5> ^spelling |soda|
+         ^next <w6>)
+   (<w6> ^spelling |is|
+         ^next <w7>)
+   (<w7> ^spelling |in|
+         ^next <w8>)
+   (<w8> ^spelling |the|
+         ^next <w9>)
+   (<w9> ^spelling |storage|
+         ^next <w10>)
+   (<w10> ^spelling |location|
+         ^next <w11>)
+   (<w11> ^spelling |.|
+         ^next nil)
+   (<S970> ^arg1 <N10224>
+           ^message-type object-description
+           ^subclause <S1044>)
+   (<N10224> ^handle goal
+             ^property <C62>)
+   (<C62> ^handle concept
+           ^type conceptual)
+   (<S1044> ^action <N10256>
+            ^arg1 <P90198>
+            ^predicate <S1235>)
+   (<N10256> ^handle is1
+             ^item-type action)
+   (<P90198> ^item-type object
+             ^predicates <P90199>
+             ^predicates-copied true)
+   (<P90199> ^category object
+             ^dialog-object true
+             ^shape soda1
+             ^visibility not-visible)
+   (<S1235> ^2 <P90442>
+            ^handle in1
+            ^item-type predicate)
+   (<P90442> ^item-type location
+             ^predicates <P90443>
+             ^predicates-copied true)
+   (<P90443> ^category location
+             ^dialog-object true
+             ^property storage1
+             ^visibility not-visible)
+}
+
+
+#   Think of the storage location for a soda.
+sp {elaborate*state*sentence*think-of-the-storage-location-for-a-soda
+   (state <s> ^name comprehension
+              ^superstate <ss>
+              ^segment <seg>)
+   (<ss> ^current-sentence-number 6)
+-->
+   (<seg> ^input-sentence <first>
+          ^current-word <first>
+          ^original-sentence <first>
+          ^expected <S1258>)
+   (<first> ^spelling |*|
+            ^next <w0>
+            ^complete-sentence |Think of the storage location for a soda.|)
+   (<w0> ^spelling |think|
+         ^next <w1>)
+   (<w1> ^spelling |of|
+         ^next <w2>)
+   (<w2> ^spelling |the|
+         ^next <w3>)
+   (<w3> ^spelling |storage|
+         ^next <w4>)
+   (<w4> ^spelling |location|
+         ^next <w5>)
+   (<w5> ^spelling |for|
+         ^next <w6>)
+   (<w6> ^spelling |a|
+         ^next <w7>)
+   (<w7> ^spelling |soda|
+         ^next <w8>)
+   (<w8> ^spelling |.|
+         ^next nil)
+   (<S1258> ^action <N10291>
+            ^arg1 <S1434>
+            ^arg2 <S1428>
+            ^message-type command)
+   (<N10291> ^handle think
+             ^item-type action
+             ^procedural <E16>
+             ^type action)
+   (<E16> ^op_name initiate-think1)
+   (<S1434> ^2 <P90442>
+            ^handle of1
+            ^item-type predicate)
+   (<P90442> ^item-type location
+             ^predicates <P90443>
+             ^predicates-copied true)
+   (<P90443> ^category location
+             ^dialog-object true
+             ^property storage1
+             ^visibility not-visible)
+   (<S1428> ^2 <P90468>
+            ^handle for1
+            ^item-type predicate)
+   (<P90468> ^item-type object
+             ^predicates <P90469>
+             ^predicates-copied true)
+   (<P90469> ^category object
+             ^dialog-object true
+             ^shape soda1
+             ^visibility unknown-visible)
+}
+
+

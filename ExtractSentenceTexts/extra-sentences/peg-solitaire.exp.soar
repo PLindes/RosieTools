@@ -1,0 +1,660 @@
+#### Test sentences for ROSIE - 
+#    Built by the SentencesToSoar tool Thu Sep 01 14:27:32 EDT 2016
+#    from file 'peg-solitaire.exp.txt'.
+chunk off
+#   Apply initialize-rosie to set up the state.
+sp {apply*initialize-rosie*sentence-number
+   (state <s> ^name rosie
+              ^operator.name initialize-rosie)
+-->
+   (<s> ^current-sentence-number 1
+        ^max-sentence-number 6
+        ^failure-count 0
+        ^success-count 0)
+}
+
+
+#   The name of the puzzle is peg-solitaire.
+sp {elaborate*state*sentence*the-name-of-the-puzzle-is-peg-solitaire
+   (state <s> ^name comprehension
+              ^superstate <ss>
+              ^segment <seg>)
+   (<ss> ^current-sentence-number 1)
+-->
+   (<seg> ^input-sentence <first>
+          ^current-word <first>
+          ^original-sentence <first>
+          ^expected <S124>)
+   (<first> ^spelling |*|
+            ^next <w0>
+            ^complete-sentence |The name of the puzzle is peg-solitaire.|)
+   (<w0> ^spelling |the|
+         ^next <w1>)
+   (<w1> ^spelling |name|
+         ^next <w2>)
+   (<w2> ^spelling |of|
+         ^next <w3>)
+   (<w3> ^spelling |the|
+         ^next <w4>)
+   (<w4> ^spelling |puzzle|
+         ^next <w5>)
+   (<w5> ^spelling |is|
+         ^next <w6>)
+   (<w6> ^spelling |peg-solitaire|
+         ^next <w7>)
+   (<w7> ^spelling |.|
+         ^next nil)
+   (<S124> ^arg1 <S246>
+           ^message-type object-description
+           ^predicate <N10072>)
+   (<S246> ^2 <S247>
+           ^handle of1
+           ^item-type predicate)
+   (<S247> ^2 <N10049>
+           ^handle name1)
+   (<N10049> ^handle puzzle1
+             ^property <C62>)
+   (<C62> ^handle concept
+           ^type conceptual)
+   (<N10072> ^handle peg-solitaire2
+             ^item-type predicate
+             ^word-structure <N10071>)
+   (<N10071> ^referent <R10193>
+              ^spelling peg-solitaire)
+   (<R10193> ^handle peg-solitaire2
+              ^word-structure <N10071>)
+}
+
+
+#   if a location is not below an object then it is clear.
+sp {elaborate*state*sentence*if-a-location-is-not-below-an-object-then-it-is-clear
+   (state <s> ^name comprehension
+              ^superstate <ss>
+              ^segment <seg>)
+   (<ss> ^current-sentence-number 2)
+-->
+   (<seg> ^input-sentence <first>
+          ^current-word <first>
+          ^original-sentence <first>
+          ^expected <S304>)
+   (<first> ^spelling |*|
+            ^next <w0>
+            ^complete-sentence |if a location is not below an object then it is clear.|)
+   (<w0> ^spelling |if|
+         ^next <w1>)
+   (<w1> ^spelling |a|
+         ^next <w2>)
+   (<w2> ^spelling |location|
+         ^next <w3>)
+   (<w3> ^spelling |is|
+         ^next <w4>)
+   (<w4> ^spelling |not|
+         ^next <w5>)
+   (<w5> ^spelling |below|
+         ^next <w6>)
+   (<w6> ^spelling |an|
+         ^next <w7>)
+   (<w7> ^spelling |object|
+         ^next <w8>)
+   (<w8> ^spelling |then|
+         ^next <w9>)
+   (<w9> ^spelling |it|
+         ^next <w10>)
+   (<w10> ^spelling |is|
+         ^next <w11>)
+   (<w11> ^spelling |clear|
+         ^next <w12>)
+   (<w12> ^spelling |.|
+         ^next nil)
+   (<S304> ^if-subclause <S418>
+           ^message-type conditional
+           ^then-subclause <S580>)
+   (<S418> ^action <N10099>
+           ^arg1 <P90197>
+           ^modifier <N10110>
+           ^predicate <S509>)
+   (<N10099> ^handle is1
+             ^item-type action)
+   (<P90197> #^handle new-object-id3
+             ^item-type location
+             ^predicates <P90198>
+             ^predicates-copied true)
+   (<P90198> ^category location
+             ^dialog-object true
+             ^visibility unknown-visible)
+   (<N10110> ^handle negation
+             ^modifier true)
+   (<S509> ^2 <P90217>
+           ^handle below1
+           ^item-type predicate)
+   (<P90217> #^handle new-object-id4
+             ^item-type object
+             ^predicates <P90218>
+             ^predicates-copied true)
+   (<P90218> ^category object
+             ^dialog-object true
+             ^visibility unknown-visible)
+   (<S580> ^action <N10132>
+           ^arg1 <P90197>
+           ^predicate <N10144>)
+   (<N10132> ^handle is1
+             ^item-type action)
+   (<N10144> ^handle clear
+             ^item-type predicate
+             ^property <C38>)
+   (<C38> ^handle property
+           ^type visual)
+}
+
+
+#   if a location is below an object then it is covered.
+sp {elaborate*state*sentence*if-a-location-is-below-an-object-then-it-is-covered
+   (state <s> ^name comprehension
+              ^superstate <ss>
+              ^segment <seg>)
+   (<ss> ^current-sentence-number 3)
+-->
+   (<seg> ^input-sentence <first>
+          ^current-word <first>
+          ^original-sentence <first>
+          ^expected <S641>)
+   (<first> ^spelling |*|
+            ^next <w0>
+            ^complete-sentence |if a location is below an object then it is covered.|)
+   (<w0> ^spelling |if|
+         ^next <w1>)
+   (<w1> ^spelling |a|
+         ^next <w2>)
+   (<w2> ^spelling |location|
+         ^next <w3>)
+   (<w3> ^spelling |is|
+         ^next <w4>)
+   (<w4> ^spelling |below|
+         ^next <w5>)
+   (<w5> ^spelling |an|
+         ^next <w6>)
+   (<w6> ^spelling |object|
+         ^next <w7>)
+   (<w7> ^spelling |then|
+         ^next <w8>)
+   (<w8> ^spelling |it|
+         ^next <w9>)
+   (<w9> ^spelling |is|
+         ^next <w10>)
+   (<w10> ^spelling |covered|
+         ^next <w11>)
+   (<w11> ^spelling |.|
+         ^next nil)
+   (<S641> ^if-subclause <S755>
+           ^message-type conditional
+           ^then-subclause <S900>)
+   (<S755> ^action <N10171>
+           ^arg1 <P90243>
+           ^predicate <S829>)
+   (<N10171> ^handle is1
+             ^item-type action)
+   (<P90243> #^handle new-object-id5
+             ^item-type location
+             ^predicates <P90244>
+             ^predicates-copied true)
+   (<P90244> ^category location
+             ^dialog-object true
+             ^visibility unknown-visible)
+   (<S829> ^2 <P90262>
+           ^handle below1
+           ^item-type predicate)
+   (<P90262> #^handle new-object-id6
+             ^item-type object
+             ^predicates <P90263>
+             ^predicates-copied true)
+   (<P90263> ^category object
+             ^dialog-object true
+             ^visibility unknown-visible)
+   (<S900> ^action <N10201>
+           ^arg1 <P90243>
+           ^predicate <N10213>)
+   (<N10201> ^handle is1
+             ^item-type action)
+   (<N10213> ^handle covered
+             ^item-type predicate
+             ^property <C38>)
+   (<C38> ^handle property
+           ^type visual)
+}
+
+
+#   the goal is that the number of covered locations is one.
+sp {elaborate*state*sentence*the-goal-is-that-the-number-of-covered-locations-is-one
+   (state <s> ^name comprehension
+              ^superstate <ss>
+              ^segment <seg>)
+   (<ss> ^current-sentence-number 4)
+-->
+   (<seg> ^input-sentence <first>
+          ^current-word <first>
+          ^original-sentence <first>
+          ^expected <S961>)
+   (<first> ^spelling |*|
+            ^next <w0>
+            ^complete-sentence |the goal is that the number of covered locations is one.|)
+   (<w0> ^spelling |the|
+         ^next <w1>)
+   (<w1> ^spelling |goal|
+         ^next <w2>)
+   (<w2> ^spelling |is|
+         ^next <w3>)
+   (<w3> ^spelling |that|
+         ^next <w4>)
+   (<w4> ^spelling |the|
+         ^next <w5>)
+   (<w5> ^spelling |number|
+         ^next <w6>)
+   (<w6> ^spelling |of|
+         ^next <w7>)
+   (<w7> ^spelling |covered|
+         ^next <w8>)
+   (<w8> ^spelling |locations|
+         ^next <w9>)
+   (<w9> ^spelling |is|
+         ^next <w10>)
+   (<w10> ^spelling |one|
+         ^next <w11>)
+   (<w11> ^spelling |.|
+         ^next nil)
+   (<S961> ^arg1 <N10228>
+           ^message-type object-description
+           ^subclause <S1039>)
+   (<N10228> ^handle goal
+             ^property <C62>)
+   (<C62> ^handle concept
+           ^type conceptual)
+   (<S1039> ^action <N10274>
+            ^arg1 <S1201>
+            ^predicate <P11201>)
+   (<N10274> ^handle is1
+             ^item-type action)
+   (<S1201> ^2 <S1202>
+            ^handle of1
+            ^item-type predicate)
+   (<S1202> ^2 <P90322>
+            ^handle number1)
+   (<P90322> #^handle new-object-id7
+             ^item-type location
+             ^predicates <P90323>
+             ^predicates-copied true)
+   (<P90323> ^category location
+             ^dialog-object true
+             ^multiple true
+             ^property covered
+             ^visibility not-visible)
+   (<P11201> ^handle 1
+              ^item-type predicate
+              ^property <P11000>)
+   (<P11000> ^handle number
+              ^item-type property
+              ^type number)
+}
+
+
+#   if the location below a block is between a clear location and a covered location then you can move the block onto the garbage and a block on the covered location onto the clear location.
+sp {elaborate*state*sentence*if-the-location-below-a-block-is-between-a-clear-location-and-a-covered-location-then-you-can-move-the-block-onto-the-garbage-and-a-block-on-the-covered-location-onto-the-clear-location
+   (state <s> ^name comprehension
+              ^superstate <ss>
+              ^segment <seg>)
+   (<ss> ^current-sentence-number 5)
+-->
+   (<seg> ^input-sentence <first>
+          ^current-word <first>
+          ^original-sentence <first>
+          ^expected <S2095>)
+   (<first> ^spelling |*|
+            ^next <w0>
+            ^complete-sentence |if the location below a block is between a clear location and a covered location then you can move the block onto the garbage and a block on the covered location onto the clear location.|)
+   (<w0> ^spelling |if|
+         ^next <w1>)
+   (<w1> ^spelling |the|
+         ^next <w2>)
+   (<w2> ^spelling |location|
+         ^next <w3>)
+   (<w3> ^spelling |below|
+         ^next <w4>)
+   (<w4> ^spelling |a|
+         ^next <w5>)
+   (<w5> ^spelling |block|
+         ^next <w6>)
+   (<w6> ^spelling |is|
+         ^next <w7>)
+   (<w7> ^spelling |between|
+         ^next <w8>)
+   (<w8> ^spelling |a|
+         ^next <w9>)
+   (<w9> ^spelling |clear|
+         ^next <w10>)
+   (<w10> ^spelling |location|
+         ^next <w11>)
+   (<w11> ^spelling |and|
+         ^next <w12>)
+   (<w12> ^spelling |a|
+         ^next <w13>)
+   (<w13> ^spelling |covered|
+         ^next <w14>)
+   (<w14> ^spelling |location|
+         ^next <w15>)
+   (<w15> ^spelling |then|
+         ^next <w16>)
+   (<w16> ^spelling |you|
+         ^next <w17>)
+   (<w17> ^spelling |can|
+         ^next <w18>)
+   (<w18> ^spelling |move|
+         ^next <w19>)
+   (<w19> ^spelling |the|
+         ^next <w20>)
+   (<w20> ^spelling |block|
+         ^next <w21>)
+   (<w21> ^spelling |onto|
+         ^next <w22>)
+   (<w22> ^spelling |the|
+         ^next <w23>)
+   (<w23> ^spelling |garbage|
+         ^next <w24>)
+   (<w24> ^spelling |and|
+         ^next <w25>)
+   (<w25> ^spelling |a|
+         ^next <w26>)
+   (<w26> ^spelling |block|
+         ^next <w27>)
+   (<w27> ^spelling |on|
+         ^next <w28>)
+   (<w28> ^spelling |the|
+         ^next <w29>)
+   (<w29> ^spelling |covered|
+         ^next <w30>)
+   (<w30> ^spelling |location|
+         ^next <w31>)
+   (<w31> ^spelling |onto|
+         ^next <w32>)
+   (<w32> ^spelling |the|
+         ^next <w33>)
+   (<w33> ^spelling |clear|
+         ^next <w34>)
+   (<w34> ^spelling |location|
+         ^next <w35>)
+   (<w35> ^spelling |.|
+         ^next nil)
+   (<S2095> ^if-subclause <S2274>
+            ^message-type conditional
+            ^then-subclause <S2898>)
+   (<S2274> ^action <N10523>
+            ^arg1 <P90689>
+            ^predicate <S2435>
+            ^predicate <S2434>)
+   (<N10523> ^handle is1
+             ^item-type action)
+   (<P90689> #^handle new-object-id14
+             ^item-type location
+             ^predicates <P90690>
+             ^predicates-copied true
+             ^relation <S2249>)
+   (<P90690> ^category location
+             ^dialog-object true
+             ^visibility not-visible)
+   (<S2249> ^2 <P90656>
+            ^handle below1)
+   (<S2435> ^2 <P90709>
+             <P90721>
+            ^handle between
+            ^item-type predicate)
+   (<P90709> #^handle new-object-id15
+             ^item-type location
+             ^predicates <P90710>
+             ^predicates-copied true)
+   (<P90710> ^category location
+             ^dialog-object true
+             ^property clear
+             ^visibility unknown-visible)
+   (<P90721> #^handle new-object-id16
+             ^item-type location
+             ^predicates <P90722>
+             ^predicates-copied true)
+   (<P90722> ^category location
+             ^dialog-object true
+             ^property covered
+             ^visibility unknown-visible)
+   (<S2434> ^2 <N10546>
+             <P90721>
+            ^handle between
+            ^item-type predicate)
+   (<N10546> ^handle location
+             ^property <P7000>)
+   (<P7000> ^handle category
+             ^item-type property
+             ^type visual)
+   (<S2898> ^action <N10576>
+            ^action-modifier <N10574>
+            ^agent <R10090>
+            ^arg1 <P90656>
+            ^arg1 <P90867>
+            ^arg2 <S2642>
+            ^arg3 <S2881>)
+   (<N10576> ^handle move1
+             ^item-type action)
+   (<N10574> ^handle can)
+   (<R10090> ^arm <A10140>
+             ^handle rosie
+             ^item-type object
+             ^predicates <P90148>)
+   (<A10140> ^action wait
+             ^state internal)
+   (<P90148> ^handle rosie)
+   (<P90656> #^handle new-object-id13
+             ^item-type block
+             ^predicates <P90657>
+             ^predicates-copied true)
+   (<P90657> ^category block
+             ^dialog-object true
+             ^visibility unknown-visible)
+   (<P90867> #^handle new-object-id17
+             ^item-type block
+             ^predicates <P90868>
+             ^predicates-copied true
+             ^relation <S2798>)
+   (<P90868> ^category block
+             ^dialog-object true
+             ^visibility unknown-visible)
+   (<S2798> ^2 <P90721>
+            ^handle on1)
+   (<S2642> ^2 <L39>
+            ^handle on1
+            ^item-type predicate)
+   (<L39> ^handle 3
+          ^item-type object
+          ^predicates <P90162>)
+   (<P90162> ^arm-status not-grabbed
+             ^category location
+             ^door closed
+             ^name garbage
+             ^visibility visible)
+   (<S2881> ^2 <P90709>
+            ^handle on1
+            ^item-type predicate)
+}
+
+
+#   if the location below a block is between a clear location and a covered location then you can move the block onto the garbage plus you can move a block on the covered location onto the clear location.
+sp {elaborate*state*sentence*if-the-location-below-a-block-is-between-a-clear-location-and-a-covered-location-then-you-can-move-the-block-onto-the-garbage-plus-you-can-move-a-block-on-the-covered-location-onto-the-clear-location
+   (state <s> ^name comprehension
+              ^superstate <ss>
+              ^segment <seg>)
+   (<ss> ^current-sentence-number 6)
+-->
+   (<seg> ^input-sentence <first>
+          ^current-word <first>
+          ^original-sentence <first>
+          ^expected <S2925>)
+   (<first> ^spelling |*|
+            ^next <w0>
+            ^complete-sentence |if the location below a block is between a clear location and a covered location then you can move the block onto the garbage plus you can move a block on the covered location onto the clear location.|)
+   (<w0> ^spelling |if|
+         ^next <w1>)
+   (<w1> ^spelling |the|
+         ^next <w2>)
+   (<w2> ^spelling |location|
+         ^next <w3>)
+   (<w3> ^spelling |below|
+         ^next <w4>)
+   (<w4> ^spelling |a|
+         ^next <w5>)
+   (<w5> ^spelling |block|
+         ^next <w6>)
+   (<w6> ^spelling |is|
+         ^next <w7>)
+   (<w7> ^spelling |between|
+         ^next <w8>)
+   (<w8> ^spelling |a|
+         ^next <w9>)
+   (<w9> ^spelling |clear|
+         ^next <w10>)
+   (<w10> ^spelling |location|
+         ^next <w11>)
+   (<w11> ^spelling |and|
+         ^next <w12>)
+   (<w12> ^spelling |a|
+         ^next <w13>)
+   (<w13> ^spelling |covered|
+         ^next <w14>)
+   (<w14> ^spelling |location|
+         ^next <w15>)
+   (<w15> ^spelling |then|
+         ^next <w16>)
+   (<w16> ^spelling |you|
+         ^next <w17>)
+   (<w17> ^spelling |can|
+         ^next <w18>)
+   (<w18> ^spelling |move|
+         ^next <w19>)
+   (<w19> ^spelling |the|
+         ^next <w20>)
+   (<w20> ^spelling |block|
+         ^next <w21>)
+   (<w21> ^spelling |onto|
+         ^next <w22>)
+   (<w22> ^spelling |the|
+         ^next <w23>)
+   (<w23> ^spelling |garbage|
+         ^next <w24>)
+   (<w24> ^spelling |plus|
+         ^next <w25>)
+   (<w25> ^spelling |you|
+         ^next <w26>)
+   (<w26> ^spelling |can|
+         ^next <w27>)
+   (<w27> ^spelling |move|
+         ^next <w28>)
+   (<w28> ^spelling |a|
+         ^next <w29>)
+   (<w29> ^spelling |block|
+         ^next <w30>)
+   (<w30> ^spelling |on|
+         ^next <w31>)
+   (<w31> ^spelling |the|
+         ^next <w32>)
+   (<w32> ^spelling |covered|
+         ^next <w33>)
+   (<w33> ^spelling |location|
+         ^next <w34>)
+   (<w34> ^spelling |onto|
+         ^next <w35>)
+   (<w35> ^spelling |the|
+         ^next <w36>)
+   (<w36> ^spelling |clear|
+         ^next <w37>)
+   (<w37> ^spelling |location|
+         ^next <w38>)
+   (<w38> ^spelling |.|
+         ^next nil)
+   (<S2925> ^if-subclause <S3096>
+            ^message-type conditional
+            ^then-subclause <S3497>)
+   (<S3096> ^action <N10709>
+            ^arg1 <P90970>
+            ^predicate <S3265>
+            ^predicate <S3264>)
+   (<N10709> ^handle is1
+             ^item-type action)
+   (<P90970> #^handle new-object-id19
+             ^item-type location
+             ^predicates <P90971>
+             ^predicates-copied true
+             ^relation <S3071>)
+   (<P90971> ^category location
+             ^dialog-object true
+             ^visibility not-visible)
+   (<S3071> ^2 <P90932>
+            ^handle below1)
+   (<S3265> ^2 <P90990>
+             <P91002>
+            ^handle between
+            ^item-type predicate)
+   (<P90990> #^handle new-object-id20
+             ^item-type location
+             ^predicates <P90991>
+             ^predicates-copied true)
+   (<P90991> ^category location
+             ^dialog-object true
+             ^property clear
+             ^visibility unknown-visible)
+   (<P91002> #^handle new-object-id21
+             ^item-type location
+             ^predicates <P91003>
+             ^predicates-copied true)
+   (<P91003> ^category location
+             ^dialog-object true
+             ^property covered
+             ^visibility unknown-visible)
+   (<S3264> ^2 <N10732>
+             <P91002>
+            ^handle between
+            ^item-type predicate)
+   (<N10732> ^handle location
+             ^property <P7000>)
+   (<P7000> ^handle category
+             ^item-type property
+             ^type visual)
+   (<S3497> ^subclause <S3348>)
+   (<S3348> ^action <N10762>
+            ^action-modifier <N10760>
+            ^agent <R10090>
+            ^arg1 <P90932>
+            ^arg2 <S3480>)
+   (<N10762> ^handle move1
+             ^item-type action)
+   (<N10760> ^handle can)
+   (<R10090> ^arm <A10140>
+             ^handle rosie
+             ^item-type object
+             ^predicates <P90148>)
+   (<A10140> ^action wait
+             ^state internal)
+   (<P90148> ^handle rosie)
+   (<P90932> #^handle new-object-id18
+             ^item-type block
+             ^predicates <P90933>
+             ^predicates-copied true)
+   (<P90933> ^category block
+             ^dialog-object true
+             ^visibility unknown-visible)
+   (<S3480> ^2 <L39>
+            ^handle on1
+            ^item-type predicate)
+   (<L39> ^handle 3
+          ^item-type object
+          ^predicates <P90162>)
+   (<P90162> ^arm-status not-grabbed
+             ^category location
+             ^door closed
+             ^name garbage
+             ^visibility visible)
+}
+
+

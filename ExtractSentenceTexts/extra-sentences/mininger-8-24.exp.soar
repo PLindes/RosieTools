@@ -1,0 +1,1248 @@
+#### Test sentences for ROSIE - 
+#    Built by the SentencesToSoar tool Thu Sep 01 14:44:34 EDT 2016
+#    from file 'mininger-8-24.exp.txt'.
+chunk off
+#   Apply initialize-rosie to set up the state.
+sp {apply*initialize-rosie*sentence-number
+   (state <s> ^name rosie
+              ^operator.name initialize-rosie)
+-->
+   (<s> ^current-sentence-number 1
+        ^max-sentence-number 19
+        ^failure-count 0
+        ^success-count 0)
+}
+
+
+#   Give Bob a tour.
+sp {elaborate*state*sentence*give-bob-a-tour
+   (state <s> ^name comprehension
+              ^superstate <ss>
+              ^segment <seg>)
+   (<ss> ^current-sentence-number 1)
+-->
+   (<seg> ^input-sentence <first>
+          ^current-word <first>
+          ^original-sentence <first>
+          ^expected <S124>)
+   (<first> ^spelling |*|
+            ^next <w0>
+            ^complete-sentence |Give Bob a tour.|)
+   (<w0> ^spelling |give|
+         ^next <w1>)
+   (<w1> ^spelling |bob|
+         ^next <w2>)
+   (<w2> ^spelling |a|
+         ^next <w3>)
+   (<w3> ^spelling |tour|
+         ^next <w4>)
+   (<w4> ^spelling |.|
+         ^next nil)
+   (<S124> ^action <N10032>
+           ^arg1 <N10041>
+           ^arg2 <N10049>
+           ^message-type command)
+   (<N10032> ^action-type primitive
+             ^handle give1
+             ^item-type action
+             ^procedural <P90041>)
+   (<P90041> ^arg1 <P90042>
+              ^arg2 <P90043>
+              ^op_name op_give1)
+   (<P90042> ^arg-status visible
+              ^arg-type object
+              ^id <O15>)
+   (<P90043> ^arg-status visible
+              ^arg-type object
+              ^id <O16>)
+   (<N10041> ^handle bob1
+             ^item-type predicate
+             ^property <P4000>)
+   (<P4000> ^handle name
+             ^item-type property
+             ^type visual)
+   (<N10049> ^handle tour1
+             ^property <C62>)
+   (<C62> ^handle concept
+           ^type conceptual)
+}
+
+
+#   Guide Bob to the lab.
+sp {elaborate*state*sentence*guide-bob-to-the-lab
+   (state <s> ^name comprehension
+              ^superstate <ss>
+              ^segment <seg>)
+   (<ss> ^current-sentence-number 2)
+-->
+   (<seg> ^input-sentence <first>
+          ^current-word <first>
+          ^original-sentence <first>
+          ^expected <S233>)
+   (<first> ^spelling |*|
+            ^next <w0>
+            ^complete-sentence |Guide Bob to the lab.|)
+   (<w0> ^spelling |guide|
+         ^next <w1>)
+   (<w1> ^spelling |bob|
+         ^next <w2>)
+   (<w2> ^spelling |to|
+         ^next <w3>)
+   (<w3> ^spelling |the|
+         ^next <w4>)
+   (<w4> ^spelling |lab|
+         ^next <w5>)
+   (<w5> ^spelling |.|
+         ^next nil)
+   (<S233> ^action <N10058>
+           ^arg1 <N10067>
+           ^arg2 <S342>
+           ^message-type command)
+   (<N10058> ^handle guide1
+             ^item-type action)
+   (<N10067> ^handle bob1
+             ^item-type predicate
+             ^property <P4000>)
+   (<P4000> ^handle name
+             ^item-type property
+             ^type visual)
+   (<S342> ^2 <R10249>
+           ^handle to1
+           ^item-type predicate)
+   (<R10249> ^handle lab1
+             ^item-type predicate
+             ^predicates <P90219>
+             ^predicates-copied true
+             ^property <P4000>
+             ^visibility not-visible)
+   (<P90219> ^category object
+             ^dialog-object true)
+}
+
+
+#   Say "This is the robotics lab".
+sp {elaborate*state*sentence*say-this-is-the-robotics-lab
+   (state <s> ^name comprehension
+              ^superstate <ss>
+              ^segment <seg>)
+   (<ss> ^current-sentence-number 3)
+-->
+   (<seg> ^input-sentence <first>
+          ^current-word <first>
+          ^original-sentence <first>
+          ^expected <S369>)
+   (<first> ^spelling |*|
+            ^next <w0>
+            ^complete-sentence |Say This is the robotics lab.|)
+   (<w0> ^spelling |say|
+         ^next <w1>)
+   (<w1> ^spelling |this is the robotics lab|
+         ^next <w6>)
+   (<w6> ^spelling |.|
+         ^next nil)
+   (<S369> ^action <N10089>
+           ^arg1 <N10093>
+           ^message-type command)
+   (<N10089> ^handle say
+             ^item-type action
+             ^procedural <E7>
+             ^type action)
+   (<E7> ^op_name initiate-say1)
+   (<N10093> ^word-structure <N10092>)
+   (<N10092> ^referent <R10289>)
+}
+
+
+#   You are done.
+sp {elaborate*state*sentence*you-are-done
+   (state <s> ^name comprehension
+              ^superstate <ss>
+              ^segment <seg>)
+   (<ss> ^current-sentence-number 4)
+-->
+   (<seg> ^input-sentence <first>
+          ^current-word <first>
+          ^original-sentence <first>
+          ^expected <S444>)
+   (<first> ^spelling |*|
+            ^next <w0>
+            ^complete-sentence |You are done.|)
+   (<w0> ^spelling |you|
+         ^next <w1>)
+   (<w1> ^spelling |are|
+         ^next <w2>)
+   (<w2> ^spelling |done|
+         ^next <w3>)
+   (<w3> ^spelling |.|
+         ^next nil)
+   (<S444> ^arg1 <R10090>
+           ^message-type object-description
+           ^predicate <N10120>)
+   (<R10090> ^arm <A10140>
+             ^handle rosie
+             ^item-type object
+             ^predicates <P90148>)
+   (<A10140> ^action wait
+             ^state internal)
+   (<P90148> ^handle rosie)
+   (<N10120> ^handle task-completed
+             ^item-type predicate
+             ^property <P15000>)
+   (<P15000> ^handle property
+              ^item-type property
+              ^type visual)
+}
+
+
+#   Start leading Bob.
+sp {elaborate*state*sentence*start-leading-bob
+   (state <s> ^name comprehension
+              ^superstate <ss>
+              ^segment <seg>)
+   (<ss> ^current-sentence-number 5)
+-->
+   (<seg> ^input-sentence <first>
+          ^current-word <first>
+          ^original-sentence <first>
+          ^expected <S553>)
+   (<first> ^spelling |*|
+            ^next <w0>
+            ^complete-sentence |Start leading Bob.|)
+   (<w0> ^spelling |start|
+         ^next <w1>)
+   (<w1> ^spelling |leading|
+         ^next <w2>)
+   (<w2> ^spelling |bob|
+         ^next <w3>)
+   (<w3> ^spelling |.|
+         ^next nil)
+   (<S553> ^action <N10128>
+           ^message-type command
+           ^vping-clause <S584>)
+   (<N10128> ^action-type primitive
+             ^handle start1
+             ^item-type action
+             ^procedural <P90098>)
+   (<P90098> ^op_name initiate-start1)
+   (<S584> ^action <N10129>
+           ^arg1 <N10137>)
+   (<N10129> ^item-type action
+             ^op_name lead)
+   (<N10137> ^handle bob1
+             ^item-type predicate
+             ^property <P4000>)
+   (<P4000> ^handle name
+             ^item-type property
+             ^type visual)
+}
+
+
+#   The goal is that there are greater than four sodas in the fridge.
+sp {elaborate*state*sentence*the-goal-is-that-there-are-greater-than-four-sodas-in-the-fridge
+   (state <s> ^name comprehension
+              ^superstate <ss>
+              ^segment <seg>)
+   (<ss> ^current-sentence-number 6)
+-->
+   (<seg> ^input-sentence <first>
+          ^current-word <first>
+          ^original-sentence <first>
+          ^expected <S661>)
+   (<first> ^spelling |*|
+            ^next <w0>
+            ^complete-sentence |The goal is that there are greater than four sodas in the fridge.|)
+   (<w0> ^spelling |the|
+         ^next <w1>)
+   (<w1> ^spelling |goal|
+         ^next <w2>)
+   (<w2> ^spelling |is|
+         ^next <w3>)
+   (<w3> ^spelling |that|
+         ^next <w4>)
+   (<w4> ^spelling |there|
+         ^next <w5>)
+   (<w5> ^spelling |are|
+         ^next <w6>)
+   (<w6> ^spelling |greater|
+         ^next <w7>)
+   (<w7> ^spelling |than|
+         ^next <w8>)
+   (<w8> ^spelling |four|
+         ^next <w9>)
+   (<w9> ^spelling |sodas|
+         ^next <w10>)
+   (<w10> ^spelling |in|
+         ^next <w11>)
+   (<w11> ^spelling |the|
+         ^next <w12>)
+   (<w12> ^spelling |fridge|
+         ^next <w13>)
+   (<w13> ^spelling |.|
+         ^next nil)
+   (<S661> ^arg1 <N10151>
+           ^message-type object-description
+           ^subclause <S735>)
+   (<N10151> ^handle goal
+             ^property <C62>)
+   (<C62> ^handle concept
+           ^type conceptual)
+   (<S735> ^predicate <S941>)
+   (<S941> ^2 <P90295>
+           ^handle greater-than1
+           ^item-type predicate)
+   (<P90295> #^handle new-object-id2
+             ^item-type object
+             ^predicates <P90296>
+             ^predicates-copied true
+             ^relation <S934>)
+   (<P90296> ^category object
+             ^dialog-object true
+             ^number 4
+             ^shape soda1
+             ^visibility unknown-visible)
+   (<S934> ^2 <L45>
+           ^handle in1)
+   (<L45> ^handle fridge1
+          ^item-type location
+          ^predicates <P90168>)
+   (<P90168> ^arm-status not-grabbed
+             ^category location
+             ^name fridge
+             ^spatial-shape room1
+             ^visibility visible)
+}
+
+
+#   Store each object on the table.
+sp {elaborate*state*sentence*store-each-object-on-the-table
+   (state <s> ^name comprehension
+              ^superstate <ss>
+              ^segment <seg>)
+   (<ss> ^current-sentence-number 7)
+-->
+   (<seg> ^input-sentence <first>
+          ^current-word <first>
+          ^original-sentence <first>
+          ^expected <S964>)
+   (<first> ^spelling |*|
+            ^next <w0>
+            ^complete-sentence |Store each object on the table.|)
+   (<w0> ^spelling |store|
+         ^next <w1>)
+   (<w1> ^spelling |each|
+         ^next <w2>)
+   (<w2> ^spelling |object|
+         ^next <w3>)
+   (<w3> ^spelling |on|
+         ^next <w4>)
+   (<w4> ^spelling |the|
+         ^next <w5>)
+   (<w5> ^spelling |table|
+         ^next <w6>)
+   (<w6> ^spelling |.|
+         ^next nil)
+   (<S964> ^action <N10217>
+           ^arg1 <P90353>
+           ^arg1 <P90351>
+           ^arg2 <S1128>
+           ^message-type command)
+   (<N10217> ^handle store1
+             ^item-type action)
+   (<P90353> #^handle new-object-id4
+             ^item-type object
+             ^predicates <P90354>
+             ^predicates-copied true)
+   (<P90354> ^category object
+             ^dialog-object true
+             ^handle each
+             ^number singular
+             ^quantified <N10224>
+             ^visibility unknown-visible)
+   (<N10224> ^handle each
+             ^number singular
+             ^referent <R10081>
+             ^specifier definite
+             ^spelling each
+             ^structure-type QUANT
+             ^super-converts-to DP)
+   (<R10081> ^handle each
+              ^number singular
+              ^referent <R10081>
+              ^specifier definite
+              ^spelling each
+              ^structure-type QUANT
+              ^super-converts-to DP)
+   (<P90351> #^handle new-object-id3
+             ^item-type each
+             ^predicates <P90352>
+             ^predicates-copied true)
+   (<P90352> ^category each
+             ^dialog-object true
+             ^handle each
+             ^handle object
+             ^number singular
+             ^quantified <N10224>
+             ^visibility unknown-visible)
+   (<S1128> ^2 <L41>
+            ^handle on1
+            ^item-type predicate)
+   (<L41> ^handle 6
+          ^item-type object
+          ^predicates <P90164>)
+   (<P90164> ^arm-status not-grabbed
+             ^category location
+             ^name table
+             ^visibility visible)
+}
+
+
+#   Serve Bob some water.
+sp {elaborate*state*sentence*serve-bob-some-water
+   (state <s> ^name comprehension
+              ^superstate <ss>
+              ^segment <seg>)
+   (<ss> ^current-sentence-number 8)
+-->
+   (<seg> ^input-sentence <first>
+          ^current-word <first>
+          ^original-sentence <first>
+          ^expected <S1159>)
+   (<first> ^spelling |*|
+            ^next <w0>
+            ^complete-sentence |Serve Bob some water.|)
+   (<w0> ^spelling |serve|
+         ^next <w1>)
+   (<w1> ^spelling |bob|
+         ^next <w2>)
+   (<w2> ^spelling |some|
+         ^next <w3>)
+   (<w3> ^spelling |water|
+         ^next <w4>)
+   (<w4> ^spelling |.|
+         ^next nil)
+   (<S1159> ^action <N10259>
+            ^arg1 <N10268>
+            ^arg2 <P90374>
+            ^message-type command)
+   (<N10259> ^handle serve1
+             ^item-type action)
+   (<N10268> ^handle bob1
+             ^item-type predicate
+             ^property <P4000>)
+   (<P4000> ^handle name
+             ^item-type property
+             ^type visual)
+   (<P90374> #^handle new-object-id7
+             ^item-type object
+             ^predicates <P90375>
+             ^predicates-copied true)
+   (<P90375> ^category object
+             ^dialog-object true
+             ^name water1
+             ^quantified <N10270>
+             ^visibility unknown-visible)
+   (<N10270> ^handle some)
+}
+
+
+#   Fill the cup with water.
+sp {elaborate*state*sentence*fill-the-cup-with-water
+   (state <s> ^name comprehension
+              ^superstate <ss>
+              ^segment <seg>)
+   (<ss> ^current-sentence-number 9)
+-->
+   (<seg> ^input-sentence <first>
+          ^current-word <first>
+          ^original-sentence <first>
+          ^expected <S1332>)
+   (<first> ^spelling |*|
+            ^next <w0>
+            ^complete-sentence |Fill the cup with water.|)
+   (<w0> ^spelling |fill|
+         ^next <w1>)
+   (<w1> ^spelling |the|
+         ^next <w2>)
+   (<w2> ^spelling |cup|
+         ^next <w3>)
+   (<w3> ^spelling |with|
+         ^next <w4>)
+   (<w4> ^spelling |water|
+         ^next <w5>)
+   (<w5> ^spelling |.|
+         ^next nil)
+   (<S1332> ^action <N10305>
+            ^arg1 <R11039>
+            ^arg2 <S1466>
+            ^message-type command
+            ^message-type new-verb)
+   (<N10305> #^handle fill8
+             ^item-type action
+             ^word-structure <N10304>)
+   (<N10304> ^new-action true
+              ^referent <R10948>
+              ^spelling fill
+              ^super-type <T996>)
+   (<R10948> ^handle fill8
+              ^word-structure <N10304>)
+   (<R11039> ^handle cup1
+             ^item-type predicate
+             ^predicates <P90453>
+             ^predicates-copied true
+             ^property <P4000>
+             ^visibility not-visible)
+   (<P90453> ^category object
+             ^dialog-object true)
+   (<P4000> ^handle name
+             ^item-type property
+             ^type visual)
+   (<S1466> ^2 <P90374>
+            ^handle with1
+            ^item-type predicate)
+   (<P90374> #^handle new-object-id7
+             ^item-type object
+             ^predicates <P90375>
+             ^predicates-copied true)
+   (<P90375> ^category object
+             ^dialog-object true
+             ^name water1
+             ^quantified <N10270>
+             ^visibility unknown-visible)
+   (<N10270> ^handle some)
+}
+
+
+#   The goal is that Bob is holding a full cup of water.
+sp {elaborate*state*sentence*the-goal-is-that-bob-is-holding-a-full-cup-of-water
+   (state <s> ^name comprehension
+              ^superstate <ss>
+              ^segment <seg>)
+   (<ss> ^current-sentence-number 10)
+-->
+   (<seg> ^input-sentence <first>
+          ^current-word <first>
+          ^original-sentence <first>
+          ^expected <S1497>)
+   (<first> ^spelling |*|
+            ^next <w0>
+            ^complete-sentence |The goal is that Bob is holding a full cup of water.|)
+   (<w0> ^spelling |the|
+         ^next <w1>)
+   (<w1> ^spelling |goal|
+         ^next <w2>)
+   (<w2> ^spelling |is|
+         ^next <w3>)
+   (<w3> ^spelling |that|
+         ^next <w4>)
+   (<w4> ^spelling |bob|
+         ^next <w5>)
+   (<w5> ^spelling |is|
+         ^next <w6>)
+   (<w6> ^spelling |holding|
+         ^next <w7>)
+   (<w7> ^spelling |a|
+         ^next <w8>)
+   (<w8> ^spelling |full|
+         ^next <w9>)
+   (<w9> ^spelling |cup|
+         ^next <w10>)
+   (<w10> ^spelling |of|
+         ^next <w11>)
+   (<w11> ^spelling |water|
+         ^next <w12>)
+   (<w12> ^spelling |.|
+         ^next nil)
+   (<S1497> ^arg1 <N10349>
+            ^message-type object-description
+            ^subclause <S1571>)
+   (<N10349> ^handle goal
+             ^property <C62>)
+   (<C62> ^handle concept
+           ^type conceptual)
+   (<S1571> ^action <N10374>
+            ^arg1 <N10371>
+            ^predicate <S1828>)
+   (<N10374> ^handle is1
+             ^item-type action)
+   (<N10371> ^handle bob1
+             ^item-type predicate
+             ^property <P4000>)
+   (<P4000> ^handle name
+             ^item-type property
+             ^type visual)
+   (<S1828> ^2 <P90529>
+            ^handle holding1
+            ^item-type predicate)
+   (<P90529> #^handle new-object-id9
+             ^item-type object
+             ^predicates <N10395>
+             ^predicates <P90530>
+             ^predicates-copied true)
+   (<N10395> ^handle cup1
+             ^item-type predicate
+             ^name cup1
+             ^property <P4000>
+             ^relation <S1822>)
+   (<S1822> ^2 <P90374>
+            ^handle of1)
+   (<P90374> #^handle new-object-id7
+             ^item-type object
+             ^predicates <P90375>
+             ^predicates-copied true)
+   (<P90530> ^category object
+             ^dialog-object true
+             ^name cup1
+             ^property full
+             ^visibility unknown-visible)
+}
+
+
+#   Turn on the faucet.
+sp {elaborate*state*sentence*turn-on-the-faucet
+   (state <s> ^name comprehension
+              ^superstate <ss>
+              ^segment <seg>)
+   (<ss> ^current-sentence-number 11)
+-->
+   (<seg> ^input-sentence <first>
+          ^current-word <first>
+          ^original-sentence <first>
+          ^expected <S1851>)
+   (<first> ^spelling |*|
+            ^next <w0>
+            ^complete-sentence |Turn on the faucet.|)
+   (<w0> ^spelling |turn|
+         ^next <w1>)
+   (<w1> ^spelling |on|
+         ^next <w2>)
+   (<w2> ^spelling |the|
+         ^next <w3>)
+   (<w3> ^spelling |faucet|
+         ^next <w4>)
+   (<w4> ^spelling |.|
+         ^next nil)
+   (<S1851> ^action <N10438>
+            ^arg1 <R11364>
+            ^message-type command)
+   (<N10438> ^action-type primitive
+             ^handle turn-on1
+             ^item-type action
+             ^procedural <P90009>)
+   (<P90009> ^arg1 <P90010>
+              ^op_name initiate-turn-on1)
+   (<P90010> ^arg-status real
+              ^arg-type object
+              ^id <O5>)
+   (<R11364> ^handle faucet1
+             ^item-type predicate
+             ^predicates <P90573>
+             ^predicates-copied true
+             ^property <P4000>
+             ^visibility not-visible)
+   (<P90573> ^category object
+             ^dialog-object true)
+   (<P4000> ^handle name
+             ^item-type property
+             ^type visual)
+}
+
+
+#   Put the cup under the faucet.
+sp {elaborate*state*sentence*put-the-cup-under-the-faucet
+   (state <s> ^name comprehension
+              ^superstate <ss>
+              ^segment <seg>)
+   (<ss> ^current-sentence-number 12)
+-->
+   (<seg> ^input-sentence <first>
+          ^current-word <first>
+          ^original-sentence <first>
+          ^expected <S1964>)
+   (<first> ^spelling |*|
+            ^next <w0>
+            ^complete-sentence |Put the cup under the faucet.|)
+   (<w0> ^spelling |put|
+         ^next <w1>)
+   (<w1> ^spelling |the|
+         ^next <w2>)
+   (<w2> ^spelling |cup|
+         ^next <w3>)
+   (<w3> ^spelling |under|
+         ^next <w4>)
+   (<w4> ^spelling |the|
+         ^next <w5>)
+   (<w5> ^spelling |faucet|
+         ^next <w6>)
+   (<w6> ^spelling |.|
+         ^next nil)
+   (<S1964> ^action <N10472>
+            ^arg1 <R11039>
+            ^arg2 <S2178>
+            ^message-type command)
+   (<N10472> ^action-type primitive
+             ^handle put-down1
+             ^item-type action
+             ^procedural <P90001>)
+   (<P90001> ^arg1 <P90002>
+              ^op_name initiate-put-down1)
+   (<P90002> ^arg-status real
+              ^arg-type object
+              ^id <O1>)
+   (<R11039> ^handle cup1
+             ^item-type predicate
+             ^predicates <P90453>
+             ^predicates-copied true
+             ^property <P4000>
+             ^visibility not-visible)
+   (<P90453> ^category object
+             ^dialog-object true)
+   (<P4000> ^handle name
+             ^item-type property
+             ^type visual)
+   (<S2178> ^2 <R11364>
+            ^handle under1
+            ^item-type predicate)
+   (<R11364> ^handle faucet1
+             ^item-type predicate
+             ^predicates <P90573>
+             ^predicates-copied true
+             ^property <P4000>
+             ^visibility not-visible)
+   (<P90573> ^category object
+             ^dialog-object true)
+}
+
+
+#   Turn off the faucet.
+sp {elaborate*state*sentence*turn-off-the-faucet
+   (state <s> ^name comprehension
+              ^superstate <ss>
+              ^segment <seg>)
+   (<ss> ^current-sentence-number 13)
+-->
+   (<seg> ^input-sentence <first>
+          ^current-word <first>
+          ^original-sentence <first>
+          ^expected <S2205>)
+   (<first> ^spelling |*|
+            ^next <w0>
+            ^complete-sentence |Turn off the faucet.|)
+   (<w0> ^spelling |turn|
+         ^next <w1>)
+   (<w1> ^spelling |off|
+         ^next <w2>)
+   (<w2> ^spelling |the|
+         ^next <w3>)
+   (<w3> ^spelling |faucet|
+         ^next <w4>)
+   (<w4> ^spelling |.|
+         ^next nil)
+   (<S2205> ^action <N10525>
+            ^arg1 <R11364>
+            ^message-type command)
+   (<N10525> ^action-type primitive
+             ^handle turn-off1
+             ^item-type action
+             ^procedural <P90011>)
+   (<P90011> ^arg1 <P90012>
+              ^op_name initiate-turn-off1)
+   (<P90012> ^arg-status real
+              ^arg-type object
+              ^id <O6>)
+   (<R11364> ^handle faucet1
+             ^item-type predicate
+             ^predicates <P90573>
+             ^predicates-copied true
+             ^property <P4000>
+             ^visibility not-visible)
+   (<P90573> ^category object
+             ^dialog-object true)
+   (<P4000> ^handle name
+             ^item-type property
+             ^type visual)
+}
+
+
+#   Drive in a square.
+sp {elaborate*state*sentence*drive-in-a-square
+   (state <s> ^name comprehension
+              ^superstate <ss>
+              ^segment <seg>)
+   (<ss> ^current-sentence-number 14)
+-->
+   (<seg> ^input-sentence <first>
+          ^current-word <first>
+          ^original-sentence <first>
+          ^expected <S2314>)
+   (<first> ^spelling |*|
+            ^next <w0>
+            ^complete-sentence |Drive in a square.|)
+   (<w0> ^spelling |drive|
+         ^next <w1>)
+   (<w1> ^spelling |in|
+         ^next <w2>)
+   (<w2> ^spelling |a|
+         ^next <w3>)
+   (<w3> ^spelling |square|
+         ^next <w4>)
+   (<w4> ^spelling |.|
+         ^next nil)
+   (<S2314> ^action <N10547>
+            ^message-type command
+            ^predicate <S2402>)
+   (<N10547> ^action-type primitive
+             ^handle go-to-location1
+             ^item-type action
+             ^procedural <P90025>)
+   (<P90025> ^arg2 <P90026>
+              ^op_name initiate-go-to-location1)
+   (<P90026> ^2 <O12>
+              ^arg-status imagined
+              ^arg-type predicate
+              ^id <P90027>)
+   (<S2402> ^2 <P90711>
+            ^handle in1
+            ^item-type predicate)
+   (<P90711> #^handle new-object-id10
+             ^item-type object
+             ^predicates <P90712>
+             ^predicates-copied true)
+   (<P90712> ^category object
+             ^dialog-object true
+             ^shape square1
+             ^visibility unknown-visible)
+}
+
+
+#   While there are less than five sodas in the fridge; put a soda in the fridge.
+sp {elaborate*state*sentence*while-there-are-less-than-five-sodas-in-the-fridge-put-a-soda-in-the-fridge
+   (state <s> ^name comprehension
+              ^superstate <ss>
+              ^segment <seg>)
+   (<ss> ^current-sentence-number 15)
+-->
+   (<seg> ^input-sentence <first>
+          ^current-word <first>
+          ^original-sentence <first>
+          ^expected <S2429>)
+   (<first> ^spelling |*|
+            ^next <w0>
+            ^complete-sentence |While there are less than five sodas in the fridge; put a soda in the fridge.|)
+   (<w0> ^spelling |while|
+         ^next <w1>)
+   (<w1> ^spelling |there|
+         ^next <w2>)
+   (<w2> ^spelling |are|
+         ^next <w3>)
+   (<w3> ^spelling |less|
+         ^next <w4>)
+   (<w4> ^spelling |than|
+         ^next <w5>)
+   (<w5> ^spelling |five|
+         ^next <w6>)
+   (<w6> ^spelling |sodas|
+         ^next <w7>)
+   (<w7> ^spelling |in|
+         ^next <w8>)
+   (<w8> ^spelling |the|
+         ^next <w9>)
+   (<w9> ^spelling |fridge|
+         ^next <w10>)
+   (<w10> ^spelling |;|
+         ^next <w101>)
+   (<w101> ^spelling |put|
+         ^next <w11>)
+   (<w11> ^spelling |a|
+         ^next <w12>)
+   (<w12> ^spelling |soda|
+         ^next <w13>)
+   (<w13> ^spelling |in|
+         ^next <w14>)
+   (<w14> ^spelling |the|
+         ^next <w15>)
+   (<w15> ^spelling |fridge|
+         ^next <w16>)
+   (<w16> ^spelling |.|
+         ^next nil)
+   (<S2429> ^message-type while-construct
+            ^while-action-subclause <S2702>
+            ^while-condition-subclause <S2684>)
+   (<S2702> ^action <N10640>
+            ^arg1 <P90848>
+            ^arg2 <S2868>)
+   (<N10640> ^action-type primitive
+             ^handle put-down1
+             ^item-type action
+             ^procedural <P90001>)
+   (<P90001> ^arg1 <P90002>
+              ^op_name initiate-put-down1)
+   (<P90002> ^arg-status real
+              ^arg-type object
+              ^id <O1>)
+   (<P90848> #^handle new-object-id12
+             ^item-type object
+             ^predicates <P90849>
+             ^predicates-copied true)
+   (<P90849> ^category object
+             ^dialog-object true
+             ^shape soda1
+             ^visibility unknown-visible)
+   (<S2868> ^2 <L45>
+            ^handle in1
+            ^item-type predicate)
+   (<L45> ^handle fridge1
+          ^item-type location
+          ^predicates <P90168>)
+   (<P90168> ^arm-status not-grabbed
+             ^category location
+             ^name fridge
+             ^spatial-shape room1
+             ^visibility visible)
+   (<S2684> ^predicate <S2685>)
+   (<S2685> ^2 <P90780>
+            ^handle less-than1
+            ^item-type predicate)
+   (<P90780> #^handle new-object-id11
+             ^item-type object
+             ^predicates <P90781>
+             ^predicates-copied true
+             ^relation <S2678>)
+   (<P90781> ^category object
+             ^dialog-object true
+             ^number 5
+             ^shape soda1
+             ^visibility unknown-visible)
+   (<S2678> ^2 <L45>
+            ^handle in1)
+}
+
+
+#   For four steps; drive forward one meter [then turn right (not yet)].
+sp {elaborate*state*sentence*for-four-steps-drive-forward-one-meter
+   (state <s> ^name comprehension
+              ^superstate <ss>
+              ^segment <seg>)
+   (<ss> ^current-sentence-number 16)
+-->
+   (<seg> ^input-sentence <first>
+          ^current-word <first>
+          ^original-sentence <first>
+          ^expected <S2895>)
+   (<first> ^spelling |*|
+            ^next <w0>
+            ^complete-sentence |For four steps; drive forward one meter.|)
+   (<w0> ^spelling |for|
+         ^next <w1>)
+   (<w1> ^spelling |four|
+         ^next <w2>)
+   (<w2> ^spelling |steps|
+         ^next <w10>)
+   (<w10> ^spelling |;|
+         ^next <w3>)
+   (<w3> ^spelling |drive|
+         ^next <w4>)
+   (<w4> ^spelling |forward|
+         ^next <w5>)
+   (<w5> ^spelling |one|
+         ^next <w6>)
+   (<w6> ^spelling |meter|
+         ^next <w7>)
+   (<w7> ^spelling |.|
+         ^next nil)
+   (<S2895> ^for-action-subclause <S2977>
+            ^for-condition <P90862>
+            ^message-type for-construct)
+   (<S2977> ^action <N10723>
+            ^arg1 <N10737>
+            ^arg1 <P11201>
+            ^modifier <N10730>)
+   (<N10723> ^action-type primitive
+             ^handle go-to-location1
+             ^item-type action
+             ^procedural <P90025>)
+   (<P90025> ^arg2 <P90026>
+              ^op_name initiate-go-to-location1)
+   (<P90026> ^2 <O12>
+              ^arg-status imagined
+              ^arg-type predicate
+              ^id <P90027>)
+   (<N10737> ^handle meters
+             ^item-type concept
+             ^property <P10000>)
+   (<P10000> ^handle unit
+              ^item-type property
+              ^type unit)
+   (<P11201> ^handle 1
+              ^item-type predicate
+              ^property <P11000>)
+   (<P11000> ^handle number
+              ^item-type property
+              ^type number)
+   (<N10730> ^handle forward)
+   (<P90862> #^handle new-object-id13
+             ^item-type object
+             ^predicates <P90863>
+             ^predicates-copied true)
+   (<P90863> ^category object
+             ^dialog-object true
+             ^multiple true
+             ^number 4
+             ^shape steps1
+             ^visibility unknown-visible)
+}
+
+
+#   For each conference room; open the door.
+sp {elaborate*state*sentence*for-each-conference-room-open-the-door
+   (state <s> ^name comprehension
+              ^superstate <ss>
+              ^segment <seg>)
+   (<ss> ^current-sentence-number 17)
+-->
+   (<seg> ^input-sentence <first>
+          ^current-word <first>
+          ^original-sentence <first>
+          ^expected <S3068>)
+   (<first> ^spelling |*|
+            ^next <w0>
+            ^complete-sentence |For each conference room; open the door.|)
+   (<w0> ^spelling |for|
+         ^next <w1>)
+   (<w1> ^spelling |each|
+         ^next <w2>)
+   (<w2> ^spelling |conference|
+         ^next <w3>)
+   (<w3> ^spelling |room|
+         ^next <w10>)
+   (<w10> ^spelling |;|
+         ^next <w101>)
+   (<w101> ^spelling |open|
+         ^next <w5>)
+   (<w5> ^spelling |the|
+         ^next <w6>)
+   (<w6> ^spelling |door|
+         ^next <w7>)
+   (<w7> ^spelling |.|
+         ^next nil)
+   (<S3068> ^for-action-subclause <S3195>
+            ^for-condition <P90886>
+            ^for-condition <P90892>
+            ^for-condition <P90890>
+            ^for-condition <P90888>
+            ^message-type for-construct)
+   (<S3195> ^action <N10815>
+            ^arg1 <P90939>)
+   (<N10815> ^action-type primitive
+             ^handle open1
+             ^item-type action
+             ^procedural <P90005>)
+   (<P90005> ^arg1 <P90006>
+              ^op_name initiate-open1)
+   (<P90006> ^arg-status real
+              ^arg-type object
+              ^id <O3>)
+   (<P90939> #^handle new-object-id18
+             ^item-type object
+             ^predicates <P90940>
+             ^predicates-copied true)
+   (<P90940> ^category object
+             ^dialog-object true
+             ^spatial-shape door
+             ^visibility not-visible)
+   (<P90886> #^handle new-object-id14
+             ^item-type conference1
+             ^predicates <P90887>
+             ^predicates-copied true)
+   (<P90887> ^category conference1
+             ^dialog-object true
+             ^handle each
+             ^name conference1
+             ^number singular
+             ^quantified <N10751>
+             ^spatial-shape room1
+             ^visibility unknown-visible)
+   (<N10751> ^handle each
+             ^number singular
+             ^referent <R10081>
+             ^specifier definite
+             ^spelling each
+             ^structure-type QUANT
+             ^super-converts-to DP)
+   (<R10081> ^handle each
+              ^number singular
+              ^referent <R10081>
+              ^specifier definite
+              ^spelling each
+              ^structure-type QUANT
+              ^super-converts-to DP)
+   (<P90892> #^handle new-object-id17
+             ^item-type object
+             ^predicates <P90893>
+             ^predicates-copied true)
+   (<P90893> ^category object
+             ^dialog-object true
+             ^handle each
+             ^name conference1
+             ^number singular
+             ^quantified <N10751>
+             ^spatial-shape room1
+             ^visibility unknown-visible)
+   (<P90890> #^handle new-object-id16
+             ^item-type room1
+             ^predicates <P90891>
+             ^predicates-copied true)
+   (<P90891> ^category room1
+             ^dialog-object true
+             ^handle each
+             ^name conference1
+             ^number singular
+             ^quantified <N10751>
+             ^spatial-shape room1
+             ^visibility unknown-visible)
+   (<P90888> #^handle new-object-id15
+             ^item-type each
+             ^predicates <P90889>
+             ^predicates-copied true)
+   (<P90889> ^category each
+             ^dialog-object true
+             ^handle each
+             ^name conference1
+             ^number singular
+             ^quantified <N10751>
+             ^spatial-shape room1
+             ^visibility unknown-visible)
+}
+
+
+#   Otherwise; put the cup on the table.
+sp {elaborate*state*sentence*otherwise-put-the-cup-on-the-table
+   (state <s> ^name comprehension
+              ^superstate <ss>
+              ^segment <seg>)
+   (<ss> ^current-sentence-number 18)
+-->
+   (<seg> ^input-sentence <first>
+          ^current-word <first>
+          ^original-sentence <first>
+          ^expected <S3277>)
+   (<first> ^spelling |*|
+            ^next <w0>
+            ^complete-sentence |Otherwise; put the cup on the table.|)
+   (<w0> ^spelling |otherwise|
+         ^next <w10>)
+   (<w10> ^spelling |;|
+         ^next <w101>)
+   (<w101> ^spelling |put|
+         ^next <w2>)
+   (<w2> ^spelling |the|
+         ^next <w3>)
+   (<w3> ^spelling |cup|
+         ^next <w4>)
+   (<w4> ^spelling |on|
+         ^next <w5>)
+   (<w5> ^spelling |the|
+         ^next <w6>)
+   (<w6> ^spelling |table|
+         ^next <w7>)
+   (<w7> ^spelling |.|
+         ^next nil)
+   (<S3277> ^message-type otherwise-construct
+            ^otherwise-action-subclause <S3321>)
+   (<S3321> ^action <N10891>
+            ^arg1 <R11039>
+            ^arg2 <S3631>)
+   (<N10891> ^action-type primitive
+             ^handle put-down1
+             ^item-type action
+             ^procedural <P90001>)
+   (<P90001> ^arg1 <P90002>
+              ^op_name initiate-put-down1)
+   (<P90002> ^arg-status real
+              ^arg-type object
+              ^id <O1>)
+   (<R11039> ^handle cup1
+             ^item-type predicate
+             ^predicates <P90453>
+             ^predicates-copied true
+             ^property <P4000>
+             ^visibility not-visible)
+   (<P90453> ^category object
+             ^dialog-object true)
+   (<P4000> ^handle name
+             ^item-type property
+             ^type visual)
+   (<S3631> ^2 <L41>
+            ^handle on1
+            ^item-type predicate)
+   (<L41> ^handle 6
+          ^item-type object
+          ^predicates <P90164>)
+   (<P90164> ^arm-status not-grabbed
+             ^category location
+             ^name table
+             ^visibility visible)
+}
+
+
+#   Wait until the cup is full.
+sp {elaborate*state*sentence*wait-until-the-cup-is-full
+   (state <s> ^name comprehension
+              ^superstate <ss>
+              ^segment <seg>)
+   (<ss> ^current-sentence-number 19)
+-->
+   (<seg> ^input-sentence <first>
+          ^current-word <first>
+          ^original-sentence <first>
+          ^expected <S3846>)
+   (<first> ^spelling |*|
+            ^next <w0>
+            ^complete-sentence |Wait until the cup is full.|)
+   (<w0> ^spelling |wait|
+         ^next <w1>)
+   (<w1> ^spelling |until|
+         ^next <w2>)
+   (<w2> ^spelling |the|
+         ^next <w3>)
+   (<w3> ^spelling |cup|
+         ^next <w4>)
+   (<w4> ^spelling |is|
+         ^next <w5>)
+   (<w5> ^spelling |full|
+         ^next <w6>)
+   (<w6> ^spelling |.|
+         ^next nil)
+   (<S3846> ^action <N10978>
+            ^arg2 <S3877>
+            ^arg2 <N10996>
+            ^message-type command)
+   (<N10978> ^action-type primitive
+             ^handle wait1
+             ^item-type action
+             ^procedural <A10001>)
+   (<A10001> ^op_name initiate-wait1)
+   (<S3877> ^until-clause <S3973>)
+   (<S3973> ^action <N10996>
+            ^arg1 <R11039>
+            ^predicate <N11007>)
+   (<R11039> ^handle cup1
+             ^item-type predicate
+             ^predicates <P90453>
+             ^predicates-copied true
+             ^property <P4000>
+             ^visibility not-visible)
+   (<P90453> ^category object
+             ^dialog-object true)
+   (<P4000> ^handle name
+             ^item-type property
+             ^type visual)
+   (<N11007> ^handle full
+             ^item-type predicate
+             ^property <F5>)
+   (<F5> ^handle property
+          ^type visual)
+   (<N10996> ^handle is1
+             ^item-type action)
+}
+
+

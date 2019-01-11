@@ -1,0 +1,4 @@
+You can set the value of a location to five.
+You can set the value of a location to a number that is greater than zero.
+You can set the value of a location to a number that is greater than zero andx less than ten.
+load init-tictactoe.

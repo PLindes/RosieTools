@@ -52,7 +52,6 @@ public class ExtractSentenceTexts {
             if (!inputFile.endsWith(".soar") || inputFile.endsWith("source.soar")) {
             	continue;
             }
-            System.out.println(inputFile);
         	//	Compute the output path
         	String outputFile = inputFile.replace(".soar", "-new.script");
         	String outputAbsolute = String.format("%s\\%s", directory.toString(), outputFile);
@@ -60,7 +59,10 @@ public class ExtractSentenceTexts {
             Path inputPath = Paths.get(file.toString());
             String inputText = getTextFromFile(inputPath);
             String outputText = extractTexts(inputText);
-            writeOutput(outputText, outputPath);
+            if (outputText.length() > 0) {
+                System.out.println(inputFile);
+            	writeOutput(outputText, outputPath);
+            }
         }
    	
 //    	//	Get or use defaults for file names
@@ -85,19 +87,22 @@ public class ExtractSentenceTexts {
 
 	private static String extractTexts(String inputText) {
 		//	Look for sentence texts
+		final String pattern = "^complete-sentence |";
 		StringBuilder builder = new StringBuilder();
-		int start = 0;
+		int start = pattern.length();
 		int end = 0;
 		while (start < inputText.length()) {
-			final String pattern = "^complete-sentence |";
 			int next = inputText.indexOf(pattern, start) + pattern.length();
 			if (next < start)
 				break;
 			start = next;
 			end = inputText.indexOf("|", start);
-			String text = inputText.substring(start, end);
-			builder.append(text);
-			builder.append("\r\n");
+			String text = null;
+			if (end > start && end <= inputText.length()) {
+				text = inputText.substring(start, end);
+				builder.append(text);
+				builder.append("\r\n");
+			}
 			start = end + 1;
 		}
 		return builder.toString();
