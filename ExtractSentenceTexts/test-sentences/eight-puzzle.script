@@ -1,0 +1,10 @@
+The name of the game is eight-puzzle.
+The name of an action is slide.
+If a location is next to a clear location but it is not diagonal with the clear location then it is adjacent to the clear location.
+If a block is on a location that is adjacent to a clear location then you can move the block onto the clear location.
+If the color of a location is equal to the color of the block that is on the location then the color is matched.
+If the color of a location is equal to the color of the block that is on the location then the location is matched.
+If the color of a location is the color of the block that is on the location then the location is matched.
+The goal is that there are eight matched locations.
+The goal is that eight locations are matched.
+The goal is that the number of the matched locations is eight.

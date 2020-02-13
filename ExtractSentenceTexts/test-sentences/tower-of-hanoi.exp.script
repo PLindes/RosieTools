@@ -1,0 +1,8 @@
+The name of the game is tower-of-hanoi.
+The name of an action is stack-block.
+Move a clear block onto a clear object.
+The block is smaller than the box.
+Move a clear block onto a clear object that is larger than the block.
+The goal is that a large block is on a blue location.
+The goal is that a large block is on a blue location and a medium block is on the large block.
+The goal is that a large block is on a blue location and a medium block is on the large block and a small block is on the medium block.

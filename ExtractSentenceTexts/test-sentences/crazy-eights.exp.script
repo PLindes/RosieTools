@@ -1,0 +1,17 @@
+The name of the game is crazy-eights.
+If the rank of one of your cards is equal to the rank of the top card then you can play your card.
+If the suit of one of your cards is equal to the suit of the top card then you can play your card.
+If one of your cards is a wild card then you can play the card.
+If a card in your hand is a wild card then you can play the card.
+The goal is that your hand is empty.
+If your hand is empty then you win.
+If you have no cards then you win.
+The goal is that you have zero cards.
+If an opponent has zero cards then you lose.
+If an opponent has an empty hand then you lose.
+If a card has a value of eight then it is wild.
+If the value of a card is eight then the card is a wild card.
+If a card is on the deck and it is not below another card then it is the top card.
+If a card is on the deck and the card is not below another card then the card is the top card.
+If a card is in your hand then it is your card.
+If two cards have the same value then they have the same rank.

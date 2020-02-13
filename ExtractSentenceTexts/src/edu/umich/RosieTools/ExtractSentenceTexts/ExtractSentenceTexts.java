@@ -53,7 +53,7 @@ public class ExtractSentenceTexts {
             	continue;
             }
         	//	Compute the output path
-        	String outputFile = inputFile.replace(".soar", "-new.script");
+        	String outputFile = inputFile.replace(".soar", ".script");
         	String outputAbsolute = String.format("%s\\%s", directory.toString(), outputFile);
         	Path outputPath = Paths.get(outputAbsolute);
             Path inputPath = Paths.get(file.toString());

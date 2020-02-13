@@ -1,0 +1,5 @@
+The name of the game is president.
+If the rank of one of your cards is equal to the rank of the top card then you can play your card.
+If the rank of one of your cards is greater than the rank of the top card then you can play your card.
+If one of your cards is a clear card then you can play the card.
+If a card has a value of two then it is clear.

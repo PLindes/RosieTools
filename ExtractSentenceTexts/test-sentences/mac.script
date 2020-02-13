@@ -1,0 +1,12 @@
+The name of the game is missionaries-and-cannibals.
+The goal is that all the missionaries are on the right side of the river and all the cannibals are on the right side of the river.
+The goal is that the three missionaries are on the right side of the river and the three cannibals are on the right side of the river.
+If more cannibals than missionaries are on a side of the river and the number of missionaries is greater than zero then you have lost.
+If the number of cannibals is greater than the number of missionaries on a side of the river and the number of missionaries is greater than zero then you have lost.
+If the boat is on the same side as two people then you can move the boat to the other side.
+If the boat is on the same side as two people then you can move the boat and those people to the other side.
+If the boat is on the same side of the river as one person then you can move the boat and the person to the other side of the river.
+The goal is that all the missionaries and cannibals are on the right side of the river.
+The goal is that the missionaries and cannibals are on the right side of the river.
+You can move the boat and a block on the current bank onto the opposite bank.
+You can move a block that is on the current bank and another block that is on the bank and the boat onto the opposite bank.

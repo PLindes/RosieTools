@@ -1,0 +1,84 @@
+Deliver the box to the soar office.
+The goal is that the box is in the office.
+Pick up the box.
+Go to the office.
+Put down the box.
+Deliver the box.
+The goal is that the box is in the office.
+Pick up the box.
+Go to the office.
+Put down the box.
+Fetch a soda from the kitchen.
+The goal is that the soda is in the starting location.
+Remember the current location as the starting location.
+Go to the kitchen.
+Pick up the soda.
+Go to the starting location.
+Put down the soda.
+Fetch a soda.
+The goal is that the soda is in the starting location.
+Remember the current location as the starting location.
+Recall a soda in a location.
+Go to the location.
+Pick up the soda.
+Go to the starting location.
+Put down the soda.
+Find a stapler.
+The goal is that the stapler is in the starting location.
+Remember the current location as the starting location.
+Explore until a stapler is visible.
+Pick up the stapler.
+Go to the starting location.
+Put down the stapler.
+Tell Bob a message.
+The goal is that Bob heard the message.
+Ask What is the message.
+Remember the answer as the message.
+Recall Bob in a location.
+Go to the location.
+Say the message.
+Interrogate Bob.
+The goal is that you said the response in the starting location.
+Remember the current location as the starting location.
+Ask What is the question?
+Remember the answer as the question.
+Recall Bob in a location.
+Go to the location.
+Ask the question.
+Remember the answer as the response.
+Go to the starting location.
+Say the answer.
+Check if the lights in the conference room are lit.
+The goal is that you said the response in the starting location.
+Remember the current location as the starting location.
+Go to the conference room.
+Remember if the lights in the conference room are lit as the response.
+Go to the starting location.
+Say the response.
+Throw away the trash.
+The goal is that the trash is in the garbage.
+Pick up the trash.
+Go to the garbage.
+Put down the trash.
+Patrol the building.
+Go to the kitchen.
+Go to the office.
+Go to the conference room.
+Go to the soar office.
+You are done.
+Patrol the building.
+If the lights in an empty room are lit then turn off the lights.
+Go to the kitchen.
+Go to the main office.
+Go to the conference room.
+Go to the office.
+You are done.
+If the lights in an room are lit and the room is empty then turn off the lights.
+The goal is that the small steak is cooked and the stove is off.
+The goal is that the red block is on the pantry and the pantry is closed.
+The sodas are usually in the kitchen.
+Bob is usually in the conference room.
+Think of the usual location for a soda
+The goal is that Bob is holding the stapler.
+Start following Bob.
+Stop leading Bob.

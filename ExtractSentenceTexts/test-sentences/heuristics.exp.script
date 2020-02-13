@@ -1,0 +1,16 @@
+Prefer playing a card that is not a wild card.
+Prefer playing a card that is not wild.
+Avoid playing a wild card.
+Prefer playing a wild card over playing another card.
+If a card is not wild then prefer playing it.
+If a card is wild then avoid playing it.
+If the value of a card is less than the value of another card and the card is not a wild card then prefer playing it.
+Prefer playing a card that is not a clear card.
+Avoid playing a clear card.
+Prefer placing a tile on the center location.
+Prefer placing a tile on a corner location over placing a tile on an edge location.
+The center location is diagonal with four locations.
+A corner location is diagonal with one location.
+An edge location is not diagonal with any location.
+An edge location is diagonal with no locations.
+If the center location is clear then prefer placing a tile on the center location.

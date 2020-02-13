@@ -1,0 +1,31 @@
+The goal is that a white block is above a green location.
+Move the white block onto a clear location.
+Move a free red block onto the white block.
+Move the red block onto the green block.
+Move the purple block onto the red triangle.
+Pick up the red block.
+Store it.
+Move the green triangle (does not exist) onto a red triangle (does exist single).
+Store it.
+Pick up a green block (multiple green blocks - should pick one from dialog).
+The name of the game is tower-of-hanoi.
+The goal is that a large block is on a blue location.
+The goal is that a medium block is on the large block.
+The goal is that a small block is on the medium block.
+The goal is that a large block is on a blue location and a medium block is on the large block.
+The goal is that a large block is on a blue location and a medium block is on the large block and a small block is on the medium block.
+Store the red triangle and store the green box.
+Store the red triangle; store the green box.
+Store the red triangle, and store the green box.
+Store the red triangle, store the green box, and store the green sphere.
+All locations are below the block.
+Move a blue block that is not on a location onto a location that is not below a block.
+The three locations that are below the red blocks are in a line.
+The red blocks are on three linear locations.
+The goal is that there are three red blocks on three locations that are in a line.
+Move a clear block onto a larger clear object.
+The goal is that all blocks are on their goal locations.
+All blocks are on locations of the same color.
+Move a block from a location onto an adjacent clear location.
+Move a red block from a location onto a clear location that is left of that location.
+There are zero locations that are not below a block.

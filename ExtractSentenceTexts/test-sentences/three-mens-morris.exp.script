@@ -1,0 +1,11 @@
+The name of the game is three-mens-morris.
+The name of an action is place-block.
+The name of an action is slide.
+Move a free red block onto a clear location.
+If a location is clear then you can move a free red block onto the location.
+If the red blocks are on their locations then you can move a red block onto a clear location.
+If all the red blocks are on their locations then you can move a red block onto a clear location.
+If all of the red blocks are on their locations then you can move a red block onto a clear location.
+If all your pieces are on their locations then you can move one of your pieces onto a clear location.
+If all your pieces are on their locations then you can move a piece onto a clear location.
+The name of the goal is three-in-a-row.

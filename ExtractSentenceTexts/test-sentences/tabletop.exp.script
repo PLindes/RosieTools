@@ -1,0 +1,37 @@
+Discard the red square.
+The goal is that the red square is on the garbage.
+Pick up the red square.
+Put the red square on the garbage.
+Move the green sphere to the table.
+The goal is that the green sphere is on the table.
+Pick up the green sphere.
+Put the green sphere on the table.
+Store the blue arch.
+Open the pantry.
+Pick up the blue arch.
+Put the blue arch on the pantry.
+Close the pantry.
+Cook the small steak.
+The goal is that the small steak is cooked and the stove is off.
+Pick up the small steak.
+Put the small steak on the stove.
+Turn on the stove.
+Wait until the steak is cooked.
+Turn off the stove.
+Serve the large steak.
+The goal is that the large steak is cooked and the large steak is on the table.
+Pick up the large steak.
+Put the large steak on the stove.
+Turn on the stove.
+Wait until the large steak is cooked.
+Turn off the stove.
+Pick up the large steak.
+Put the large steak on the table.
+Stack the red block and the green box.
+Stack the red block and the green box and the purple block.
+The goal is that the red block is on the green box.
+The goal is that the red block is on the green box and the green box is on the purple block.
+If the number of cannibals on a boat is one then it is green.
+The goal is that the number of cannibals on a boat is one.
+The goal is that the number of cannibals is one.
+If the number of cannibals on the bank is more than the number of missionaries on the bank then you lose.
